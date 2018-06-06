@@ -9,7 +9,6 @@ const sessionReducer = (state = { currentUser: null }, action) => {
         case LOGOUT_CURRENT_USER:
             return { currentUser: null };
         default:
-            // console.log(state);
             return state;
     }
 };

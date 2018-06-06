@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Redirect, Link, withRouter } from 'react-router-dom';
 // import _ from 'lodash';
 import isEqual from 'lodash/isEqual';
 
@@ -28,42 +28,20 @@ class SessionForm extends React.Component {
         if(typeof e !== 'undefined') e.preventDefault();
         this.props.submitForm(this.state);
     }
-    sleep(ms) {
-    var start = new Date().getTime(), expire = start + ms;
-    while (new Date().getTime() < expire) { }
-    return;
-}
+
 
     handleDemo(e) {
-        // let fn = (res) => (this.setState({username: res}))
-        this.setState({username: "itspronouncedjif"});
-        // const un = "itspronouncedjif".split('');
-        // let result = "";
-        // for (let i = 0; i < un.length; i++) {
-            // debugger
-            // result+=un[i];
-            // setTimeout(fn.bind(null,result), 1000);
-        // }
-        this.setState({password: "password"});
-        // this.handleSubmit.bind(this)();
+        this.setState({ username: "itspronouncedjif", password: "password" }, () => this.handleSubmit());
     }
 
-    // componentWillReceiveProps(newProps){
-    //     debugger;
-    //     console.log(newProps);
-    //     if(this.props.state !== newProps.state){
-    //         this.props.errors = [];
-    //     }
-    // }
 
     renderErrors() {
         let errs = this.props.errors;
-        console.log(this.state);
         if (isEqual(this.state,{ username: "", password: "" })) errs = [];
         return (
-            <ul>
+            <ul className="errors">
                 {errs.map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li key={`error-${i}`} >
                         {error}
                     </li>
                 ))}
@@ -73,42 +51,47 @@ class SessionForm extends React.Component {
 
     render() {
         let demo;
+        let loginorsignup;
         let err;
-        if(this.props.formType === 'login'){
-             demo = (<button onClick={this.handleDemo.bind(this)}>Demo</button>)
+        if(this.props.formType === 'LOG IN'){
+            demo = (<span><button className="demo-login-fb" onClick={this.handleDemo.bind(this)}>DEMO LOGIN</button>
+            <p className="or">- OR -</p></span>)
+            loginorsignup = (<div>Don't have an account? <Link to="/signup" className="ss">Sign Up</Link></div>)
         } else {
-            demo = (<div></div>)
+            demo = (<span></span>)
+            loginorsignup = (<div>Already have an account? <Link to="/login" className="ss">Log in</Link></div>)
+            
         }
 
-        // if (this.state === { username: "", password: "" }) {
-        //     err = this.renderErrors; 
-        // } else {
-        //     err = (() => <div>hi</div>);
-        // }
         return (
-            <div>
-                <form onSubmit={ this.handleSubmit.bind(this) }>
-                    {this.renderErrors()}
+            <div className="AllSession">
+                <div className="sessionlogo"></div>
+                <div className="allform">
+                    {demo}
+                <form>
                     <div>
-                        <label>Username:
                             <input type="text" 
                                 value={this.state.username}
                                 onChange={this.handleUsernameChange}
-                            />
-                        </label>
+                                className="usernameform"
+                                placeholder="Username"
+                                autoFocus
+                                />
                         <br />
-                        <label>Password:
-                            <input type="text"
+                            <input type="password"
                                 value={this.state.password}
                                 onChange={this.handlePasswordChange}
-                            />
-                        </label>
+                                className="passwordform"
+                                placeholder="Password"
+                                />
                         <br />
-                        <input type="submit" value={this.props.formType} />
-                        {demo}
-                        {/* <button onClick={this.handleDemo.bind(this)}>Demo</button> */}
+                                {this.renderErrors()}
+                            <div className="submitcontainer"><button onClick={this.handleSubmit.bind(this)} className="submitForm">{this.props.formType}</button></div>
                     </div>
                 </form>
+                </div>
+                {loginorsignup}
+                <div className="tc"> If you click "Demo Login" and are not a Audify user, you are invited to visit my <a href="#" className="ss1">Github</a> and <a href="#" className="ss1">LinkedIn</a></div>
             </div>
         );
     }

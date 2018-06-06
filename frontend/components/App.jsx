@@ -8,9 +8,9 @@ import { logout } from '../actions/session_actions';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 const App = () => (
-    <div>
+    <div className="AppComponent">
         <header>
-        <Link to="/"><h1>Audify: Work in Progress</h1></Link>
+        {/* <Link to="/"><h1>Audify: Work in Progress</h1></Link> */}
         </header>
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
