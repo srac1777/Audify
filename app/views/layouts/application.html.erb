@@ -3,12 +3,24 @@
   <head>
     <title>AudifyApp</title>
     <%= csrf_meta_tags %>
-
+    <%= favicon_link_tag 'favicon.png' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <style>
+    @font-face {
+  font-family: "Circular-Bold";
+  src: url("fonts/circular-std-book/CircularStd-Bold.otf") format("truetype");
+    }
+</style>
   </head>
 
   <body>
+    <% if logged_in? %>
+    <script type="text/javascript">
+        window.currentUser = <%= render("api/users/user.json.jbuilder",
+            user: current_user).html_safe %>
+    </script>
+    <% end %>
     <%= yield %>
   </body>
 </html>
