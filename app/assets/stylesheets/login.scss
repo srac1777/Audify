@@ -13,10 +13,10 @@
 .sessionlogo {
     background: image-url("sp-lo-black.png");
     height: 70px;
-    background-size: 11.1% auto;
+    background-size: 14% auto;
     background-repeat: no-repeat;
-    width: 1800px; 
-    background-position-x: 800px;
+    width: 100%; 
+    background-position-x: 635px;
     background-position-y: 25px;
     border-bottom: 1px solid lightgray;
     // background: red;
@@ -29,7 +29,7 @@
     border: none;
     border-radius: 20px;
     padding: 10px 0;
-    margin: 32px 0 10px 0;
+    margin: 0px 0 10px 0;
     color: white;
     letter-spacing: 3px;
     font-size: 12px;
@@ -70,6 +70,7 @@
     letter-spacing: 3px;
     font-weight: bold;
     text-align: center;
+    font-size: 12px;
 }
 
 .submitForm {

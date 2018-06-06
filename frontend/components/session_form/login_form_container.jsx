@@ -11,7 +11,8 @@ const mapStateToProps = ({ errors }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    submitForm: user => dispatch(login(user))
+    submitForm: user => dispatch(login(user)),
+    demoLogin: user => dispatch(login(user))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);

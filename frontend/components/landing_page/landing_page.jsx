@@ -7,12 +7,10 @@ class LandingPage extends React.Component {
             <div className="AllLanding">
             <div className="landing">
                 <div className="left-landing">
-                {/* <img src="assets/images/logo-white-2x.png"/> */}
                 <div className="landing-logo"></div>
                 <Link to="/signup" className="link1">SIGN UP</Link>
                 <p>- ALREADY HAVE AN ACCOUNT? -</p>
                 <Link to="/login" className="link2">LOG IN</Link>
-                <Link to="/login" className="demotext">DEMO LOGIN</Link>
                 </div>
                 <div className="middle-landing-bar"></div>
                 <div className="right-landing">
@@ -21,7 +19,7 @@ class LandingPage extends React.Component {
                     <h3>Listen to millions of songs for free.</h3>
                     <ul>
                         <li><div className="landing-tick"></div><span className="ticktext">Search & discover music you'll love</span></li>
-                            <li><div className="landing-tick"></div><span className="ticktext">Create playlists of your favorite music</span></li>
+                        <li><div className="landing-tick"></div><span className="ticktext">Create playlists of your favorite music</span></li>
                     </ul>
                 </div>
             </div>

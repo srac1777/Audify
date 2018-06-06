@@ -13,7 +13,6 @@ class SessionForm extends React.Component {
         };
         this.handleUsernameChange = this.handleUsernameChange.bind(this)
         this.handlePasswordChange = this.handlePasswordChange.bind(this)
-        // this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleUsernameChange(e) {
@@ -29,9 +28,15 @@ class SessionForm extends React.Component {
         this.props.submitForm(this.state);
     }
 
+    handleDemoSubmit(e) {
+        if (typeof e !== 'undefined') e.preventDefault();
+        this.props.demoLogin(this.state);
+    }
+
+
 
     handleDemo(e) {
-        this.setState({ username: "itspronouncedjif", password: "password" }, () => this.handleSubmit());
+        this.setState({ username: "itspronouncedjif", password: "password" }, () => this.handleDemoSubmit());
     }
 
 
@@ -58,7 +63,8 @@ class SessionForm extends React.Component {
             <p className="or">- OR -</p></span>)
             loginorsignup = (<div>Don't have an account? <Link to="/signup" className="ss">Sign Up</Link></div>)
         } else {
-            demo = (<span></span>)
+            demo = (<span><button className="demo-login-fb" onClick={this.handleDemo.bind(this)}>DEMO LOGIN</button>
+                <p className="or">- OR -</p></span>)
             loginorsignup = (<div>Already have an account? <Link to="/login" className="ss">Log in</Link></div>)
             
         }
