@@ -1,0 +1,322 @@
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.AllLanding {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(login-background.jpg);
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* line 14, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 21, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing-logo {
+  background-image: url(/assets/logo-white-2x-db9e9b5745726ae072be562fc54f89a65207b8b917fbcc275796f3b5476c7f90.png);
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  height: 100px;
+  background-position-x: 67px;
+}
+
+/* line 29, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+}
+
+/* line 35, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing p {
+  color: rgba(211, 211, 211, 0.801);
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin: 36px 0;
+  text-align: center;
+}
+
+/* line 43, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing .link1 {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 19px;
+  border-radius: 50px;
+  width: 280px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* line 55, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing .link2 {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background: white;
+  padding: 19px;
+  border-radius: 50px;
+  width: 280px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* line 67, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.middle-landing-bar {
+  background: rgba(211, 211, 211, 0.801);
+  height: 430px;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* line 76, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing {
+  padding: 45px;
+  white-space: nowrap;
+}
+
+/* line 81, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing h1 {
+  color: #1DB954;
+  font-size: 52px;
+}
+
+/* line 86, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing h3 {
+  font-weight: lighter;
+  font-size: 24px;
+  color: white;
+}
+
+/* line 91, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing ul {
+  padding: 0;
+}
+
+/* line 95, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing ul li {
+  list-style-type: none;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+/* line 102, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing-tick {
+  background-image: url(/assets/checkmark-9697f50413e04306eac78d540e9e30101aa2c1a848f25d49ae62645980eef0e2.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  padding-right: 10px;
+  background-position-y: 5px;
+}
+
+/* line 112, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.ticktext {
+  position: relative;
+  bottom: 5px;
+}
+
+/* line 117, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.demotext {
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(211, 211, 211, 0.801);
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.AllSession {
+  background: green;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 13, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.sessionlogo {
+  background: url(/assets/sp-lo-black-30562af9628f2d128f62c1b1c9a9e758f83af225f4f723d0e041f226ba543c94.png);
+  height: 70px;
+  background-size: 14% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position-x: 635px;
+  background-position-y: 25px;
+  border-bottom: 1px solid lightgray;
+  padding: 19px 0;
+}
+
+/* line 26, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.demo-login-fb {
+  background: #3a5997;
+  width: 450px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 0px 0 10px 0;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 39, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.demo-login-fb:hover {
+  transition: 0.5s;
+  background: #3a61b3;
+}
+
+/* line 44, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform {
+  width: 450px;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* line 52, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform:invalid {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+/* line 57, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.passwordform {
+  width: 450px;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* line 65, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+::placeholder {
+  color: #C1C3C6;
+}
+
+/* line 69, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.or {
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 76, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitForm {
+  background: #1cb953;
+  width: 210px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 0px 0 40px 0;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 90, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitForm:hover {
+  transition: 0.5s;
+  background: #18d45f;
+}
+
+/* line 95, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.errors {
+  color: red;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 101, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.errors li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -30px;
+}
+
+/* line 109, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 118, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss {
+  color: #1cb953;
+  text-decoration: none;
+}
+
+/* line 123, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss:hover {
+  color: #18d45f;
+}
+
+/* line 128, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss1 {
+  color: #1cb953;
+  text-decoration: none;
+}
+
+/* line 133, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss1:hover {
+  color: #18d45f;
+}
+
+/* line 138, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.tc {
+  color: #c1c3c6;
+  font-size: 11px;
+  width: 400px;
+  padding: 20px 0;
+  border-top: 1px solid #c1c3c6;
+  margin: 0 0 270px 0;
+}
+
+/* line 147, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+input.leftJustifyStyle.ErrorShade {
+  border-color: red;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 21, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 25, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+body {
+  margin: 0;
+  background: lightslategray;
+  height: 100%;
+}
