@@ -6,6 +6,8 @@ const songsReducer = (state = {}, action) => {
     switch (action.type) {
         case RECEIVE_ALL_SONGS:
             return merge({}, state, action.songs);
+        // case LOGOUT_CURRENT_USER:
+        //     return {};
         default:
             return state;
     }

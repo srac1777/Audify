@@ -3,16 +3,11 @@ import PlaylistIndexItem from './playlist_index_item';
 import PlaylistFormContainer from './playlist_form_container';
 
 class PlaylistIndex extends React.Component {
+    
     componentDidMount() {
         this.props.fetchPlaylists();
     }
-
-    componentWillReceiveProps(newProps){
-        if(this.props.playlists.length !== newProps.playlists.length){
-            this.props.fetchPlaylists()
-        }
-    }
-
+    
     render() {
         return (
             <div>
@@ -24,5 +19,11 @@ class PlaylistIndex extends React.Component {
         );
     }
 }
-
 export default PlaylistIndex;
+
+
+// componentWillReceiveProps(newProps){
+//     if(this.props.playlists.length !== newProps.playlists.length){
+//         this.props.fetchPlaylists()
+//     }
+// }

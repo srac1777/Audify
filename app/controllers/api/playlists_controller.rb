@@ -20,7 +20,7 @@ class Api::PlaylistsController < ApplicationController
     end
 
     def index
-        @playlists = Playlist.all 
+        @playlists = current_user.playlists 
     end
 
     def playlist_params

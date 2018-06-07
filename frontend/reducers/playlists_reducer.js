@@ -1,5 +1,6 @@
 import { RECEIVE_ALL_PLAYLISTS, REMOVE_PLAYLIST, RECEIVE_PLAYLIST } from "../actions/playlist_actions";
 import merge from 'lodash/merge';
+import { LOGOUT_CURRENT_USER } from "../actions/session_actions";
 
 const playlistsReducer = (state = {}, action) => {
     Object.freeze(state);
@@ -12,6 +13,8 @@ const playlistsReducer = (state = {}, action) => {
             let newState = merge({}, state);
             delete newState[action.id];
             return newState;
+        case LOGOUT_CURRENT_USER:
+            return {};
         default:
             return state;
     }
