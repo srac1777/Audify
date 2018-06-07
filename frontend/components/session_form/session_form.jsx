@@ -15,11 +15,17 @@ class SessionForm extends React.Component {
         this.handlePasswordChange = this.handlePasswordChange.bind(this)
     }
 
+    componentWillUnmount(){
+        this.props.clearErrors([]);
+    }
+
     handleUsernameChange(e) {
+        this.props.clearErrors([]);
         this.setState({username: e.currentTarget.value});
     }
 
     handlePasswordChange(e) {
+        this.props.clearErrors([]);
         this.setState({ password: e.currentTarget.value });
     }
 
@@ -42,7 +48,7 @@ class SessionForm extends React.Component {
 
     renderErrors() {
         let errs = this.props.errors;
-        if (isEqual(this.state,{ username: "", password: "" })) errs = [];
+        // if (isEqual(this.state,{ username: "", password: "" })) errs = [];
         return (
             <ul className="errors">
                 {errs.map((error, i) => (
