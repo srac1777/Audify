@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import * as UtilTest from './utils/session_api_util';
 import configureStore from './store/store';
 import Root from './components/Root';
+import { fetchPlaylists } from './actions/playlist_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,8 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
+    // window.fetchPlaylists = fetchPlaylists;
     window.getState = store.getState;
+    window.fetchPlaylists = fetchPlaylists;
     window.logout = UtilTest.logout;
+    window.dispatch = store.dispatch;
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
 });
@@ -25,4 +29,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //tests
 // window.login = UtilTest.login
 // window.signup = UtilTest.signup
-// window.dispatch = store.dispatch;

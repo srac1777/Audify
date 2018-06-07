@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint(8)        not null, primary key
+#  username        :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
 
     validates_presence_of :username, :password_digest, :session_token
@@ -5,6 +17,10 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6, allow_nil: true }
     attr_reader :password
     before_validation :ensure_session_token
+
+    has_many :playlists,
+        class_name: Playlist,
+        foreign_key: :creator_id
 
     
     def password=(password)
