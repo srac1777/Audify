@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import SongIndexItem from './songs_index_item';
+import Modal from '../modal/modal';
 
 class SongIndex extends React.Component {
 
@@ -12,8 +13,12 @@ class SongIndex extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.props.songs.map(song => (<SongIndexItem key={song.id} song={song} />))}
+                    {this.props.songs.map(song => (<SongIndexItem key={song.id} 
+                                                    song={song}
+                                                    openModal={this.props.openModal}
+                                                    />))}
                 </ul>
+                <Modal />
             </div>
         );
     }

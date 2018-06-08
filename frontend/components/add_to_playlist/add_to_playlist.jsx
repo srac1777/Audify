@@ -6,7 +6,7 @@ class AddtoPlaylist extends React.Component {
     //     super(props);
     // }
     render() {
-        debugger
+        // debugger
         return (
             <div>
                 <h1>Choose a Playlist</h1>

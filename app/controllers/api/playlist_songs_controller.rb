@@ -1,6 +1,11 @@
 class Api::PlaylistSongsController < ApplicationController
+    
+    def index
+        @playlistsongs = PlaylistSong.all
+    end
+    
     def create
-        @playlistsong = Playlist.new(playlist_songs_params)
+        @playlistsong = PlaylistSong.new(playlist_songs_params)
 
         if @playlistsong.save
             render :show
