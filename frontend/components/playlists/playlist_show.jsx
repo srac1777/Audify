@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Modal from '../modal/modal_ep';
 
 class PlaylistShow extends React.Component {
     constructor(props){
@@ -9,6 +10,9 @@ class PlaylistShow extends React.Component {
         this.props.fetchPlaylist(this.props.playlist.id)
     }
 
+    handleClick() {
+        this.props.openModal('ep')
+    }
     
     render() {
         console.log(this.props.playlist);
@@ -16,6 +20,8 @@ class PlaylistShow extends React.Component {
         return (
             <div>
                 {this.props.playlist.title}
+                <Modal />
+                <button onClick={this.handleClick.bind(this)}>rename</button>
             </div>
         );
     }

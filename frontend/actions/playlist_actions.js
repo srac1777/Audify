@@ -12,9 +12,12 @@ export const fetchPlaylist = id => dispatch => (
     PlaylistUtil.fetchPlaylist(id).then(playlist => dispatch({ type: RECEIVE_PLAYLIST, playlist }))
 );
 
-export const createPlaylist = playlist => dispatch => { console.log(playlist);
-
+export const createPlaylist = playlist => dispatch => {
    return PlaylistUtil.createPlaylist(playlist).then(playlist => dispatch({ type: RECEIVE_PLAYLIST, playlist }))
+};
+
+export const updatePlaylist = playlist => dispatch => {
+    return PlaylistUtil.updatePlaylist(playlist).then(playlist => dispatch({ type: RECEIVE_PLAYLIST, playlist }))
 };
 
 export const deletePlaylist = id => dispatch => (
