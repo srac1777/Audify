@@ -10,7 +10,12 @@ class AddtoPlaylist extends React.Component {
         return (
             <div>
                 <h1>Choose a Playlist</h1>
-                <ATPIndex playlists={this.props.playlists} fetchPlaylists={this.props.fetchPlaylists}/>
+                <ATPIndex playlists={this.props.playlists} 
+                        fetchPlaylists={this.props.fetchPlaylists}
+                        createPlaylistSong = {this.props.createPlaylistSong}
+                        clickedSong={this.props.clickedSong}
+                        closeModal={this.props.closeModal}
+                        />
             </div>
         );
     }

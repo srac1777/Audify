@@ -11,7 +11,13 @@ class ATPIndex extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.props.playlists.map(playlist => (<ATPIndexItem key={playlist.id} playlist={playlist} />))}
+                    {this.props.playlists.map(playlist => (<ATPIndexItem key={playlist.id} 
+                                                                        playlist={playlist} 
+                                                                        createPlaylistSong={this.props.createPlaylistSong} 
+                                                                        clickedSong={this.props.clickedSong}
+                                                                        closeModal={this.props.closeModal}
+
+                                                                        />))}
                 </ul>
             </div>
         );

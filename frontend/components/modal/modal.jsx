@@ -1,7 +1,7 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
-import AddtoPlaylistContainer from '../add_to_playlist/add_to_playlist_container';
+import AddtoPlaylistContainer from '../add_to_playlist/atp_container';
 
 function Modal({ modal, closeModal }) {
     if (!modal) {

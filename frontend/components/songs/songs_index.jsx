@@ -16,6 +16,7 @@ class SongIndex extends React.Component {
                     {this.props.songs.map(song => (<SongIndexItem key={song.id} 
                                                     song={song}
                                                     openModal={this.props.openModal}
+                                                    songClick={this.props.songClick}
                                                     />))}
                 </ul>
                 <Modal />
