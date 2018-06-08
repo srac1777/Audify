@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import SongIndexItem from './songs_index_item';
-import Modal from '../modal/modal';
+import Modal from '../modal/modal_atp';
 
 class SongIndex extends React.Component {
 

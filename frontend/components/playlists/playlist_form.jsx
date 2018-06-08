@@ -13,6 +13,7 @@ class PlaylistForm extends React.Component {
     handleSubmit(e) {
         this.props.createPlaylist(this.state)
         this.setState({ title: '' })
+        this.props.closeModal()
     }
 
     render() {
