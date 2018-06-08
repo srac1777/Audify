@@ -13,8 +13,8 @@ export const createPlaylistSong = playlist_song => dispatch => {
     return PlaylistSongsUtil.createPlaylistSong(playlist_song).then(playlist_song => dispatch({ type: RECEIVE_PLAYLIST_SONG, playlist_song }))
 };
 
-export const deletePlaylistSong = id => dispatch => (
-    PlaylistSongsUtil.deletePlaylistSong(id).then(playlist_song => dispatch({ type: REMOVE_PLAYLIST_SONG, id: playlist_song.id }))
+export const deletePlaylistSong = ps => dispatch => (
+    PlaylistSongsUtil.deletePlaylistSong(ps).then(playlist_song => dispatch({ type: REMOVE_PLAYLIST_SONG, id: playlist_song.id }))
 );
 
 

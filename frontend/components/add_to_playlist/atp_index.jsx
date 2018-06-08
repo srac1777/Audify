@@ -16,7 +16,7 @@ class ATPIndex extends React.Component {
                                                                         createPlaylistSong={this.props.createPlaylistSong} 
                                                                         clickedSong={this.props.clickedSong}
                                                                         closeModal={this.props.closeModal}
-
+                                                                        updatePlaylist={this.props.updatePlaylist}
                                                                         />))}
                 </ul>
             </div>

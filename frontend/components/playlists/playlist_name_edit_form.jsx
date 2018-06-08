@@ -12,7 +12,7 @@ class PlaylistNameEditForm extends React.Component {
     }
 
     handleSubmit(e) {
-        this.props.updatePlaylist(this.state)
+        this.props.updatePlaylist(this.state, [])
         this.setState({ title: '' })
         this.props.closeModal()
     }

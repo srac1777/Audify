@@ -13,6 +13,8 @@ export const fetchPlaylist = id => (
 );
 
 export const createPlaylist = playlist => {
+    console.log(playlist);
+    
     return $.ajax({
         url: 'api/playlists',
         method: 'POST',
@@ -20,11 +22,12 @@ export const createPlaylist = playlist => {
     });
 };
 
-export const updatePlaylist = playlist => {
+export const updatePlaylist = (playlist, song_change) => {
+    console.log("fromapi",playlist);
     return $.ajax({
         url: `api/playlists/${playlist.id}`,
         method: 'PATCH',
-        data: { playlist }
+        data: { playlist, song_change }
     });
 };
 

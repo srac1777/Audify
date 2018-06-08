@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-    updatePlaylist: playlist => dispatch(updatePlaylist(playlist)),
+    updatePlaylist: (playlist) => dispatch(updatePlaylist(playlist)),
     closeModal: () => dispatch(closeModal())
 });
 

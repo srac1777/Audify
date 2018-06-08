@@ -15,9 +15,12 @@ class Api::PlaylistSongsController < ApplicationController
     end
 
     def destroy
-        @playlistsong = PlaylistSong.find(params[:id])
-        @playlistsong.destroy
-        render :show
+        # debugger
+
+        @playlistsong = PlaylistSong.all.where(["playlist_id = ? and song_id = ?", params[:playlist_id], params[:song_id]])
+        @fakeps = @playlistsong.first
+        @playlistsong.destroy(@playlistsong.first.id)
+        render :destroy
     end
 
     def playlist_songs_params

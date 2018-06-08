@@ -9,9 +9,10 @@ import SongsIndex from './songs/songs_index_container';
 import AddtoPlaylistContainer from './add_to_playlist/atp_container';
 import { logout } from '../actions/session_actions';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
+import { fetchSongs } from '../actions/song_actions';
 
-const App = () => (
-    <div className="AppComponent">
+const App = () => {
+    return (<div className="AppComponent">
             
         <Switch>
             <AuthRoute path="/login" component={LogInFormContainer} />
@@ -22,7 +23,7 @@ const App = () => (
             <ProtectedRoute path="/songs" component={SongsIndex} />
             <AuthRoute path="/" component={LandingPage} />
         </Switch>
-    </div>
-);
+    </div>)
+};
 
 export default App;

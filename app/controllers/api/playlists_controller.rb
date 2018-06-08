@@ -10,8 +10,8 @@ class Api::PlaylistsController < ApplicationController
     end
 
     def update
-        @playlist = current_user.playlists.find(params[:id])
-
+        @playlist = current_user.playlists.find(params[:playlist][:id])
+    
         if @playlist.update_attributes(playlist_params)
             render :show
         else

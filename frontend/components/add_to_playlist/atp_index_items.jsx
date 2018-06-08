@@ -8,6 +8,9 @@ class ATPIndexItem extends React.Component {
     }
 
     handleClick(e){
+        // let arr = this.props.playlist.song_ids
+        // arr.push(this.props.clickedSong.id)
+        // this.props.updatePlaylist(this.props.playlist);
         this.props.createPlaylistSong({ playlist_id: `${this.props.playlist.id}`, song_id: `${this.props.clickedSong.id}` })
         this.props.closeModal();
     }

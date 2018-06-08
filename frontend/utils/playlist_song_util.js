@@ -13,10 +13,11 @@ export const createPlaylistSong = playlist_song => {
     });
 };
 
-export const deletePlaylistSong = id => {
+export const deletePlaylistSong = ps => {
     return $.ajax({
-        url: `api/playlists_songs/${id}`,
-        method: 'DELETE'
+        url: `api/playlist_songs/${ps.playlist_id}/${ps.song_id}`,
+        method: 'DELETE',
+        data: { ps }
     });
 };
                         

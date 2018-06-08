@@ -4,7 +4,7 @@ import PlaylistIndex from './playlist_index';
 import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => {
-    console.log(state);
+    // console.log(state);
     
     return {
     playlists: Object.values(state.entities.playlists)
