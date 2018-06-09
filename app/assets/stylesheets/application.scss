@@ -20,12 +20,15 @@
 
  * {
      font-family: Arial, Helvetica, sans-serif; //TODO
+    // font-family: 'spotifybold';
 }
 
-    body {
+    html, body {
         margin: 0;
-        background: lightslategray;
+        background: rgb(24, 24, 24);
         height: 100%;
+        // max-width: 100%;
+        // overflow-x: hidden;
     }
   
 
