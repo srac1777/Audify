@@ -6,14 +6,17 @@ import Modal from '../modal/modal_ep';
 class PlaylistShow extends React.Component {
     constructor(props){
         super(props);
+        // this.ownProps = ownProps;
+        // this.playlist = this.props.fetchPlaylist(props.ownProps.params.match.playlistId)
     }
     componentWillMount(){
-        this.props.fetchSongs().then(this.props.fetchPlaylistSongs)
+        this.props.fetchPlaylists().then(this.props.fetchSongs).then(this.props.fetchPlaylistSongs)
+        // this.props.fetchPlaylist(this.props.ownProps.match.params.playlistId)
         // this.props.fetchPlaylistSongs();
     }
 
     componentWillReceiveProps(newProps) {
-        debugger
+        // debugger
         // if(newProps.)
     }
 
@@ -31,7 +34,7 @@ class PlaylistShow extends React.Component {
         // console.log(this.props.songs);
         
         return (
-            <div>
+            <div className="playlist-show">
                 {this.props.playlist.title}
                 <ul>
                     {this.props.songs.map(song => (<PlaylistSongsIndexItem key={song.id} 

@@ -8,9 +8,11 @@ class PlaylistIndexItem extends React.Component {
 
     render() {
         return (
-            <li >
-                <Link to={`/playlists/${this.props.playlist.id}`}>{this.props.playlist.title}</Link>
-            </li>
+            <div>
+                <li>
+                    <Link to={`/playlists/${this.props.playlist.id}`}>{this.props.playlist.title}</Link>
+                </li>
+            </div>
         );
     }
 }

@@ -1,0 +1,33 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    text-transform: uppercase;
+    color:white;
+    position: relative;
+    left: -100px;
+    
+    // width: 200px;
+    // margin-left: 80vh;
+    // background: transparent;
+    // margin: 0 auto;
+}
+.active-nav {
+    .active-underline {
+        background: rgb(28, 185, 93);
+        width: 30px;
+        height: 2px;
+        margin: 0 auto;
+        position: relative;
+        top: 10px;
+    }
+}
+
+.nav-link-items {
+    padding: 10px;
+    font-size: 12x; 
+}
+.nav-text {
+    font-size: 12px;
+    letter-spacing: 2px;
+}

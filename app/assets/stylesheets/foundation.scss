@@ -1,9 +1,9 @@
 .AppComponent {
-    // background: blue;
+    // background: aqua;
 }
 
 .inAppComponent {
-    background: red;
+    // background: red;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -11,9 +11,9 @@
 }
 
 .main-upper {
-    background: green;
-    height: 100%;
-    width: 100%;
+    // background: green;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -29,10 +29,42 @@
     height: 100vh;
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // background: green;
+    height: 70px;
+}
+
+.side-links {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+    // padding: 10px;
+    margin: 30px;
+    // background: red;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.side-links:hover {
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.side-user {
+    margin-bottom: 100px;
 }
 
 .main-component {
-    background: aqua;
+    // background: blue;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -42,7 +74,7 @@
     width: 100vw; 
     background: rgb(40,40,40);
     z-index: 10;
-    position: sticky;
+    position: fixed;
     -webkit-transform: none;
     bottom: 0; 
     height: 90px;
@@ -50,22 +82,10 @@
     border-bottom-right-radius: 5px;
 }
 
-.homePlaylistIndex {
-    padding-left: 260px; 
-    // background: linear-gradient(rgb(58,91,95), black);
-    background: purple;
-    height: 100vh;
-    margin: 0;
-    color: white;
-    opacity: 1;
-}
-
-.homePlaylistIndex ul {
-    margin: 0;
-}
 
 .audify-logo {
     background: image-url("Audify-white-3.png");
+    // background: white;
     height: 100px;
     width: 100%;
     background-size: 50%;
@@ -74,3 +94,83 @@
     background-position-x: 45px;
     background-position-y: 25px;
 } 
+
+.search-icon {
+    background: image-url("search-icon.png");
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 87%;
+    // background: red;
+    display: inline-block;
+    background-position-y: 5px; 
+    margin-right: 10px; 
+}
+
+.home-icon {
+    background: image-url("home-icon.png");
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 87%;
+    // background: red;
+    display: inline-block;
+    background-position-y: 5px; 
+    margin-right: 10px; 
+
+}
+
+.library-icon {
+    background: image-url("library-icon.png");
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 87%;
+    // background: red;
+    display: inline-block;
+    background-position-y: 5px; 
+    margin-right: 10px; 
+
+}
+
+.active-side {
+    // color: rgb(28,185,83);
+    opacity: 1;
+
+    .search-icon {
+        background: image-url("search-icon-selected.png");
+        height: 50px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-size: 87%;
+        // background: red;
+        display: inline-block;
+        background-position-y: 5px; 
+        margin-right: 10px; 
+    }
+
+    .home-icon {
+        background: image-url("home-icon-selected.png");
+        height: 50px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-size: 87%;
+        // background: red;
+        display: inline-block;
+        background-position-y: 5px; 
+        margin-right: 10px; 
+    }
+
+    .library-icon {
+        background: image-url("library-icon-selected.png");
+        height: 50px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-size: 87%;
+        // background: red;
+        display: inline-block;
+        background-position-y: 5px; 
+        margin-right: 10px; 
+    }
+}
+

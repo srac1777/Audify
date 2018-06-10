@@ -1,3 +1,199 @@
 // Place all the styles related to the api/songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .songs-index-container {
+//     padding-left: 260px; 
+//     // background: linear-gradient(rgb(58,91,95), black);
+//     background: purple;
+//     height: 100vh;
+//     color: white;
+//     //     .main-footer {
+//     //         width: 100vw; 
+//     //         background: rgb(40,40,40);
+//     //         z-index: 10;
+//     //         position: fixed;
+//     //         -webkit-transform: none;
+//     //         bottom: 0; 
+//     //         height: 90px;
+//     //         border-bottom-left-radius: 5px;
+//     //         border-bottom-right-radius: 5px;
+//     // }
+// }
+
+.songs-index-items-container {
+    // background: aquamarine;
+    padding-left: 40px;
+    margin-left: 220px;
+}
+
+.each-song {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // background: orangered;
+    margin: 3px;
+    padding: 15px;
+    transition: 0.2s;
+    line-height: 26px;
+}
+
+.new-playlist-button2 {
+    // display: none;
+    
+}
+
+// .each-song a {
+//     display: none;
+// }
+
+.dropbtn {
+    
+    color: white;
+
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-right: 50px;
+}
+
+.each-song:hover {
+    .music-note-icon {
+    background: image-url("music-note-hover.png");
+    width: 30px;
+    height: 30px;
+    // background: purple;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-y: 2px;
+    }
+
+    .dropbtn {
+    
+    color: white;
+
+    font-size: 20.5px;
+    border: none;
+    cursor: pointer;
+    display: inline;
+}
+    background: rgba(0,0,0,0.3);
+    // -webkit-transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+        // .a {
+        //     display: inline
+        // }
+
+.music-note-icon {
+    background: image-url("music-note.png");
+    width: 30px;
+    height: 30px;
+    // background: purple;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-y: 5px; 
+}
+
+.song-first {
+    display: flex;
+    flex-direction: row;
+}
+
+.music-note-icon:hover {
+    background: image-url("music-note-hover.png");
+}
+
+.song-title {
+    align-self: center;
+
+    color: white;
+}
+
+.artist-album-separator {
+    padding: 0 7px;
+    font-size: 12px;
+}
+
+.song-details {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgba(white,0.7)
+}
+
+.song-details:hover {
+    font-size: 14px;
+    color: rgba(white,1);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+//with help from w3schools
+//https://www.w3schools.com/howto/howto_js_dropdown.asp
+.dropbtn {
+    
+    color: white;
+
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    letter-spacing: 3px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    font-size: 21px;
+    letter-spacing: 3.6px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: rgba(white,0.7);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(40,40,40);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px 0;
+    border-radius: 3px;
+    right: 40px;
+    button, input[type="submit"] {
+    cursor: pointer;
+    font-size: 14px;
+}
+    // background: blue;
+}
+
+.dropdown-content a {
+    color: rgba(white,0.7);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    // font-size: 18px !important;
+}
+
+
+
+.dropdown a:hover {background-color: rgba(white, 0.1)}
+
+.show {display:block;}
+
+.dur {
+    // background: maroon;
+    margin-right: 15px;
+    color: rgba(white,0.8);
+}
+
+.left-song {
+    display: flex;
+    flex-direction: row;
+}
+
