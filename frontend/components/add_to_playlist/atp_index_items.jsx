@@ -17,9 +17,9 @@ class ATPIndexItem extends React.Component {
 
     render() {
         return (
-            <li onClick={this.handleClick.bind(this)}>
+            <div className="atp-li"><li onClick={this.handleClick.bind(this)}>
                 {this.props.playlist.title}
-            </li>
+            </li></div>
         );
     }
 }

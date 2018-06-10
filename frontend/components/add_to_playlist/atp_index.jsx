@@ -9,8 +9,8 @@ class ATPIndex extends React.Component {
 
     render() {
         return (
-            <div>
-                <ul>
+            <ul>
+            <div className="atp-index-comp-con">
                     {this.props.playlists.map(playlist => (<ATPIndexItem key={playlist.id} 
                                                                         playlist={playlist} 
                                                                         createPlaylistSong={this.props.createPlaylistSong} 
@@ -18,8 +18,8 @@ class ATPIndex extends React.Component {
                                                                         closeModal={this.props.closeModal}
                                                                         updatePlaylist={this.props.updatePlaylist}
                                                                         />))}
-                </ul>
             </div>
+                </ul>
         );
     }
 }

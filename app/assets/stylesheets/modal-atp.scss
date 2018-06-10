@@ -1,12 +1,20 @@
 .ModalATP {
-    background: red;
-    position: absolute;
-    top: 0;
-    // position: fixed;
+    background: rgba(black, 0.8);
+    // position: absolute;
     // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    // scroll-behavior: smooth;
+    // line-height: 60px;
     // width: 100vw;
     // height: 100vh;
 }
@@ -14,3 +22,54 @@
 // .entire-atp-modal {
 //     background: blue;
 // }
+
+.atp-button-fix {
+    // padding: 10px 90px;
+    width: 180px;
+    height: 50px;
+}
+
+.modal-atp-x {
+    font-size: 45px;
+    color: lightgray;
+    // background-color: red;
+    button {
+        font-size: 42px;
+    }
+}
+
+.modal-atp-x:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.atp-index-container {
+    
+    background: blue;
+    width: 100vw;
+    height: 100vh;
+}
+
+.atp-index-comp-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100vw;
+    // height: 100vh;
+    flex-wrap: wrap;
+    background: red;
+    // align-items: center;
+}
+
+
+
+.choose-playlist h1 {
+    font-size: 52px;
+    font-family: 'spotifybold';
+}
+
+.atp-li {
+    background: purple;
+    margin: 100px;
+    // display: inline;
+}

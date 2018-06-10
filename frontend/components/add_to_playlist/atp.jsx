@@ -9,8 +9,9 @@ class AddtoPlaylist extends React.Component {
         // debugger
         return (
             <div className="ModalATP">
-                <div className="choose-playlist"><h1>Choose a Playlist</h1></div>
-                <div><ATPIndex playlists={this.props.playlists} 
+                <div className="modal-atp-x"><button onClick={() => this.props.closeModal()}>X</button></div>
+                <div className="choose-playlist"><h1>Add to playlist</h1></div>
+                <div className="atp-index-container"><ATPIndex playlists={this.props.playlists} 
                         fetchPlaylists={this.props.fetchPlaylists}
                         createPlaylistSong = {this.props.createPlaylistSong}
                         clickedSong={this.props.clickedSong}

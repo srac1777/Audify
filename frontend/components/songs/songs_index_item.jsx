@@ -46,7 +46,7 @@ class SongIndexItem extends React.Component {
                     <button onClick={this.myFunction.bind(this)} className="dropbtn">•••</button>
                     <div id={`myDropdown${this.props.song.id}`} className="dropdown-content">
                 
-                       <a> <button onClick={this.handleClick.bind(this)}>Add to Playlist</button></a>
+                       <a> <button className="atp-button-fix" onClick={this.handleClick.bind(this)}>Add to Playlist</button></a>
                     </div>
                 </div>
                 <div className="dur">{Math.floor(this.props.song.duration/60)}:{this.props.song.duration%60}</div>
