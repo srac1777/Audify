@@ -119,6 +119,68 @@ xy = Album.create(title: "X & Y", artist_id: coldplay.id, img_url: "https://s3-u
 
 
 
+#songs 
+
+getlucky = Song.create(title: "Get Lucky", album_id: ram.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Get+Lucky.mp3")
+
+
+alonesong = Song.create(title: "Alone", album_id: alone.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Alone.m4a")
+
+
+rockstar = Song.create(title: "rockstar (feat. 21 Savage)", album_id: stoney.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+rockstar+(feat.+21+Savage).m4a" )
+
+
+whateverittakes = Song.create(title: "Whatever it Takes", album_id: evolve.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/02+Whatever+It+Takes.m4a")
+
+
+style = Song.create(title: "Style", album_id: nineteeneightynine.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/03+Style.m4a")
+
+
+wi = Song.create(title: "White Iverson", album_id: stoney.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/06+White+Iverson.m4a")
+
+
+goflex = Song.create(title: "Go Flex", album_id: stoney.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/09+Go+Flex.m4a")
+
+
+congratulations = Song.create(title: "Congratulations (feat. Quavo)", album_id: stoney.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/12+Congratulations+(feat.+Quavo).m4a")
+
+
+demons =  Song.create(title: "Demons", album_id: nightvisions.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Demons.mp3")
+
+
+hello = Song.create(title: "Hello", album_id: twentyfive.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Hello.mp3")
+
+
+instantcrush = Song.create(title: "Instant Crush", album_id: ram.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Instant+Crush.mp3")
+
+
+paradise = Song.create(title: "Paradise", album_id: mx.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Paradise.mp3")
+
+
+radioactive = Song.create(title: "Radioactive", album_id: nightvisions.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Radioactive.mp3")
+
+
+rollinginthedeep = Song.create(title: "Rolling in the Deep", album_id: twentyone.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Rolling+In+The+Deep.mp3")
+
+
+theoceansong = Song.create(title: "The Ocean", album_id: theocean.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/The+Ocean+(feat.+Shy+Martin).m4a")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
