@@ -1,11 +1,22 @@
 .main-nav {
     display: flex;
     justify-content: center;
-    z-index: 2;
+    // z-index: 2;
     text-transform: uppercase;
-    color:white;
+    color:rgba(white,1);
     position: relative;
     left: -100px;
+    
+    // width: 200px;
+    // margin-left: 80vh;
+    // background: transparent;
+    // margin: 0 auto;
+}
+
+.main-nav:hover {
+    
+    color:rgba(white,1);
+
     
     // width: 200px;
     // margin-left: 80vh;

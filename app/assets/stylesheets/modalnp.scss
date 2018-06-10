@@ -1,0 +1,126 @@
+.modal-np {
+    color: white;
+    background: rgba(black, 0.8);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'spotifybold';
+
+
+// display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    // z-index: 1; /* Sit on top */
+    left: 0px;
+    right: 0;
+    top: 0;
+    // width: 100vw; /* Full width */
+    // height: 100vh; /* Full height */
+    // overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.create-playlist {
+    font-size: 47px;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'spotifybold'
+}
+
+.close-np {
+    font-size: 64px;
+    color: gray;
+    // z-index: 10;
+}
+
+.close-np:hover {
+    font-weight: 100px;
+    color: white;
+    transition: 0.3s;
+    // z-index: 10;
+}
+
+.create-np-button {
+    color: white;
+    text-decoration: none;
+    background: #1DB954;
+    padding: 10px;
+    border-radius: 50px;
+    width: 123px;
+    height: 15px;
+    text-align: center;
+    // font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    align-self: center;
+    display: inline;
+}
+
+.create-np-button:hover {
+    background: rgb(24, 212, 95);
+    transition: 0.2s;
+}
+
+.create-np-button2 {
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 121px;
+    height: 13px;
+    text-align: center;
+    // font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    border: 2px solid lightgray;
+    align-self: center;
+    display: inline;
+}
+
+.create-np-button2:hover {
+   color: white;
+   border: 2px solid white;
+   transition: 0.2s;
+}
+
+.form-np {
+    background: rgba(40,40,40,0.8);
+    width: 100vw;
+    height: 150px;
+    font-size: 58px;
+    caret-color: #1DB954;
+    font-family: 'spotifybold';
+    padding-left: 40vw;
+    // color: rgba(white);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.2; /* Firefox */
+}
+.cp-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-np-button {
+//    margin-left: 45vw;
+}
+
+.cancel-cp {
+    
+}
+
+.cp-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

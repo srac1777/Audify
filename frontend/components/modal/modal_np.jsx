@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import AddtoPlaylistContainer from '../add_to_playlist/atp_container';
 import PlaylistFormContainer from '../playlists/playlist_form_container';
 
-function Modal({ modal, closeModal }) {
-    if (!modal) {
+function Modal(props) {
+    console.log(props);
+    
+    if (!props.modal) {
         return null;
     }
     let component;
-    switch (modal) {
+    switch (props.modal) {
         case 'atp':
             component = <AddtoPlaylistContainer />;
             break;
@@ -20,8 +22,9 @@ function Modal({ modal, closeModal }) {
             return null;
     }
     return (
-        <div onClick={closeModal}> x
+        <div>
             <div onClick={e => e.stopPropagation()}>
+                {/* <button className="close-np" onClick={() => props.closeModal()}>hello</button> */}
                 {component}
             </div>
         </div>

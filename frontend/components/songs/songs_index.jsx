@@ -16,7 +16,7 @@ class SongIndex extends React.Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container2">
                     <div className="main-nav">
                         <div className="nav-link-items"><NavLink to="/home/songs" activeClassName="active-nav"><a className="nav-text">Songs</a><div className="active-underline"></div></NavLink></div>
                         <div className="nav-link-items"><NavLink exact to="/home" activeClassName="active-nav"><a className="nav-text">Playlists</a><div className="active-underline"></div></NavLink></div>

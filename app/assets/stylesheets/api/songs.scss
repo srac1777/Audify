@@ -38,9 +38,21 @@
     line-height: 26px;
 }
 
+.container2 {
+//   width: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0;
+//   background: red;
+  align-items: flex-end;
+  position: relative;
+  right: 168px;
+}
+
 .new-playlist-button2 {
-    // display: none;
-    
+    display: none;
+
 }
 
 // .each-song a {
@@ -119,7 +131,7 @@
 .song-details {
     margin-top: 5px;
     font-size: 14px;
-    color: rgba(white,0.7)
+    color: rgba(white,0.5)
 }
 
 .song-details:hover {
@@ -161,7 +173,7 @@
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    // z-index: 1;
     padding: 5px 0;
     border-radius: 3px;
     right: 40px;

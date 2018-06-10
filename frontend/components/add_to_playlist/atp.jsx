@@ -8,14 +8,15 @@ class AddtoPlaylist extends React.Component {
     render() {
         // debugger
         return (
-            <div>
-                <h1>Choose a Playlist</h1>
-                <ATPIndex playlists={this.props.playlists} 
+            <div className="ModalATP">
+                <div className="choose-playlist"><h1>Choose a Playlist</h1></div>
+                <div><ATPIndex playlists={this.props.playlists} 
                         fetchPlaylists={this.props.fetchPlaylists}
                         createPlaylistSong = {this.props.createPlaylistSong}
                         clickedSong={this.props.clickedSong}
                         closeModal={this.props.closeModal}
                         />
+                </div>
             </div>
         );
     }

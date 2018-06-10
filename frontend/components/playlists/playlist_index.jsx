@@ -16,9 +16,9 @@ class PlaylistIndex extends React.Component {
     
     render() {
         return (
-            <div>
+            <div className="full-playlists-index">
                 <div className="container">
-
+                    <Modal closeModal={this.props.closeModal} modal={'np'}/>
                     <div className="main-nav">
                         <div className="nav-link-items"><NavLink to="/home/songs" activeClassName="active-nav"><a className="nav-text">Songs</a><div className="active-underline"></div></NavLink></div>
                         <div className="nav-link-items"><NavLink to="/home" activeClassName="active-nav"><a className="nav-text">Playlists</a><div className="active-underline"></div></NavLink></div>
@@ -31,7 +31,7 @@ class PlaylistIndex extends React.Component {
                     {this.props.playlists.map(playlist => (<PlaylistIndexItem key={playlist.id} playlist={playlist} />))}
                 </ul>
                 </div>
-                <Modal />
+                
           </div>
         );
     }
