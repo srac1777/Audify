@@ -15,6 +15,8 @@ class PlaylistIndex extends React.Component {
     }
     
     render() {
+        console.log(this.props.playlists);
+        
         return (
             <div className="full-playlists-index">
                 <div className="container">

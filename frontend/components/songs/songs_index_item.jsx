@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { debug } from 'util';
 
 class SongIndexItem extends React.Component {
     constructor(props) {
@@ -7,13 +8,17 @@ class SongIndexItem extends React.Component {
     }
 
     handleClick(){
-        this.props.songClick(this.props.song)
-        this.props.openModal('atp')
+        console.log(this.props);
+        
+        // debugger
+        this.props.songClick(this.props.song);
+        // debugger
+
+        this.props.openModal('atp');
     }
 
     myFunction(){
-        console.log("button clicked");
-        
+        // console.log("button clicked");
         document.getElementById(`myDropdown${this.props.song.id}`).classList.toggle("show");
     }
 

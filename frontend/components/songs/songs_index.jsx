@@ -10,7 +10,7 @@ class SongIndex extends React.Component {
     }
 
     handleClick() {
-        this.props.openModal('np')
+        // this.props.openModal('np')
     }
 
     render() {
@@ -21,7 +21,7 @@ class SongIndex extends React.Component {
                         <div className="nav-link-items"><NavLink to="/home/songs" activeClassName="active-nav"><a className="nav-text">Songs</a><div className="active-underline"></div></NavLink></div>
                         <div className="nav-link-items"><NavLink exact to="/home" activeClassName="active-nav"><a className="nav-text">Playlists</a><div className="active-underline"></div></NavLink></div>
                     </div>
-                    <div className="np-button-container"><button className="new-playlist-button2" onClick={this.handleClick.bind(this)}>New Playlist</button></div>
+                    {/* <div className="np-button-container"><button className="new-playlist-button2" onClick={this.handleClick.bind(this)}>New Playlist</button></div> */}
 
                 </div>
                 <div className="songs-index-items-container">
@@ -29,11 +29,12 @@ class SongIndex extends React.Component {
                     {this.props.songs.map(song => (<SongIndexItem key={song.id} 
                                                     song={song}
                                                     openModal={this.props.openModal}
+                                                    closeModal={this.props.closeModal}
                                                     songClick={this.props.songClick}
                                                     />))}
                 </ul>
                 </div>
-                <Modal />
+                <Modal closeModal={this.props.closeModal} modal={'atp'}/>
             </div>
         );
     }

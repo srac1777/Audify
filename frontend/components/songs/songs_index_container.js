@@ -13,7 +13,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
     fetchSongs: () => dispatch(fetchSongs()),
     openModal: modal => dispatch(openModal(modal)),
-    songClick: song => dispatch(songClick(song))
+    songClick: song => dispatch(songClick(song)),
+    closeModal: () => dispatch(closeModal())
 });
 
 export default connect(

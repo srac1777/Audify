@@ -7,6 +7,7 @@ const songClickReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case ADD_CLICKED_SONG:
+        // debugger
             return merge({}, state, action.song);
         case CLOSE_MODAL:
             return {};

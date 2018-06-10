@@ -1,4 +1,5 @@
 import React from 'react';
+import { debug } from 'util';
 
 class PlaylistForm extends React.Component {
     constructor(props) {
@@ -16,9 +17,23 @@ class PlaylistForm extends React.Component {
     }
 
     handleSubmit(e) {
+        if(e.keyCode===13)
+        e.preventDefault();
+        debugger;
         this.props.createPlaylist(this.state)
         this.setState({ title: '' })
         this.props.closeModal()
+    }
+
+    handleSubmitEnter(e) {
+        console.log("hi");     
+        if(e.keyCode==='Enter'){
+            e.preventDefault();
+            debugger;
+            this.props.createPlaylist(this.state)
+            this.setState({ title: '' })
+            this.props.closeModal()
+        }
     }
 
 
@@ -33,14 +48,15 @@ class PlaylistForm extends React.Component {
                     <div><input className="form-np" 
                                 type="text" 
                                 onChange={this.handletitle.bind(this)}
+                                onKeyPress={this.handleSubmitEnter.bind(this)}
                                  value={this.state.title}
-                                ref={(input) => { this.textInput = input; }}
+                                // ref={(input) => { this.textInput = input; }}
                                 placeholder="Start Typing..."
                                  />
                     </div>
                     <div className="cp-buttons">
                         <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div>
-                        <div><input className="create-np-button" type="submit" value="create"/></div>
+                            <div><button type="submit" className="create-np-button">CREATE</button></div>
                     </div>
                 </form>
                 </div>
