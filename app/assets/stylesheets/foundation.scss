@@ -175,3 +175,55 @@
     }
 }
 
+.username {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.user-icon {
+    background: image-url("user.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -5px;
+    // display: inline; 
+}
+
+.username-text {
+    margin-left: 5px;
+    font-size: 22px;
+    font-family: 'spotifybold';
+}
+
+.lb-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logout-button {
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 75px;
+    height: 9px;
+    text-align: center;
+    // font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    // margin-right: 25px;
+    border: 2px solid lightgray;
+    align-self: center;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.logout-button:hover {
+   color: white;
+   border: 2px solid white;
+   transition: 0.2s;
+}
+
+

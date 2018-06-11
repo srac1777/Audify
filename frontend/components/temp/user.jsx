@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 const User = ({ current_user }) => {
     
     return (
-        <h2>{current_user.username}</h2>)
+        <div className="username">
+            <div className="user-icon"></div>
+            <div className="username-text">{current_user.username}</div>
+        </div>
+    )
 };
 
 export default User;

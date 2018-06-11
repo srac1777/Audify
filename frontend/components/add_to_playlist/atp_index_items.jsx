@@ -16,10 +16,23 @@ class ATPIndexItem extends React.Component {
     }
 
     render() {
+        let songs = this.props.playlist.songs
+        let img_src;
+        // console.log(this.props.playlist, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
+        // console.log(songs, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
+        if (typeof songs === 'undefined' || songs.join() === '') {
+            img_src = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
+        } else {
+            img_src = songs[0].album_art
+        }
+
         return (
-            <div className="atp-li"><li onClick={this.handleClick.bind(this)}>
-                {this.props.playlist.title}
-            </li></div>
+            <div className="atp-li">
+                <li className="atp-li-li" onClick={this.handleClick.bind(this)}>
+                    <div className="overlay-gradient-pl"><img className="atp-album-art-pl-index" src={img_src}></img></div>
+                    <div className="atp-text">{this.props.playlist.title}</div>
+                </li>
+            </div>
         );
     }
 }

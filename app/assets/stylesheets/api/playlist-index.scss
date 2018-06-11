@@ -100,6 +100,16 @@
     box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
 }
 
+.album-art-pl-index:active {
+    width: 187px;
+    height: 187px;
+    transition: 0.2s;
+    //from cssmatic.com
+    -webkit-box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+    box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+}
+
 .playlist-title-index-page {
     color: white;
     text-align: center;

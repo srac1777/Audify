@@ -13,10 +13,13 @@
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    overflow: auto;
     // scroll-behavior: smooth;
     // line-height: 60px;
     // width: 100vw;
     // height: 100vh;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9);
 }
 
 // .entire-atp-modal {
@@ -44,10 +47,12 @@
 }
 
 .atp-index-container {
-    
-    background: blue;
-    width: 100vw;
+    background: rgb(58, 58, 58);
+    width: 97vw;
     height: 100vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
 }
 
 .atp-index-comp-con {
@@ -57,7 +62,7 @@
     width: 100vw;
     // height: 100vh;
     flex-wrap: wrap;
-    background: red;
+    // background: red;
     // align-items: center;
 }
 
@@ -69,7 +74,46 @@
 }
 
 .atp-li {
-    background: purple;
-    margin: 100px;
+    // background: purple;
+    margin: 50px;
+    cursor: pointer;
     // display: inline;
+}
+
+.atp-album-art-pl-index {
+    width: 200px;
+    height: 200px;
+    //from cssmatic.com
+ -webkit-box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    transition: 0.4s;
+ 
+}
+
+.atp-album-art-pl-index:hover {
+    width: 198px;
+    height: 198px;
+    transition: 0.2s;
+    //from cssmatic.com
+    -webkit-box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+    box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+}
+
+.atp-album-art-pl-index:active {
+    width: 198px;
+    height: 198px;
+    transition: 0.2s;
+    //from cssmatic.com
+    -webkit-box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+    box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
+}
+
+.atp-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'spotifybold';
+    margin-top: 15px;
 }
