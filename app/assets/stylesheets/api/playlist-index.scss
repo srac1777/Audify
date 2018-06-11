@@ -1,5 +1,5 @@
 .full-playlists-index {
-    padding-left: 220px;
+    padding-left: 260px;
 }
 
 .container {
@@ -54,7 +54,7 @@
     // background: orange;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -76,5 +76,33 @@
 
 .homePlaylistIndex ul li {
     margin: 0;
-    padding: 100px;
+    padding: 50px 20px 100px 20px;
+}
+
+.album-art-pl-index {
+    width: 180px;
+    height: 180px;
+    //from cssmatic.com
+    -webkit-box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 24px 82px -4px rgba(0,0,0,0.75);
+    transition: 0.4s;
+}
+
+
+.album-art-pl-index:hover {
+    width: 190px;
+    height: 190px;
+    transition: 0.4s;
+    //from cssmatic.com
+    -webkit-box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+    box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);
+}
+
+.playlist-title-index-page {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
 }

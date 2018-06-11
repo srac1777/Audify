@@ -13,6 +13,7 @@ class PlaylistIndex extends React.Component {
     handleClick() {
         this.props.openModal('np')
     }
+
     
     render() {
         console.log(this.props.playlists);
@@ -29,6 +30,7 @@ class PlaylistIndex extends React.Component {
 
                 </div>
                 <div className="playlist-index-list-container">
+                    
                 <ul>
                     {this.props.playlists.map(playlist => (<PlaylistIndexItem key={playlist.id} playlist={playlist} />))}
                 </ul>

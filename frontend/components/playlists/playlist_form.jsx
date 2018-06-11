@@ -17,9 +17,8 @@ class PlaylistForm extends React.Component {
     }
 
     handleSubmit(e) {
-        if(e.keyCode===13)
         e.preventDefault();
-        debugger;
+        // debugger;
         this.props.createPlaylist(this.state)
         this.setState({ title: '' })
         this.props.closeModal()
@@ -29,7 +28,7 @@ class PlaylistForm extends React.Component {
         console.log("hi");     
         if(e.keyCode==='Enter'){
             e.preventDefault();
-            debugger;
+            // debugger;
             this.props.createPlaylist(this.state)
             this.setState({ title: '' })
             this.props.closeModal()
