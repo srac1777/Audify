@@ -23,7 +23,7 @@ function Modal({ modal, closeModal }) {
             return null;
     }
     return (
-        <div onClick={closeModal}> x
+        <div onClick={closeModal}>
             <div onClick={e => e.stopPropagation()}>
                 {component}
             </div>

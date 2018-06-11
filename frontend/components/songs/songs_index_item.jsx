@@ -38,7 +38,7 @@ class SongIndexItem extends React.Component {
                     <span className="song-details">{this.props.song.album_title}</span>
                     
                     </div>
-                    </div>
+                </div>
                 {/* {this.props.song.album_id} */}
                 {/* <Link to="/songs/addtoplaylist">Add to Playlist</Link> */}
                 <div className="left-song">

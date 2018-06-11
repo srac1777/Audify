@@ -17,23 +17,23 @@ class PlaylistForm extends React.Component {
     }
 
     handleSubmit(e) {
-        e.preventDefault();
+        // e.preventDefault();
         // debugger;
         this.props.createPlaylist(this.state)
         this.setState({ title: '' })
         this.props.closeModal()
     }
 
-    handleSubmitEnter(e) {
-        console.log("hi");     
-        if(e.keyCode==='Enter'){
-            e.preventDefault();
-            // debugger;
-            this.props.createPlaylist(this.state)
-            this.setState({ title: '' })
-            this.props.closeModal()
-        }
-    }
+    // handleSubmitEnter(e) {
+    //     console.log("hi");     
+    //     if(e.keyCode==='Enter'){
+    //         e.preventDefault();
+    //         // debugger;
+    //         this.props.createPlaylist(this.state)
+    //         this.setState({ title: '' })
+    //         this.props.closeModal()
+    //     }
+    // }
 
 
 
@@ -47,15 +47,15 @@ class PlaylistForm extends React.Component {
                     <div><input className="form-np" 
                                 type="text" 
                                 onChange={this.handletitle.bind(this)}
-                                onKeyPress={this.handleSubmitEnter.bind(this)}
+                                // onKeyPress={this.handleSubmitEnter.bind(this)}
                                  value={this.state.title}
                                 // ref={(input) => { this.textInput = input; }}
                                 placeholder="Start Typing..."
                                  />
                     </div>
                     <div className="cp-buttons">
-                        <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div>
-                            <div><button type="submit" className="create-np-button">CREATE</button></div>
+                        {/* <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div> */}
+                            <div><input type="submit" className="create-np-button" value="CREATE" /></div>
                     </div>
                 </form>
                 </div>

@@ -31,12 +31,27 @@ class PlaylistShow extends React.Component {
     }
     
     render() {
-        // console.log(this.props.songs);
-        
+        // console.log(this.props.playlist, "hiiiiiiiii");
+        let songs = this.props.playlist.songs;
+        let img_src;
+        if (typeof songs === 'undefined' || songs.join() === '') {
+            img_src = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
+        } else {
+            img_src = songs[0].album_art
+        }
         return (
             <div className="playlist-show">
-                {this.props.playlist.title}
-                <ul>
+                   <Modal />
+        
+                   <div className="left-pl-show">
+                        <div><img className="pl-show-img" src={img_src}></img></div>
+                        <div className="pl-show-title">{this.props.playlist.title}</div>
+                        <div className="pl-show-left-buttons">
+                            <div><button className="pl-rename-button" onClick={this.handleClick.bind(this)}>rename</button></div>
+                            <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
+                        </div>
+                    </div>
+               <div className="pl-songs-container"><ul>
                     {this.props.songs.map(song => (<PlaylistSongsIndexItem key={song.id} 
                                                                 deletePlaylistSong={this.props.deletePlaylistSong}
                                                                 playlist_songs={this.props.playlist_songs}
@@ -44,11 +59,8 @@ class PlaylistShow extends React.Component {
                                                                 song={song}
                                                                 playlist={this.props.playlist}
                                                                 />))}
-                </ul>
+                </ul></div>
 
-                <Modal />
-                <button onClick={this.handleClick.bind(this)}>rename</button>
-                <button onClick={this.handleDelete.bind(this)}>delete playlist</button>
             </div>
         );
     }

@@ -27,13 +27,25 @@ class PlaylistSongsIndexItem extends React.Component {
         console.log(this.props.song);
         
         return (
-            <li >
-                
-                {this.props.song.title} &nbsp;
+            <div className="right-pl-show">
+                <li className="pl-each-song">
+                    <div className="pl-song-first"><div className="music-note-icon"></div>
+                        <div className="pl-song-title">
+                            <div>{this.props.song.title}</div>
+                            <span className="pl-song-details">{this.props.song.artist_name}</span>
+                            <span className="pl-artist-album-separator">•</span>
+                            <span className="pl-song-details">{this.props.song.album_title}</span>
 
-                {/* <button onClick={this.handleClick.bind(this)}>ATP</button> */}
-                <button onClick={this.handleDelete.bind(this)}>Remove from Playlist</button>
-            </li>
+                        </div>
+                    </div>
+                    {/* {this.props.song.title} &nbsp; */}
+
+                    {/* <button onClick={this.handleClick.bind(this)}>ATP</button> */}
+                    <div>
+                        <button className="remove-song-from-pl" onClick={this.handleDelete.bind(this)}><p className="rsfp-text">REMOVE</p></button>
+                    </div>
+                </li>
+            </div>
         );
     }
 }
