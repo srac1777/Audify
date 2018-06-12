@@ -17,12 +17,17 @@ import LibraryPage from './library/library';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';
 
-const App = () => {
+const App = ({store}) => {
     // let st = props.store.getState();
     let landing_render, footer_render;
     let SidebarLinks, selected;
     // console.log(op, "hihiiihihi");
 
+    // let sidebar_wp = store => {
+    //     return(
+    //         <Sidebar state={store.getState()}/>
+    //     )
+    // }
     
     return (<div className="AppComponent">
         <div className="inAppComponent">

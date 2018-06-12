@@ -5,7 +5,8 @@ import LogoutContainer from '../session_form/logout_container';
 import UserContainer from '../../components/temp/user_container';
 
 const Sidebar = () => {
-
+    // console.log(props.state);
+    
     return (<div className="main-sidebar">
         <div>
             <div className="audify-logo"></div>
@@ -16,11 +17,10 @@ const Sidebar = () => {
             </div>
         </div>
         <div className="side-user">
-            
                 <ProtectedRoute path="/home" component={UserContainer} />
                 <ProtectedRoute path="/home" component={LogoutContainer} />
-    </div>
         </div>
+    </div>
 )
 };
 

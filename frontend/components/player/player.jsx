@@ -5,10 +5,12 @@ class Player extends React.Component {
     constructor(props){
         super(props);
         this.state = { now_playing_song: this.props.play_now_song,
-                       play_pause_toggle: true,
+                       play_pause_toggle: "nope",
                        duration: null,
                        secondsElapsed: 0,
-                       seeking: false
+                       seeking: false,
+                       volume: 1,
+                       v_changing: false
                       }
         // this.play_pause_toggle = true;
     }
@@ -31,6 +33,7 @@ class Player extends React.Component {
     componentWillReceiveProps(newProps){
         if(this.props.play_now_song !== newProps.play_now_song){
             this.setState({now_playing_song: newProps.play_now_song})
+            this.setState({ play_pause_toggle: true})
         }
     }
 
@@ -94,42 +97,135 @@ class Player extends React.Component {
     }
 
 
+
+
+
+    handleMouseVolumeDown() {
+        this.setState({ v_changing: true });
+    }
+
+    handleMouseVolumeUp(e) {
+        this.setState({ v_changing: false });
+        // this.player.seekTo(parseFloat(e.target.value))
+        // this.handleSeek(e);
+    }
+
+    handleVolume(e) {
+        // e.preventDefault();
+
+        this.setState({ volume: e.target.value });
+        // console.log(e.target.value, "heeyyyyy");
+    }
+
+
+
+
+
+
+
+
+
+    prettyTime(time) {
+        let minutes = Math.floor(time / 60);
+        let seconds = Math.floor(time % 60);
+        if (seconds < 10) {
+            seconds = '0' + seconds
+        }
+        let finalTime = minutes + ':' + seconds;
+        return finalTime;
+    }
+
+
     render() {
-        let song_url;
+        let song_url, song_details_title, song_details_artist;
         if(this.state.now_playing_song === ''){
-            song_url = ''
+            song_url = '';
+            song_details_title = '';
+            song_details_artist = '';
         }  else {
             song_url = this.state.now_playing_song.song_url
+            song_details_title = this.state.now_playing_song.title;
+            song_details_artist = this.state.now_playing_song.artist_name;
         }
+
+        let ppbtn;
+        if (this.state.play_pause_toggle === false || this.state.play_pause_toggle === "nope"){
+            ppbtn = "play-btn";
+        } else ppbtn = "pause-btn";
+
+        let img_src;
+        if (typeof this.state.now_playing_song.album_art === 'undefined') {
+            img_src = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
+        } else {
+            img_src = this.state.now_playing_song.album_art
+        }
+    
+
+
+        // let minutes = Math.floor(this.state.secondsElapsed / 60);
+        // let seconds = Math.floor(this.state.secondsElapsed % 60);
+        // if(seconds < 10){
+        //     seconds = '0'+seconds
+        // }
+        // let finalTime = minutes + ':' + seconds;
         return (
             <div className="main-footer">
-                <button className="play-pause-t" onClick={this.playPauseToggle.bind(this)}>Play/Pause</button>
-                <button className="next-t" onClick={this.forward.bind(this)}>N</button>
-                <button className="prev-t" onClick={this.rewind.bind(this)}>P</button>
-                <p>{this.state.secondsElapsed}></p>
-                                                    <input 
-                                                        className="seekbar-t" 
-                                                        type="range" 
-                                                        min="0"
-                                                        onMouseDown={this.handleMouseSeekDown.bind(this)} 
-                                                        onMouseUp={this.handleMouseSeekUp.bind(this)}
-                                                        onChange={this.handleSeek.bind(this)}
-                                                        max={this.state.duration} 
-                                                        step="any" 
-                                                        value={this.state.secondsElapsed}
-                                                    />
-                <p>{this.state.duration}></p>
-                {/* <ReactPlayer url={this.state.now_playing_song.song_url} */}
-                <ReactPlayer url={song_url}
-                            playing = {this.state.play_pause_toggle}
-                            // controls = {true}
-                            //  width="600px"
-                            //  height="5px"
-                            onEnded={this.play_next.bind(this)}
-                            ref={this.ref.bind(this)}
-                            onDuration={this.onDuration.bind(this)}
-                            onProgress={this.onProgress.bind(this)}
-                            />
+                <div className="left-footer">
+                    <div><img id="nwpl-album-art" src={img_src}></img></div>
+                    <div className="nwpl-song-title">{song_details_title}</div>
+                    <div className="nwpl-song-artist">{song_details_artist}</div>
+                    {/* <div>{this.state.now_playing_song.album_title}</div> */}
+                </div>
+                <div className="main-player">
+                    <div className="player-controller-btns">
+                        <div><button className="next-btn" onClick={this.forward.bind(this)}></button></div>
+                        <div><button className={ppbtn} onClick={this.playPauseToggle.bind(this)}></button></div>
+                        <div><button className="prev-btn" onClick={this.rewind.bind(this)}></button></div>
+                    </div>
+                    <div>
+                        <div className="under-controller">
+                            <div className="duration-time"><p>{this.prettyTime(this.state.secondsElapsed)}</p></div>
+                                    <div className="seekbar-con"><input 
+                                        className="seekbar-main" 
+                                        type="range" 
+                                        min="0"
+                                        onMouseDown={this.handleMouseSeekDown.bind(this)} 
+                                        onMouseUp={this.handleMouseSeekUp.bind(this)}
+                                        onChange={this.handleSeek.bind(this)}
+                                        max={this.state.duration} 
+                                        step="any" 
+                                        value={this.state.secondsElapsed}
+                                    /></div>
+                            <div className="duration-time"><p>{this.prettyTime(this.state.duration)}</p></div>
+                        </div>     
+                        {/* <ReactPlayer url={this.state.now_playing_song.song_url} */}
+                        <ReactPlayer url={song_url}
+                                    playing = {this.state.play_pause_toggle}
+                                    // controls = {true}
+                                    //  width="600px"
+                                    //  height="5px"
+                                    onEnded={this.play_next.bind(this)}
+                                    ref={this.ref.bind(this)}
+                                    onDuration={this.onDuration.bind(this)}
+                                    onProgress={this.onProgress.bind(this)}
+                                    volume={this.state.volume}
+                                    />
+                    </div>
+                </div>
+                <div className="right-footer">
+                    <div className="volume-icon"></div>
+                    <div><input
+                        className="volume-bar"
+                        type="range"
+                        min="0"
+                        onMouseDown={this.handleMouseVolumeDown.bind(this)}
+                        onMouseUp={this.handleMouseVolumeUp.bind(this)}
+                        onChange={this.handleVolume.bind(this)}
+                        max="1"
+                        step="any"
+                        value={this.state.volume}
+                    /></div>
+                </div>
             </div>
         );
     }

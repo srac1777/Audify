@@ -1,0 +1,340 @@
+.main-footer {
+    background: plum;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // position: relative;
+}
+
+.left-footer {
+    // background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 25px;
+    min-width: 300px;
+}
+
+.nwpl-song-title {
+    font-size: 17px;
+    color: rgba(white, 0.9);
+}
+
+.nwpl-song-artist {
+    font-size: 12px;
+    color: rgba(white, 0.6);
+}
+
+.main-player {
+    // background: red;
+    
+}
+
+
+.right-footer {
+    // position: absolute;
+    // background: greenyellow;
+    margin-right: 50px;
+    margin-top: 34px;
+    // left: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type='range'] {
+    width: 100px;
+    height: 5px;
+    overflow: hidden;
+    // width: 80px;
+    -webkit-appearance: none;
+    background-color: rgba(white, 0.1);
+    border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: rgba(red, 1);
+      margin-top: -1px;
+    //   z-index: 2;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+    //   background: white;
+      box-shadow: -80px 0 0 80px rgba(white, 0.5);
+    } 
+
+
+    
+     input[type='range']:hover::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+      background: white;
+      box-shadow: -80px 0 0 80px rgb(28,185,83);
+      transition: 0.2s;
+
+    }
+    
+    input[type='range']:active::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+      background: white;
+      box-shadow: -80px 0 0 80px rgb(28,185,83);
+      transition: 0.2s;
+    }
+
+.volume-icon {
+    background: image-url("volume-icon2.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+
+    
+}
+
+.volume-icon:hover {
+    opacity: 1;  
+}
+
+.main-player {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // margin-top: 200px; 
+    align-items: center;
+    margin-left: 100px;
+}
+
+.seekbar-main {
+    min-width: 450px !important;
+    height: 5px;
+    overflow: hidden;
+    // width: 80px;
+    -webkit-appearance: none;
+    background-color: rgba(white, 0.1);
+    border-radius: 5px;
+}
+
+.seekbar-main::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: rgba(red, 1);
+      margin-top: -1px;
+    //   z-index: 2;
+    }
+    
+    .seekbar-main::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+    //   background: white;
+      box-shadow: -800px 0 0 800px rgba(white, 0.5) !important;
+    } 
+
+
+    
+     .seekbar-main:hover::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+      background: white;
+      box-shadow: -800px 0 0 800px rgb(28,185,83) !important;
+      transition: 0.2s;
+
+    }
+    
+    .seekbar-main:active::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+    //   cursor: ew-resize;
+      background: white;
+      box-shadow: -800px 0 0 800px rgb(28,185,83) !important;
+      transition: 0.2s;
+    }
+
+    .player-controller-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 110px;
+    }
+
+    .play-btn {
+        background: image-url("play-button.png");
+            // background: url(/assets/play-button-62a5bc2….png);
+    background-size: 69%;
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 60px;
+    opacity: 0.6;
+    background-position-y: 21px;
+        // background-position-x: -10px;
+    }
+
+    .pause-btn {
+        background: image-url("pause-button.png");
+            // background: url(/assets/play-button-62a5bc2….png);
+    background-size: 72.6%;
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 60px;
+    opacity: 0.6;
+    background-position-y: 21px;
+        background-position-x: -1px;
+    }
+
+     .next-btn {
+        background: image-url("prev-button.png");
+            // background: url(/assets/prev-button-a17b08e….png);
+    background-size: 47%;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 60px;
+    opacity: 0.6;
+    background-position-y: 33px;
+        // background-position-x: -10px; 
+    }
+
+     .prev-btn {
+        background: image-url("next-button.png");
+    //    background: url(/assets/next-button-faa3d4f….png);
+    background-size: 47%;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 60px;
+    opacity: 0.6;
+    background-position-y: 31px;
+        // background-position-x: -10px; 
+    }
+
+
+    .play-btn:hover {
+    opacity: 1;
+        
+    }
+
+    .pause-btn:hover {
+    opacity: 1;
+        
+    }
+
+     .next-btn:hover {
+    opacity: 1;
+
+    }
+
+     .prev-btn:hover {
+    opacity: 1;
+    }
+
+    .under-controller {
+        display: flex;
+        flex-direction: row;
+        margin-top: 17px;
+        // margin-right: 20px;
+    }
+
+    .seekbar-con {
+        margin: 0 10px;
+    }
+
+    .duration-time {
+        font-size: 12px;
+        color: rgba(white, 0.5);
+        position: relative;
+        top: 5px;
+    }
+
+
+    #nwpl-album-art {
+        // position: absolute;
+        // float: left;
+        // bottom: 90px;
+
+        // height: 100px;
+        // width: 100px;
+        // margin-bottom: 0;
+        // margin-top: 5px; 
+        // background: blue;
+
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    bottom: 90px;
+    left: 0;
+    }
+
+
+
+
+
+
+
+// input[type='range']:hover::-webkit-slider-runnable-track {
+//       height: 10px;
+//       -webkit-appearance: none;
+//       color: rgb(28,185,83);
+//       margin-top: -1px;
+//       transition: .3s;
+//     }
+    
+//     input[type='range']:hover::-webkit-slider-thumb {
+//       width: 10px;
+//       -webkit-appearance: none;
+//       height: 10px;
+//     //   cursor: ew-resize;
+//     //   background: white;
+//       box-shadow: -80px 0 0 80px rgb(28,185,83);
+//       transition: .3s;
+
+//     }
+
+
+
+
+// .volume-bar::-webkit-slider-runnable-track {
+//     // background: #ccc; /*trackColor*/
+//     height: 5px; /*trackHeight*/
+//     border-radius: 4px; /*trackHeight*/
+//     transition: 0.1s;
+//     margin-top: 1px; 
+// }
+
+// .volume-bar:hover::-webkit-slider-runnable-track {
+//     background: rgb(28,185,83); /*activeTrackColor*/
+// }
+
+// .volume-bar::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     // background: red; /*thumbColor*/
+//     width: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+//     height: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+//     border-radius: 50%;
+//     margin-top: -5px; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+//     cursor: pointer;
+//     // border: 4px solid #fff; /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+//     transition: 0.3s;
+// }
+
+// .volume-bar:hover::-webkit-slider-thumb {
+//     background: darkOrange; /*activeThumbColor*/
+// }
+
+
