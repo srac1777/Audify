@@ -5,16 +5,22 @@ import { debug } from 'util';
 class SongIndexItem extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {now_playing_song: ''}
     }
 
     handleClick(){
-        console.log(this.props);
+        // console.log(this.props);
         
         // debugger
         this.props.songClick(this.props.song);
         // debugger
 
         this.props.openModal('atp');
+    }
+
+    handlePlayClick(){
+        this.props.playNow(this.props.song);
+        this.props.nowPlayingQueue(this.props.current_songs_list);
     }
 
     myFunction(){
@@ -25,14 +31,15 @@ class SongIndexItem extends React.Component {
  
 
     render() {
-        console.log(this.props.song);
+        // console.log(this.props.next_song);
+
         
         return (
             <li className="each-song">
                 
                 <div className="song-first"><div className="music-note-icon"></div>
                     <div className="song-title">
-                    <div>{this.props.song.title}</div>
+                    <div onClick={this.handlePlayClick.bind(this)}>{this.props.song.title}</div>
                     <span className="song-details">{this.props.song.artist_name}</span>
                         <span className="artist-album-separator">•</span>
                     <span className="song-details">{this.props.song.album_title}</span>

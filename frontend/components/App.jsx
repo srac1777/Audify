@@ -15,6 +15,7 @@ import { fetchSongs } from '../actions/song_actions';
 import SearchPage from './search/seach';
 import LibraryPage from './library/library';
 import Sidebar from './temp/sidebar';
+import PlayerContainer from './player/player_container';
 
 const App = () => {
     // let st = props.store.getState();
@@ -43,7 +44,7 @@ const App = () => {
                     </Switch>
                 </div>
             </div>
-                <ProtectedRoute path="/" component={() => <div className="main-footer">footer</div>} />
+                <ProtectedRoute path="/" component={PlayerContainer} />
                  
         </div>
         </div>)

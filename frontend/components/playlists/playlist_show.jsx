@@ -10,13 +10,19 @@ class PlaylistShow extends React.Component {
         // this.playlist = this.props.fetchPlaylist(props.ownProps.params.match.playlistId)
     }
     componentWillMount(){
+        console.log("in will");
+        
         this.props.fetchPlaylists().then(this.props.fetchSongs).then(this.props.fetchPlaylistSongs)
         // this.props.fetchPlaylist(this.props.ownProps.match.params.playlistId)
         // this.props.fetchPlaylistSongs();
     }
 
+    componentDidMount(){
+        debugger
+    }
+
     componentWillReceiveProps(newProps) {
-        // debugger
+        debugger
         // if(newProps.)
     }
 
@@ -32,6 +38,11 @@ class PlaylistShow extends React.Component {
     
     render() {
         // console.log(this.props.playlist, "hiiiiiiiii");
+        // debugger
+        if(typeof this.props.playlist === 'undefined'){
+            console.log("undeffffff");
+            return (<div>hello</div>);
+        }
         let songs = this.props.playlist.songs;
         let img_src;
         if (typeof songs === 'undefined' || songs.join() === '') {

@@ -6,6 +6,7 @@ import Modal from '../modal/modal_atp';
 class SongIndex extends React.Component {
 
     componentDidMount() {
+        // debugger
         this.props.fetchSongs();
     }
 
@@ -26,11 +27,14 @@ class SongIndex extends React.Component {
                 </div>
                 <div className="songs-index-items-container">
                 <ul>
-                    {this.props.songs.map(song => (<SongIndexItem key={song.id} 
+                    {this.props.songs.map((song,idx) => (<SongIndexItem key={song.id} 
                                                     song={song}
                                                     openModal={this.props.openModal}
                                                     closeModal={this.props.closeModal}
                                                     songClick={this.props.songClick}
+                                                    playNow={this.props.playNow}
+                                                    current_songs_list={this.props.songs}
+                                                    nowPlayingQueue={this.props.nowPlayingQueue}
                                                     />))}
                 </ul>
                 </div>
