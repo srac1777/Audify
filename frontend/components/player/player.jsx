@@ -138,7 +138,7 @@ class Player extends React.Component {
 
     render() {
         let song_url, song_details_title, song_details_artist;
-        if(this.state.now_playing_song === ''){
+        if (this.state.now_playing_song === '' || typeof this.state.now_playing_song === 'undefined'){
             song_url = '';
             song_details_title = '';
             song_details_artist = '';
@@ -154,7 +154,7 @@ class Player extends React.Component {
         } else ppbtn = "pause-btn";
 
         let img_src;
-        if (typeof this.state.now_playing_song.album_art === 'undefined') {
+        if (typeof this.state.now_playing_song === 'undefined' || typeof this.state.now_playing_song.album_art === 'undefined') {
             img_src = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
         } else {
             img_src = this.state.now_playing_song.album_art
@@ -178,9 +178,9 @@ class Player extends React.Component {
                 </div>
                 <div className="main-player">
                     <div className="player-controller-btns">
-                        <div><button className="next-btn" onClick={this.forward.bind(this)}></button></div>
-                        <div><button className={ppbtn} onClick={this.playPauseToggle.bind(this)}></button></div>
                         <div><button className="prev-btn" onClick={this.rewind.bind(this)}></button></div>
+                        <div><button className={ppbtn} onClick={this.playPauseToggle.bind(this)}></button></div>
+                        <div><button className="next-btn" onClick={this.forward.bind(this)}></button></div>
                     </div>
                     <div>
                         <div className="under-controller">

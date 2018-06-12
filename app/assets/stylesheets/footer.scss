@@ -200,26 +200,26 @@ input[type='range']::-webkit-slider-runnable-track {
     }
 
      .next-btn {
-        background: image-url("prev-button.png");
+        background: image-url("next-button.png");
             // background: url(/assets/prev-button-a17b08e….png);
     background-size: 47%;
     background-repeat: no-repeat;
     width: 41px;
     height: 60px;
     opacity: 0.6;
-    background-position-y: 33px;
+    background-position-y: 32.5px;
         // background-position-x: -10px; 
     }
 
      .prev-btn {
-        background: image-url("next-button.png");
+        background: image-url("prev-button.png");
     //    background: url(/assets/next-button-faa3d4f….png);
     background-size: 47%;
     background-repeat: no-repeat;
     width: 45px;
     height: 60px;
     opacity: 0.6;
-    background-position-y: 31px;
+    background-position-y: 34px;
         // background-position-x: -10px; 
     }
 
