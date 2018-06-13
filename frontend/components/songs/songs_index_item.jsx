@@ -28,6 +28,16 @@ class SongIndexItem extends React.Component {
         document.getElementById(`myDropdown${this.props.song.id}`).classList.toggle("show");
     }
 
+    prettyTime(time) {
+        let minutes = Math.floor(time / 60);
+        let seconds = Math.floor(time % 60);
+        if (seconds < 10) {
+            seconds = '0' + seconds
+        }
+        let finalTime = minutes + ':' + seconds;
+        return finalTime;
+    }
+
  
 
     render() {
@@ -57,7 +67,7 @@ class SongIndexItem extends React.Component {
                        <a> <button className="atp-button-fix" onClick={this.handleClick.bind(this)}>Add to Playlist</button></a>
                     </div>
                 </div>
-                <div className="dur">{Math.floor(this.props.song.duration/60)}:{this.props.song.duration%60}</div>
+                    <div className="dur">{this.prettyTime(this.props.song.duration)}</div>
                 </div>
                 {/* <div><button onClick={this.handleClick.bind(this)}>ATP</button></div> */}
             </li>
