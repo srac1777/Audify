@@ -20,7 +20,7 @@ class SongIndexItem extends React.Component {
 
     handlePlayClick(){
         // debugger
-        this.props.playNow(this.props.song);
+        this.props.playNow(this.props.song.id-1);
         this.props.nowPlayingQueue(this.props.current_songs_list);
     }
 
