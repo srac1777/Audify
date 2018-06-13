@@ -36,7 +36,12 @@ class Player extends React.Component {
         // debugger
         let current_song_index = this.props.now_playing_index
         // let next_song = this.props.now_playing_queue[current_song_index + 1]
-        this.props.updateNwpl(current_song_index + 1);
+        // if(current_song_index+1 === this.props.now_playing_queue.length){
+        //     this.resetNwpl();
+        // } else {
+            this.props.updateNwpl(current_song_index + 1);
+        // }
+
         // if(typeof next_song === 'undefined'){
         //     this.setState({ now_playing_song: ''})
         // } else {

@@ -12,6 +12,7 @@ const mapStateToProps = state => {
     return {
         songs: Object.values(state.entities.songs),
         playlist_songs: Object.values(state.entities.playlist_songs),
+        now_pl_green: state.now_playing_queue[state.now_playing]
     }
 };
 

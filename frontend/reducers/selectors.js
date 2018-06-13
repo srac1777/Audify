@@ -2,7 +2,7 @@ import { fetchSongs } from "../actions/song_actions";
 
 export const getFilteredPlaylistSongs = (state, playlist_id) => {
     
-    console.log(state,"state");
+    // console.log(state,"state");
     let result = [];
     for(let id in state.entities.playlist_songs){
         // debugger

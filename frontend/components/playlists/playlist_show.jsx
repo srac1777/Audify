@@ -76,6 +76,7 @@ class PlaylistShow extends React.Component {
                                                                 playNow={this.props.playNow}
                                                                 current_songs_list={this.props.songs}
                                                                 nowPlayingQueue={this.props.nowPlayingQueue}
+                                                                now_pl_green={this.props.now_pl_green}
                                                                 />))}
                 </ul></div>
 

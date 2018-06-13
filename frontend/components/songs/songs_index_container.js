@@ -8,7 +8,8 @@ import { nowPlayingQueue } from '../../actions/now_playing_queue_action';
 
 const mapStateToProps = state => {
     return {
-        songs: Object.values(state.entities.songs)
+        songs: Object.values(state.entities.songs),
+        now_pl_green: state.now_playing_queue[state.now_playing] || ''
     }
 };
 

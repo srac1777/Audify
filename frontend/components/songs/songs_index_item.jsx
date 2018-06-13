@@ -43,7 +43,10 @@ class SongIndexItem extends React.Component {
 
     render() {
         // console.log(this.props.next_song);
-
+        let green_nwpl;
+        if(this.props.song.title === this.props.now_pl_green.title){
+            green_nwpl = "apply-green-nwpl";
+        } else green_nwpl = "";
         
         return (
             <li className="each-song" >
@@ -51,7 +54,7 @@ class SongIndexItem extends React.Component {
                 <div className="song-first" onClick={this.handlePlayClick.bind(this)}>
                     <div className="music-note-icon"></div>
                     <div className="song-title">
-                        <div >{this.props.song.title}</div>
+                        <div className={green_nwpl}>{this.props.song.title}</div>
                         <span className="song-details">{this.props.song.artist_name}</span>
                         <span className="artist-album-separator">•</span>
                         <span className="song-details">{this.props.song.album_title}</span>

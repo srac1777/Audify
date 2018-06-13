@@ -25,7 +25,8 @@ const msp = (state, ownProps) => {
     // songs: Object.values(state.entities.songs)
     songs: getFilteredPlaylistSongs(state, ownProps.match.params.playlistId),
     playlist_songs: Object.values(state.entities.playlist_songs),
-    ownProps: ownProps
+    ownProps: ownProps,
+    now_pl_green: state.now_playing_queue[state.now_playing]
 }};
 
 const mdp = dispatch => {
