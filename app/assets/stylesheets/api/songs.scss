@@ -25,6 +25,7 @@
     // background: aquamarine;
     padding-left: 40px;
     margin-left: 220px;
+    margin-bottom: 110px; 
 }
 
 .each-song {
@@ -111,6 +112,7 @@
 .song-first {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .music-note-icon:hover {

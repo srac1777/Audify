@@ -6,32 +6,54 @@ class PlaylistForm extends React.Component {
         super(props);
         this.state = props.playlist;
         this.focus = this.focus.bind(this);
+        this.state = ({
+            title: props.playlist.title,
+            creator_id: props.playlist.creator_id,
+            errors: ''
+        })
     }
 
     focus() {
         this.textInput.focus();
     }
 
+    escFunction(event) {
+        if (event.keyCode === 27) {
+            this.props.closeModal();
+        }
+    }
+
+    componentDidMount(){
+        document.addEventListener("keydown", this.escFunction.bind(this), false);
+    }
+
     handletitle(e) {
         this.setState({ title: e.target.value })
+    }
+
+    renderErrors(e){
+        
     }
 
     handleSubmit(e) {
         // e.preventDefault();
         // debugger;
-        this.props.createPlaylist(this.state)
-        this.setState({ title: '' })
-        this.props.closeModal()
+        if(this.state.title === ''){
+            this.renderErrors(e);
+        } else {
+            this.props.createPlaylist(this.state);
+            this.setState({ title: '' });
+            this.props.closeModal();
+        }
     }
 
-    // handleSubmitEnter(e) {
-    //     console.log("hi");     
-    //     if(e.keyCode==='Enter'){
+    // handleEsc(e) { 
+    //     if(e.keyCode=== 27){
     //         e.preventDefault();
     //         // debugger;
-    //         this.props.createPlaylist(this.state)
-    //         this.setState({ title: '' })
-    //         this.props.closeModal()
+    //         // this.props.createPlaylist(this.state)
+    //         // this.setState({ title: '' })
+    //         this.props.closeModal();
     //     }
     // }
 
@@ -47,7 +69,8 @@ class PlaylistForm extends React.Component {
                     <div><input className="form-np" 
                                 type="text" 
                                 onChange={this.handletitle.bind(this)}
-                                // onKeyPress={this.handleSubmitEnter.bind(this)}
+                                autoFocus
+                                // onKeyPress={() => this.handleEsc()}
                                  value={this.state.title}
                                 // ref={(input) => { this.textInput = input; }}
                                 placeholder="Start Typing..."

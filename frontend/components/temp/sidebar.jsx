@@ -4,9 +4,14 @@ import { Route, Link, Switch, NavLink } from 'react-router-dom';
 import LogoutContainer from '../session_form/logout_container';
 import UserContainer from '../../components/temp/user_container';
 
-const Sidebar = () => {
-    // console.log(props.state);
-    
+const Sidebar = (props) => {
+    console.log(props);
+    let art;
+    if (typeof props.now_playing === ''){
+        art=''
+    } else {
+        art = props.now_playing.album_art
+    }
     return (<div className="main-sidebar">
         <div>
             <div className="audify-logo"></div>
@@ -20,6 +25,7 @@ const Sidebar = () => {
                 <ProtectedRoute path="/home" component={UserContainer} />
                 <ProtectedRoute path="/home" component={LogoutContainer} />
         </div>
+        <div className="side-art"><img src={art}></img></div>
     </div>
 )
 };

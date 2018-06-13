@@ -10,13 +10,20 @@
     flex-wrap: nowrap;
 }
 
+// .sessionlogo-container {
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+// }
+
 .sessionlogo {
     background: image-url("Audify-black-2.png");
     height: 70px;
     background-size: 14% auto;
     background-repeat: no-repeat;
     width: 100%; 
-    background-position-x: 635px;
+    // background-position-x: 540px;
+    align-self: center;
     background-position-y: 25px;
     border-bottom: 1px solid lightgray;
     // background: red;

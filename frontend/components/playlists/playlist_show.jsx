@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PlaylistSongsIndexItem from '../songs/pl_songs_index_item';
 import Modal from '../modal/modal_ep';
+import Modal2 from '../modal/modal_dp';
 
 class PlaylistShow extends React.Component {
     constructor(props){
@@ -18,22 +19,23 @@ class PlaylistShow extends React.Component {
     }
 
     componentDidMount(){
-        debugger
+        // debugger
     }
 
     componentWillReceiveProps(newProps) {
-        debugger
+        // debugger
         // if(newProps.)
     }
 
-    handleClick() {
+    handleEdit() {
         this.props.openModal('ep');
     }
 
     handleDelete(){
-        // console.log(this.props.history)
-        this.props.deletePlaylist(this.props.playlist.id);
-        this.props.history.push('/home');
+        // // console.log(this.props.history)
+        // this.props.deletePlaylist(this.props.playlist.id);
+        // this.props.history.push('/home');
+        this.props.openModal('dp');
     }
     
     render() {
@@ -52,13 +54,14 @@ class PlaylistShow extends React.Component {
         }
         return (
             <div className="playlist-show">
-                   <Modal />
+                   {/* <Modal /> */}
+                   <Modal2 playlist={this.props.playlist}/>
         
                    <div className="left-pl-show">
                         <div><img className="pl-show-img" src={img_src}></img></div>
                         <div className="pl-show-title">{this.props.playlist.title}</div>
                         <div className="pl-show-left-buttons">
-                            <div><button className="pl-rename-button" onClick={this.handleClick.bind(this)}>rename</button></div>
+                            <div><button className="pl-rename-button" onClick={this.handleEdit.bind(this)}>rename</button></div>
                             <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
                         </div>
                     </div>

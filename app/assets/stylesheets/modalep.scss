@@ -42,14 +42,14 @@
 
 }
 
-.form-np {
+.form-ep {
     background: rgba(40,40,40,1);
     width: 100vw;
     height: 150px;
     font-size: 58px;
     caret-color: #1DB954;
     font-family: 'spotifybold';
-    padding-left: 40vw;
+    padding-left: 30%;
     
 }
 
@@ -70,11 +70,12 @@
     // font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-right: 25px;
+    // margin-right: 25px;
     align-self: center;
     display: inline;
-    position: relative;
-    left: 65vw;
+    // position: relative;
+    // left: 72vw;
+    // margin-left: 43%;
     margin-top: 30px;
 }
 
@@ -88,4 +89,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} 
+
+.ep-stuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+}
+
+.submit-edit {
+    align-self: center;
 }

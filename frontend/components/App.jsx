@@ -16,6 +16,7 @@ import SearchPage from './search/seach';
 import LibraryPage from './library/library';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';
+import sidebar_container from './temp/sidebar_container';
 
 const App = ({store}) => {
     // let st = props.store.getState();
@@ -34,7 +35,7 @@ const App = ({store}) => {
             <div className="main-upper">
                 {/* {landing_render} */}
                 <div className="main-component"> 
-                    <ProtectedRoute path="/" component={Sidebar}/>
+                    <ProtectedRoute path="/" component={sidebar_container}/>
                     <Switch>
                         <AuthRoute path="/login" component={LogInFormContainer} />
                         <AuthRoute path="/signup" component={SignUpFormContainer} />
@@ -48,8 +49,8 @@ const App = ({store}) => {
                         <AuthRoute path="/" component={LandingPage} />
                     </Switch>
                 </div>
-            </div>
                 <ProtectedRoute path="/" component={PlayerContainer} />
+            </div>
                  
         </div>
         </div>)

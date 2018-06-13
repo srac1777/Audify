@@ -20,7 +20,27 @@
     // height: 100vh;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9);
+
 }
+
+.ModalATP::-webkit-scrollbar {
+    width: 0em;
+}
+           body::-webkit-scrollbar {
+        width: 0em;
+    }
+    // .songs-index-items-container--open{
+       
+    // height: 100%;
+    // overflow: hidden;
+
+    // }
+    // body { 
+        // overflow-y: hidden !important;
+     
+    // display: none; 
+// }
+
 
 // .entire-atp-modal {
 //     background: blue;
@@ -35,6 +55,8 @@
 .modal-atp-x {
     font-size: 45px;
     color: lightgray;
+    // position: relative;
+    // left: 50px;
     // background-color: red;
     button {
         font-size: 42px;
@@ -47,11 +69,12 @@
 }
 
 .atp-index-container {
-    background: rgb(58, 58, 58);
-    width: 97vw;
-    height: 100vh;
-    margin-left: 10px;
-    margin-right: 10px;
+    // background: rgb(58, 58, 58);
+    // width: 97vw;
+    // margin-left: 260px; 
+    height: 100%;
+    margin-left: 130px;
+    margin-right: 130px;
     border-radius: 7px;
 }
 
@@ -59,11 +82,13 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 100vw;
+    // width: 100vw;
     // height: 100vh;
     flex-wrap: wrap;
-    // background: red;
+    margin-bottom: 90px;
+    // background: blue;
     // align-items: center;
+    position: relative;
 }
 
 
@@ -71,6 +96,7 @@
 .choose-playlist h1 {
     font-size: 52px;
     font-family: 'spotifybold';
+
 }
 
 .atp-li {
@@ -116,4 +142,21 @@
     font-size: 20px;
     font-family: 'spotifybold';
     margin-top: 15px;
+}
+
+
+
+.s-atp {
+    // min-width: 0;
+    font-size: 24px;
+    background: rgb(28, 185, 83);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 40px;
+    right: 40px;
+    // z-index: 3;
+    text-align: center;
+    font-family: 'spotifybold';
+
 }

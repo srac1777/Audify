@@ -35,13 +35,14 @@ class SongIndexItem extends React.Component {
 
         
         return (
-            <li className="each-song" onClick={this.handlePlayClick.bind(this)}>
+            <li className="each-song" >
                 
-                <div className="song-first"><div className="music-note-icon"></div>
+                <div className="song-first" onClick={this.handlePlayClick.bind(this)}>
+                    <div className="music-note-icon"></div>
                     <div className="song-title">
                     <div >{this.props.song.title}</div>
                     <span className="song-details">{this.props.song.artist_name}</span>
-                        <span className="artist-album-separator">•</span>
+                    <span className="artist-album-separator">•</span>
                     <span className="song-details">{this.props.song.album_title}</span>
                     
                     </div>

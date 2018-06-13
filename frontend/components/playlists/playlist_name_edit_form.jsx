@@ -22,13 +22,15 @@ class PlaylistNameEditForm extends React.Component {
             <div className="modal-ep">
                 <div><button className="close-ep" onClick={this.props.closeModal}>X</button></div>
                 <div className="rename-playlist">Rename playlist</div>
-                <div className="ep-form">
+                {/* <div className="ep-form"> */}
                     <form onSubmit={this.handleSubmit.bind(this)}>
-                        <div><input className="form-np" type="text" onChange={this.handletitle.bind(this)} value={this.state.title} /></div>
+                    <div className="ep-stuff">
+                        <div><input className="form-ep" type="text" onChange={this.handletitle.bind(this)} value={this.state.title} autoFocus /></div>
                         {/* <input type="submit" /> */}
-                        <div><input type="submit" className="edit-ep-button" value="rename" /></div>
+                        <div className="submit-edit"><input type="submit" className="edit-ep-button" value="rename" /></div>
+                    </div>    
                     </form>
-                </div>
+                {/* </div> */}
             </div>
         );
     }

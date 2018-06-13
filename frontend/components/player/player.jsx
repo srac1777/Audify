@@ -171,7 +171,7 @@ class Player extends React.Component {
         return (
             <div className="main-footer">
                 <div className="left-footer">
-                    <div><img id="nwpl-album-art" src={img_src}></img></div>
+                    {/* <div><img id="nwpl-album-art" src={img_src}></img></div> */}
                     <div className="nwpl-song-title">{song_details_title}</div>
                     <div className="nwpl-song-artist">{song_details_artist}</div>
                     {/* <div>{this.state.now_playing_song.album_title}</div> */}
