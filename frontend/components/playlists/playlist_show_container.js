@@ -6,6 +6,9 @@ import { fetchSongs } from '../../actions/song_actions';
 import { getFilteredPlaylistSongs } from '../../reducers/selectors';
 import { deletePlaylistSong, fetchPlaylistSongs } from '../../actions/playlist_song_actions';
 import merge from 'lodash/merge';
+import { playNow } from '../../actions/play_now_action';
+import { nowPlayingQueue } from '../../actions/now_playing_queue_action';
+
 
 
 
@@ -35,7 +38,9 @@ const mdp = dispatch => {
     deletePlaylist: id => dispatch(deletePlaylist(id)),
     fetchSongs: () => dispatch(fetchSongs()),
     fetchPlaylistSongs: () => dispatch(fetchPlaylistSongs()),
-    deletePlaylistSong: ps => dispatch(deletePlaylistSong(ps))
+    deletePlaylistSong: ps => dispatch(deletePlaylistSong(ps)),
+    playNow: song => dispatch(playNow(song)),
+    nowPlayingQueue: queue => dispatch(nowPlayingQueue(queue))
 }};
 
 export default connect(msp, mdp)(PlaylistShow);

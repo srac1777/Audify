@@ -66,12 +66,16 @@ class PlaylistShow extends React.Component {
                         </div>
                     </div>
                <div className="pl-songs-container"><ul>
-                    {this.props.songs.map(song => (<PlaylistSongsIndexItem key={song.id} 
+                    {this.props.songs.map((song,idx) => (<PlaylistSongsIndexItem key={song.id} 
                                                                 deletePlaylistSong={this.props.deletePlaylistSong}
                                                                 playlist_songs={this.props.playlist_songs}
                                                                 current_playlist={this.props.playlist}
                                                                 song={song}
+                                                                idx={idx}
                                                                 playlist={this.props.playlist}
+                                                                playNow={this.props.playNow}
+                                                                current_songs_list={this.props.songs}
+                                                                nowPlayingQueue={this.props.nowPlayingQueue}
                                                                 />))}
                 </ul></div>
 

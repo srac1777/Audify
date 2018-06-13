@@ -14,7 +14,13 @@ class PlaylistSongsIndexItem extends React.Component {
 
     handleClick() {
         this.props.songClick(this.props.song)
-        this.props.openModal('atp')
+        // this.props.openModal('atp')
+    }
+
+    handlePlayClick() {
+        // debugger
+        this.props.playNow(this.props.idx);
+        this.props.nowPlayingQueue(this.props.current_songs_list);
     }
 
     handleDelete() {
@@ -24,12 +30,13 @@ class PlaylistSongsIndexItem extends React.Component {
     }
 
     render() {
-        console.log(this.props.song);
+        // console.log(this.props);
         
         return (
             <div className="right-pl-show">
                 <li className="pl-each-song">
-                    <div className="pl-song-first"><div className="music-note-icon"></div>
+                    <div className="pl-song-first" onClick={this.handlePlayClick.bind(this)}>
+                        <div className="music-note-icon"></div>
                         <div className="pl-song-title">
                             <div>{this.props.song.title}</div>
                             <span className="pl-song-details">{this.props.song.artist_name}</span>

@@ -90,13 +90,24 @@
 
 .pl-songs-container {
     // background: red;
-    margin-top: 40px; 
+    margin-top: 20px; 
+    margin-bottom: 120px;
+    height: 85vh;
+    overflow: auto;
+
 }
+
+.pl-songs-container::-webkit-scrollbar {
+        width: 0em;
+    }
 
 .right-pl-show {
     // background: purple;
     width: 45vw;
+
+    // margin-bottom: 250px;
     // height: 100vh;
+
 }
 
 .pl-each-song {
