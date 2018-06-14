@@ -43,18 +43,53 @@
 //   width: 100vh;
   height: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 30px 0;
 //   background: red;
-  align-items: flex-end;
-  position: relative;
-  right: 168px;
+//   align-items: flex-end;
+//   position: relative;
+
+}
+
+.new-playlist-button4{
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    border-radius: 50px;
+    width: 123px;
+    height: 15px;
+    text-align: center;
+    // font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    color: transparent;
+    cursor: default;
 }
 
 .new-playlist-button2 {
     display: none;
 
 }
+
+// .fake-np {
+//     color: white;
+//     text-decoration: none;
+//     background: transparent;
+//     background: red;
+//     padding: 10px 0;
+//     border-radius: 50px;
+//     width: 123px;
+//     height: 15px;
+//     text-align: center;
+//     // font-weight: bold;
+//     letter-spacing: 2px;
+//     text-transform: uppercase;
+//     margin-right: 25px;
+//     // display: none;
+
+// }
 
 // .each-song a {
 //     display: none;

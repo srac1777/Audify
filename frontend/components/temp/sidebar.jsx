@@ -24,11 +24,11 @@ class Sidebar extends React.Component {
                         <div><NavLink to="/search" className="side-links" activeClassName="active-side"><div className="search-icon"></div>Search</NavLink></div>
                         <div><NavLink to="/home" className="side-links" activeClassName="active-side"><div className="home-icon"></div>Home</NavLink></div>
                         <div><NavLink to="/library" className="side-links" activeClassName="active-side"><div className="library-icon"></div>Your Library</NavLink></div>
+                        <div className="side-user">
+                            <ProtectedRoute path="/home" component={UserContainer} />
+                            <ProtectedRoute path="/home" component={LogoutContainer} />
+                        </div>
                     </div>
-                </div>
-                <div className="side-user">
-                    <ProtectedRoute path="/home" component={UserContainer} />
-                    <ProtectedRoute path="/home" component={LogoutContainer} />
                 </div>
                 <div className="side-art"><img src={art}></img></div>
             </div>

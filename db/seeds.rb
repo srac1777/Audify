@@ -69,6 +69,51 @@ Tesfaye debuted the Weeknd in late 2010 with three songs uploaded to YouTube. Ma
 After Tesfaye signed with Universal Republic, the three Weeknd mixtapes were remastered and bundled with three new songs for Trilogy, issued in November 2012. Despite consisting of material previously available for free, the set debuted at number four on the Billboard 200 chart. The following April, Tesfaye won Juno Awards in the categories of Breakthrough Artist of the Year and R&B/Soul Recording of the Year. Trilogy was certified platinum by the RIAA the next month. Kiss Land, much darker in tone than its title implied, followed in September 2013 and debuted at number two. Out of its several singles, only \"Live For,\" featuring Drake, touched the Hot R&B/Hip-Hop chart. Tesfaye had much more success with a series of non-album singles that followed. \"Often,\" released in 2014, was a Top Ten R&B/Hip-Hop hit. He was featured on Ariana Grande\'s \"Love Me Harder,\" which reached the Top Ten of the Hot 100 and went platinum in the U.S. \"Earned It,\" featured in Fifty Shades of Grey, repeated the same feats.")
 
 
+louis_the_child = Artist.create(name: "Louis the Child", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/louis-the-child.jpeg", about:"tbd")
+
+
+ac_dc = Artist.create(name: "AC/DC", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/acdc.jpeg", about:"tbd")
+
+
+alan_walker = Artist.create(name: "Alan Walker", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/alan-walker.jpeg", about:"tbd")
+
+
+charlie_puth = Artist.create(name: "Charlie Puth", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/charlie-puth.jpeg", about:"tbd")
+
+
+drake = Artist.create(name: "Drake", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/drake.jpeg", about:"tbd")
+
+
+ed_sheeran = Artist.create(name: "Ed Sheeran", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/ed-sheeran.jpeg", about:"tbd")
+
+
+kendrick_lamar = Artist.create(name: "Kendrick Lamar", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/kendrick.jpeg", about:"tbd")
+
+
+hans_zimmer = Artist.create(name: "Hans Zimmer", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/hans-zimmer.jpeg", about:"tbd")
+
+
+jon_bellion = Artist.create(name: "Jon Bellion", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/jon-bellion.jpeg", about:"tbd")
+
+
+kygo = Artist.create(name: "Kygo", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/kygo.jpeg", about:"tbd")
+
+
+mtm = Artist.create(name: "MagnusTheMagnus", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/magnus-the-magnus.jpeg", about:"tbd")
+
+
+m5 = Artist.create(name: "Maroon 5", img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/artists/maroon-5.jpeg", about:"tbd")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,6 +155,57 @@ theocean = Album.create(title: "The Ocean", artist_id: mikeperry.id, img_url: "h
 
 
 xy = Album.create(title: "X & Y", artist_id: coldplay.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/x%26y.png")
+
+
+damn = Album.create(title: "DAMN.", artist_id: kendrick_lamar.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/damn.jpeg")
+
+
+reputation = Album.create(title: "Reputation", artist_id: taylorswift.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/reputation.jpg")
+
+
+back_in_black = Album.create(title: "Back in Black", artist_id: ac_dc.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/back-in-black.jpg")
+
+
+ed_divide = Album.create(title: "Divide", artist_id: ed_sheeran.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/divide.jpg")
+
+
+interstellar = Album.create(title: "Interstellar", artist_id: hans_zimmer.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/interstellar.jpg")
+
+
+scary_hours = Album.create(title: "Scary Hours", artist_id: drake.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/scary-hours.jpg")
+
+
+the_human_condition = Album.create(title: "The Human Condition", artist_id: jon_bellion.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/the-human-condition.jpg")
+
+
+voice_notes = Album.create(title: "Voicenotes", artist_id: charlie_puth.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/attention.jpg")
+
+
+nine_track_mind = Album.create(title: "Nine Track Mind", artist_id: charlie_puth.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/nine-track-mind.jpg")
+
+
+ed_x = Album.create(title: "X", artist_id: ed_sheeran.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/x.jpg")
+
+
+area_a = Album.create(title: "Area", artist_id: mtm.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/area.jpg")
+
+
+love_is_alive = Album.create(title: "Love is Alive EP", artist_id: louis_the_child.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/love-is-alive.jpg")
+
+
+stargazing = Album.create(title: "Stargazing", artist_id: kygo.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/stargazing.jpg")
+
+
+maroon_v = Album.create(title: "V", artist_id: m5.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/v.png")
+
+
+faded = Album.create(title: "Faded", artist_id: alan_walker.id, img_url: "https://s3-us-west-1.amazonaws.com/audifymaster/album_art/Screen+Shot+2018-06-13+at+2.28.51+PM.png")
+
+
+
+
+
+
 
 
 
@@ -164,6 +260,98 @@ rollinginthedeep = Song.create(title: "Rolling in the Deep", album_id: twentyone
 
 
 theoceansong = Song.create(title: "The Ocean", album_id: theocean.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/The+Ocean+(feat.+Shy+Martin).m4a", duration: "183")
+
+
+we_dont_talk = Song.create(title: "We Don't Talk Anymore (feat. Selena Gomez)", album_id: nine_track_mind.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/05+We+Dont+Talk+Anymore+(feat.+Selena+Gomez).m4a", duration: "217")
+
+
+animals = Song.create(title: "Animals", album_id: maroon_v.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Animals+++Maroon+5+++V.mp3", duration: "229")
+
+
+humble = Song.create(title: "HUMBLE.", album_id: damn.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+HUMBLE..m4a", duration: "177")
+
+
+gods_plan = Song.create(title: "God's Plan", album_id: scary_hours.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Gods+Plan.m4a", duration: "199")
+
+
+fix_you = Song.create(title: "Fix You", album_id: xy.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Fix+You.m4a", duration: "295")
+
+
+komh = Song.create(title: "King of My Heart", album_id: reputation.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/10+King+of+My+Heart.m4a", duration: "214")
+
+
+ready_for_it = Song.create(title: "...Ready for it", album_id: reputation.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+...Ready+For+It_.m4a", duration: "208")
+
+
+bib = Song.create(title: "Back in Black", album_id: back_in_black.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Back+In+Black.mp3", duration: "256")
+
+
+faded_s = Song.create(title: "Faded", album_id: faded.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Faded.mp3", duration: "209")
+
+
+it_aint_me = Song.create(title: "It Ain't Me (Original Mix)", album_id: stargazing.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01.+Kygo+%26+Selena+Gomez+-+It+Ain't+Me+(Original+Mix).mp3", duration: "221")
+
+
+shoot_tt = Song.create(title: "Shoot To Thrill", album_id: back_in_black.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Shoot+To+Thrill.mp3", duration: "318")
+
+
+first_time = Song.create(title: "First Time (Original Mix)", album_id: stargazing.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01.+Kygo+%26+Ellie+Goulding+-+First+Time+(Original+Mix).mp3", duration: "193")
+
+
+stargazing_song = Song.create(title: "Stargazing (feat. Justin Jesso)", album_id: stargazing.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Stargazing+(feat.+Justin+Jesso).m4a", duration: "236")
+
+
+area_s = Song.create(title: "Area", album_id: area_a.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Area.m4a", duration: "180")
+
+
+attn = Song.create(title: "Attention", album_id: voice_notes.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Attention.m4a", duration: "211")
+
+
+slow_down = Song.create(title: "Slow Down Love (feat. Chelsea Cut)", album_id: love_is_alive.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/03+Slow+Down+Love+(feat.+Chelsea+Cut.m4a", duration: "157")
+
+
+perfect = Song.create(title: "Perfect", album_id: ed_divide.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/05+Perfect.m4a", duration: "263")
+
+
+shape_of_you = Song.create(title: "Shape of You", album_id: ed_divide.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/04+Shape+of+You.m4a", duration: "233")
+
+
+hc = Song.create(title: "Guillotine (feat. Travis Mendes)", album_id: the_human_condition.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Guillotine+(feat.+Travis+Mendes).m4a", duration: "208")
+
+
+
+coth = Song.create(title: "Castle on the Hill", album_id: ed_divide.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/02+Castle+on+the+Hill.m4a", duration: "261")
+
+
+all_time_low = Song.create(title: "All Time Low", album_id: the_human_condition.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/All+Time+Low.mp3", duration: "221")
+
+stay = Song.create(title: "S.T.A.Y.", album_id: interstellar.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/15.+S.T.A.Y..mp3", duration: "383")
+
+
+coward = Song.create(title: "Coward", album_id: interstellar.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/13.+Coward.mp3", duration: "506")
+
+
+mountains = Song.create(title: "Mountains", album_id: interstellar.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/08.+Mountains.mp3", duration: "219")
+
+
+cornfield = Song.create(title: "Cornfield Chase", album_id: interstellar.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/02.+Cornfield+Chase.mp3", duration: "127")
+
+
+i_see_fire = Song.create(title: "I See Fire", album_id: ed_x.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Ed+Sheeran+-+I+See+Fire.mp3", duration: "300")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
