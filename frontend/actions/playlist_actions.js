@@ -8,9 +8,11 @@ export const fetchPlaylists = () => dispatch => (
     PlaylistUtil.fetchPlaylists().then(playlists => dispatch({ type: RECEIVE_ALL_PLAYLISTS, playlists }))
 );
 
-export const fetchPlaylist = id => dispatch => (
+export const fetchPlaylist = id => dispatch => {
+
+    return (
     PlaylistUtil.fetchPlaylist(id).then(playlist => dispatch({ type: RECEIVE_PLAYLIST, playlist }))
-);
+);}
 
 export const createPlaylist = playlist => dispatch => {
    return PlaylistUtil.createPlaylist(playlist).then(playlist => dispatch({ type: RECEIVE_PLAYLIST, playlist }))

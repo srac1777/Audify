@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create]
     resources :playlists, only: [:index, :create, :destroy, :show, :update]
-    resources :songs, only: [:index]
+    resources :songs, only: [:index, :show]
     resources :playlist_songs, only: [:index, :create]
     # destroy "/api/playlist_songs/:playlist_id/:song_id", "PlaylistSongsController#destroy"
     # resources :search, only: [:index]

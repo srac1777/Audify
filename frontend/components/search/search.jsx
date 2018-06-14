@@ -1,5 +1,5 @@
 import React from 'react';
-import SRIndexItem from './sr_index_item';
+import SRIndexItemContainer from './sr_index_item_container';
 
 class Search extends React.Component {
     constructor(props){
@@ -30,10 +30,9 @@ class Search extends React.Component {
     render() {
         let sr;
         if(typeof this.state.searchResults === 'undefined'){
-            sr = <p></p>
+            sr = <p>no results</p>
         } else {
-            // debugger
-            sr = this.state.searchResults.map( (result, idx) => (<SRIndexItem 
+            sr = this.state.searchResults.map( (result, idx) => (<SRIndexItemContainer 
                                                                         key={idx}
                                                                         result={result}
                                                                         />) )
