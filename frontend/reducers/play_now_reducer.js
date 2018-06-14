@@ -26,7 +26,7 @@ import { UPDATE_NWPL } from '../actions/update_nwpl_action';
 
 const playNowReducer = (state = {}, action) => {
     Object.freeze(state);
-    console.log(action);
+    // console.log(action);
     
     switch (action.type) {
         case PLAY_NOW:

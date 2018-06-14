@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :songs, only: [:index]
     resources :playlist_songs, only: [:index, :create]
     # destroy "/api/playlist_songs/:playlist_id/:song_id", "PlaylistSongsController#destroy"
+    # resources :search, only: [:index]
+    get '/search', to: 'search#index'
 
     delete '/playlist_songs/:playlist_id/:song_id', to: 'playlist_songs#destroy'
     get '/playlist_songs', to: 'playlist_songs#index'
@@ -14,6 +16,5 @@ Rails.application.routes.draw do
 
     resource :session, only: [:create, :destroy]
   end
-  
   root "static_pages#root"
 end

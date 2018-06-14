@@ -13,6 +13,8 @@
 
 class Song < ApplicationRecord 
     validates_presence_of :title, :album_id, :song_url, :duration
+    include PgSearch
+        multisearchable :against => [:title]
 
     belongs_to :album
     

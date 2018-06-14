@@ -12,7 +12,7 @@ import AddtoPlaylistContainer from './add_to_playlist/atp_container';
 import { logout } from '../actions/session_actions';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import { fetchSongs } from '../actions/song_actions';
-import SearchPage from './search/seach';
+import SearchPage from './search/search_container';
 import LibraryPage from './library/library';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';

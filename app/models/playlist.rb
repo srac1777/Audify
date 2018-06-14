@@ -9,6 +9,8 @@
 
 class Playlist < ApplicationRecord
     validates_presence_of :title, :creator_id
+    include PgSearch
+        multisearchable :against => [:title]
 
     belongs_to :creator,
         class_name: :User,
