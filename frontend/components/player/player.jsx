@@ -65,9 +65,10 @@ class Player extends React.Component {
     }
 
     rewind() {
-        let current_song_index = this.props.now_playing_queue.findIndex(song => this.props.now_playing_song === song)
-        let prev_song = this.props.now_playing_queue[current_song_index + 1]
-        this.props.updateNwpl(prev_song);
+        let current_song_index = this.props.now_playing_index;
+        this.props.updateNwpl(current_song_index - 1);
+        // let prev_song = this.props.now_playing_queue[current_song_index + 1]
+        // this.props.updateNwpl(prev_song);
     }
 
     ref(player){
