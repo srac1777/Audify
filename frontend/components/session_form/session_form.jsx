@@ -77,9 +77,9 @@ class SessionForm extends React.Component {
 
         return (
             <div className="AllSession">
-               
+                <div className="sessionlogo-container">
                     <div className="sessionlogo"></div>
-                
+                </div>
                 <div className="allform">
                     {demo}
                 <form>

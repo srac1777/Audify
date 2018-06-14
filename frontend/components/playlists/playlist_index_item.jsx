@@ -15,7 +15,7 @@ class PlaylistIndexItem extends React.Component {
         let img_src;
         // console.log(this.props.playlist, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
         // console.log(songs, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
-        if (typeof songs === 'undefined' ||songs.join() === ''){
+        if (typeof songs === 'undefined' || songs.join() === ''){
             img_src = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
         } else {
             img_src = songs[0].album_art

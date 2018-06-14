@@ -10,24 +10,28 @@
     flex-wrap: nowrap;
 }
 
-// .sessionlogo-container {
-//     // display: flex;
-//     // justify-content: center;
-//     // align-items: center;
-// }
+.sessionlogo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    width: 100vw;
+}
 
 .sessionlogo {
     background: image-url("Audify-black-2.png");
-    height: 70px;
-    background-size: 14% auto;
+    height: 60px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    width: 100%; 
+    width: 170px; 
     // background-position-x: 540px;
-    align-self: center;
-    background-position-y: 25px;
-    border-bottom: 1px solid lightgray;
+    // align-self: center;
+    // background-position-y: 25px;
+    
     // background: red;
-    padding: 19px 0;
+    // padding: 19px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .demo-login-fb {
