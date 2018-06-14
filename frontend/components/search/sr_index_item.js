@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { debug } from 'util';
+import PlaylistSongsIndexItem from '../songs/pl_songs_index_item';
 
 class SRIndexItem extends React.Component {
     constructor(props){
@@ -32,7 +32,11 @@ class SRIndexItem extends React.Component {
         
 
     }
-}
+    }
+
+    // componentWillUnmount(){
+    //     this.setState({ searchResultPlaylist: '', searchResultSong: ''})
+    // }
 
     // componentWillReceiveProps(newProps){
     //     if(this.props.result !== newProps.result){
@@ -62,13 +66,23 @@ class SRIndexItem extends React.Component {
         if (this.state.searchResultPlaylist === '' && this.state.searchResultSong === ''){
             return <div>hello</div>
         }
-
         // debugger
+        debugger
         return (
             <div>
                 <li>
-                    {this.state.searchResultPlaylist.title}
+                    <Link to={`/playlists/${this.state.searchResultPlaylist.id}`}>{this.state.searchResultPlaylist.title}</Link>
                     {this.state.searchResultSong.title}
+                    <PlaylistSongsIndexItem 
+                        
+                        song={this.state.searchResultSong}
+                        idx={this.props.send_key}
+                        playlist={this.props.playlist}
+                        playNow={this.props.playNow}
+                        current_songs_list={[this.state.searchResultSong]}
+                        nowPlayingQueue={this.props.nowPlayingQueue}
+                        now_pl_green={this.props.now_pl_green}
+                    />
                     {/* hi{searchResultSong.title}hello{searchResultSong.duration} */}
                 </li>
             </div>

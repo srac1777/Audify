@@ -11,7 +11,7 @@ class PlaylistShow extends React.Component {
         // this.playlist = this.props.fetchPlaylist(props.ownProps.params.match.playlistId)
     }
     componentWillMount(){
-        console.log("in will");
+        // console.log("in will");
         
         this.props.fetchPlaylists().then(this.props.fetchSongs).then(this.props.fetchPlaylistSongs)
         // this.props.fetchPlaylist(this.props.ownProps.match.params.playlistId)

@@ -18,7 +18,7 @@ const msp = (state, ownProps) => {
     // let test = fetchSongs();
     // console.log(test);
     // debugger
-    console.log(state,"lokolol");
+    // console.log(state,"lokolol");
     
     return {
     playlist: state.entities.playlists[ownProps.match.params.playlistId],

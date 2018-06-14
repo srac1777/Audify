@@ -34,6 +34,7 @@ class Search extends React.Component {
         } else {
             sr = this.state.searchResults.map( (result, idx) => (<SRIndexItemContainer 
                                                                         key={idx}
+                                                                        send_key={idx}
                                                                         result={result}
                                                                         />) )
         }
