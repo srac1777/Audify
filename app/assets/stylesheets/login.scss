@@ -60,7 +60,13 @@
     margin: 15px 0;
     box-sizing: border-box;
     border: 1px solid rgb(217,218,220);    
-    font-size: 16px;    
+    font-size: 16px;  
+    // color: red;  
+}
+
+.usernameform::placeholder {
+    color: rgba(black, 0.9)
+    // color: red;  
 }
 
 .usernameform:focus {
@@ -89,8 +95,9 @@
     transition: 0.5s; 
 }
 
-::placeholder { 
-    color: #C1C3C6;
+.passwordform::placeholder {
+    color: rgba(black, 0.9)
+    // color: red;  
 }
 
 .or {
