@@ -39,6 +39,9 @@ class Player extends React.Component {
         // if(current_song_index+1 === this.props.now_playing_queue.length){
         //     this.resetNwpl();
         // } else {
+            if (typeof this.props.now_playing_queue[current_song_index + 1] === 'undefined'){
+                this.setState({ play_pause_toggle: false })
+            }
             this.props.updateNwpl(current_song_index + 1);
         // }
 
@@ -61,11 +64,19 @@ class Player extends React.Component {
     }
 
     forward(){
+        let current_song_index = this.props.now_playing_index
+
+        if (typeof this.props.now_playing_queue[current_song_index + 1] === 'undefined') {
+            this.setState({ play_pause_toggle: false })
+        }
         this.play_next()
     }
 
     rewind() {
         let current_song_index = this.props.now_playing_index;
+        if (typeof this.props.now_playing_queue[current_song_index + 1] === 'undefined') {
+            this.setState({ play_pause_toggle: false })
+        }
         this.props.updateNwpl(current_song_index - 1);
         // let prev_song = this.props.now_playing_queue[current_song_index + 1]
         // this.props.updateNwpl(prev_song);

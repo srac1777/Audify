@@ -23,7 +23,7 @@ class SRIndexItem extends React.Component {
             )
             
         } else if (this.props.result.searchable_type === 'Song') {
-            debugger
+            // debugger
             this.props.fetchSong(this.props.result.searchable_id).then( (songsa) => {
                 // debugger
                 this.setState({searchResultSong: songsa.song })
@@ -45,6 +45,8 @@ class SRIndexItem extends React.Component {
     // }
 
     render() {
+        let songs_render; 
+        let playlist_render;
         // let songs = this.props.playlist.songs
         // let img_src;
         // // console.log(this.props.playlist, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
@@ -63,26 +65,42 @@ class SRIndexItem extends React.Component {
         //     debugger
         //      searchResultSong = this.props.songs[this.props.result.searchable_id]
         // }
+
         if (this.state.searchResultPlaylist === '' && this.state.searchResultSong === ''){
             return <div>hello</div>
         }
+
+        if(this.state.searchResultPlaylist === ''){
+            // debugger
+            playlist_render = <p></p>
+        } else {
+            playlist_render = (<Link to={`/playlists/${this.state.searchResultPlaylist.id}`}><img src={this.state.searchResultPlaylist.album_art}></img>{this.state.searchResultPlaylist.title}</Link>)
+        }
+
+        if(this.state.searchResultSong === ''){
+            songs_render = <p></p>
+        } else {
+            songs_render = (<PlaylistSongsIndexItem
+
+                song={this.state.searchResultSong}
+                idx={this.props.send_key}
+                playlist={this.props.playlist}
+                playNow={this.props.playNow}
+                current_songs_list={[this.state.searchResultSong]}
+                nowPlayingQueue={this.props.nowPlayingQueue}
+                now_pl_green={this.props.now_pl_green}
+            />)
+        }
+
+
         // debugger
-        debugger
+        // debugger
         return (
             <div>
                 <li>
-                    <Link to={`/playlists/${this.state.searchResultPlaylist.id}`}>{this.state.searchResultPlaylist.title}</Link>
-                    {this.state.searchResultSong.title}
-                    <PlaylistSongsIndexItem 
-                        
-                        song={this.state.searchResultSong}
-                        idx={this.props.send_key}
-                        playlist={this.props.playlist}
-                        playNow={this.props.playNow}
-                        current_songs_list={[this.state.searchResultSong]}
-                        nowPlayingQueue={this.props.nowPlayingQueue}
-                        now_pl_green={this.props.now_pl_green}
-                    />
+                    <div>{playlist_render}</div>
+                    <div>{songs_render}</div>
+                    
                     {/* hi{searchResultSong.title}hello{searchResultSong.duration} */}
                 </li>
             </div>
