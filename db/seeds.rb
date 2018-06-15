@@ -7,6 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 jeff = User.create(username: "itspronouncedjif", password: "password");
+tony = User.create(username: "Tony", password: "password");
+bruce = User.create(username: "Bruce", password: "password");
+peter = User.create(username: "Peter", password: "password");
+kal = User.create(username: "Kal", password: "password");
+strange = User.create(username: "S.V.Strange", password: "password");
+diana = User.create(username: "Diana", password: "password");
+
 
 
 
@@ -316,7 +323,7 @@ perfect = Song.create(title: "Perfect", album_id: ed_divide.id, song_url: "https
 shape_of_you = Song.create(title: "Shape of You", album_id: ed_divide.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/04+Shape+of+You.m4a", duration: "233")
 
 
-hc = Song.create(title: "Guillotine (feat. Travis Mendes)", album_id: the_human_condition.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Guillotine+(feat.+Travis+Mendes).m4a", duration: "208")
+ghc = Song.create(title: "Guillotine (feat. Travis Mendes)", album_id: the_human_condition.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/01+Guillotine+(feat.+Travis+Mendes).m4a", duration: "208")
 
 
 
@@ -340,6 +347,159 @@ cornfield = Song.create(title: "Cornfield Chase", album_id: interstellar.id, son
 i_see_fire = Song.create(title: "I See Fire", album_id: ed_x.id, song_url: "https://s3-us-west-1.amazonaws.com/audifymaster/songs/Ed+Sheeran+-+I+See+Fire.mp3", duration: "300")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Playlists
+
+#jeff
+jeffp1 = Playlist.create(title: "Manic Mornings", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: i_see_fire.id)
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: coward.id)
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: coth.id)
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: perfect.id)
+    PlaylistSong.create(playlist_id: jeffp1.id, song_id: bib.id)
+
+jeffp2 = Playlist.create(title: "This Is Post Malone", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp2.id, song_id: rockstar.id)
+    PlaylistSong.create(playlist_id: jeffp2.id, song_id: goflex.id)
+    PlaylistSong.create(playlist_id: jeffp2.id, song_id: wi.id)
+    PlaylistSong.create(playlist_id: jeffp2.id, song_id: congratulations.id)
+
+jeffp3 = Playlist.create(title: "Vocals", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp3.id, song_id: i_see_fire.id)
+    PlaylistSong.create(playlist_id: jeffp3.id, song_id: hello.id)
+    PlaylistSong.create(playlist_id: jeffp3.id, song_id: rollinginthedeep.id)
+    PlaylistSong.create(playlist_id: jeffp3.id, song_id: rollinginthedeep.id)
+
+jeffp4 = Playlist.create(title: "Vibes", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: we_dont_talk.id)
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: jeffp4.id, song_id: wi.id)
+
+jeffp5 = Playlist.create(title: "Chill", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: faded_s.id)
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: jeffp5.id, song_id: it_aint_me.id)
+
+jeffp6 = Playlist.create(title: "Vibes", creator_id: jeff.id)
+
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: getlucky.id)
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: jeffp6.id, song_id: wi.id)
+
+jeffp7 = Playlist.create(title: "Digging Now", creator_id: jeff.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: we_dont_talk.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: shape_of_you.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: area_s.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: jeffp7.id, song_id: congratulations.id)
+#Tony
+
+tonyp1 = Playlist.create(title: "I am ironman", creator_id: tony.id)
+
+    PlaylistSong.create(playlist_id: tonyp1.id, song_id: shoot_tt.id)
+    PlaylistSong.create(playlist_id: tonyp1.id, song_id: back_in_black.id)
+    PlaylistSong.create(playlist_id: tonyp1.id, song_id: goflex.id)
+
+#bruce
+
+brucep1 = Playlist.create(title: "Black", creator_id: bruce.id)
+
+    PlaylistSong.create(playlist_id: brucep1.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: brucep1.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: brucep1.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: brucep1.id, song_id: all_time_low.id)
+    PlaylistSong.create(playlist_id: brucep1.id, song_id: fix_you.id)
+
+brucep2 = Playlist.create(title: "Nanananana", creator_id: bruce.id)
+
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: perfect.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: stay.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: back_in_black.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: wi.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: brucep2.id, song_id: ghc.id)
+
+#diana 
+
+dianap1 = Playlist.create(title: "W", creator_id: diana.id)
+
+    PlaylistSong.create(playlist_id: dianap1.id, song_id: radioactive.id)
+    PlaylistSong.create(playlist_id: dianap1.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: dianap1.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: dianap1.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: dianap1.id, song_id: fix_you.id)
+
+peterp1 = Playlist.create(title: "Great Power", creator_id: peter.id)
+
+    PlaylistSong.create(playlist_id: peterp1.id, song_id: humble.id)
+    PlaylistSong.create(playlist_id: peterp1.id, song_id: theoceansong.id)
+    PlaylistSong.create(playlist_id: peterp1.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: peterp1.id, song_id: animals.id)
+
+peterp2 = Playlist.create(title: "Great Responsibility", creator_id: peter.id)
+
+    PlaylistSong.create(playlist_id: peterp2.id, song_id: gods_plan.id)
+    PlaylistSong.create(playlist_id: peterp2.id, song_id: it_aint_me.id)
+    PlaylistSong.create(playlist_id: peterp2.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: peterp2.id, song_id: ghc.id)
+    PlaylistSong.create(playlist_id: peterp2.id, song_id: coth.id)
+
+
+
+kalp1 = Playlist.create(title: "Steel", creator_id: kal.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: demons.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: it_aint_me.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: komh.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: back_in_black.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: fix_you.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: ghc.id)
+    PlaylistSong.create(playlist_id: kalp1.id, song_id: coth.id)
+
+strangep1 = Playlist.create(title: "Meditate", creator_id: strange.id)
+
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: whateverittakes.id)
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: ready_for_it.id)
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: paradise.id)
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: stargazing_song.id)
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: all_time_low.id)
+    PlaylistSong.create(playlist_id: strangep1.id, song_id: fix_you.id)
 
 
 

@@ -65,13 +65,19 @@ class PlaylistShow extends React.Component {
 
         let delbtn;
         let renamebtn;
+        let fbtn;
+        let ubtn;
         // debugger
         if(this.props.playlist.creator_id === this.props.currentUser.id){
             delbtn = <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
             renamebtn = <div><button className="pl-rename-button" onClick={this.handleEdit.bind(this)}>rename</button></div>
+            fbtn = <div></div>
+            ubtn = <div></div>
         } else {
             delbtn = <div></div>
             renamebtn = <div></div>
+            fbtn = <div><button className="pl-rename-button" onClick={this.handleFollow.bind(this)}>Follow</button></div>
+            ubtn = <div><button className="pl-rename-button" onClick={this.handleUnfollow.bind(this)}>Unfollow</button></div>
         }
         return (
             <div className="playlist-show">
@@ -85,8 +91,9 @@ class PlaylistShow extends React.Component {
                         <div className="pl-show-left-buttons">
                             {renamebtn}
                             {delbtn}
-                            <div><button className="pl-rename-button" onClick={this.handleFollow.bind(this)}>Follow</button></div>
-                            <div><button className="pl-rename-button" onClick={this.handleUnfollow.bind(this)}>Unfollow</button></div>
+                            {fbtn}
+                            {ubtn}
+                            
                         </div>
                     </div>
                <div className="pl-songs-container"><ul>

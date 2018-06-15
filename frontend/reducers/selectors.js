@@ -34,3 +34,16 @@ export const getFilteredPlaylists = (state) => {
 
     return result;
 };
+
+
+export const getFilteredOtherPlaylists = (state) => {
+
+    let result = [];
+    for (let id in state.entities.playlists) {
+        if (state.entities.playlists[id].creator_id !== state.session.currentUser.id) {
+            result.push(state.entities.playlists[id])
+        }
+    }
+
+    return result;
+};
