@@ -16,7 +16,9 @@ class BrowsePage extends React.Component {
             return (<div></div>);
         }
         return (
-            <div className="browse-page">
+        <div className="browse-full-container">
+            <div className="browse-title">Browse playlists by other Audify users</div>
+            <div className="browse-page-full">
                 {this.props.all_playlists.map( each_p => (<BrowsePageItem
                                                                             key={each_p.id}
                                                                             each_p={each_p}
@@ -24,6 +26,7 @@ class BrowsePage extends React.Component {
                                                                             )
                                                                         }
             </div>
+        </div>
         );
     }
 }

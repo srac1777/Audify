@@ -44,10 +44,16 @@ class BrowsePageItem extends React.Component {
 
         return (
             <div className="each-pf" >
-                <div className="">
-                    <div className="link-t"><Link to={`/playlists/${this.props.each_p.id}`}><img src={img_url}></img>{this.props.each_p.title}</Link></div>
-                    {/* <div className="">{this.props.song.album_title}</div> */}
-                </div>
+                
+                    <Link to={`/playlists/${this.props.each_p.id}`}>
+                        <div className="each-pf-item">
+                            <div><img className="browse-aa" src={img_url}></img></div>
+                            <div className="each-pf-item-title">{this.props.each_p.title}</div>
+                            <div className="each-pf-item-by">by</div>
+                            <div className="each-pf-item-creator">{this.props.each_p.creator_name}</div>
+                        </div>
+                    </Link>
+                
             </div>
         );
     }

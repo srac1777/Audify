@@ -62,6 +62,17 @@ class PlaylistShow extends React.Component {
         } else {
             img_src = songs[0].album_art
         }
+
+        let delbtn;
+        let renamebtn;
+        // debugger
+        if(this.props.playlist.creator_id === this.props.currentUser.id){
+            delbtn = <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
+            renamebtn = <div><button className="pl-rename-button" onClick={this.handleEdit.bind(this)}>rename</button></div>
+        } else {
+            delbtn = <div></div>
+            renamebtn = <div></div>
+        }
         return (
             <div className="playlist-show">
                    {/* <Modal /> */}
@@ -70,9 +81,10 @@ class PlaylistShow extends React.Component {
                    <div className="left-pl-show">
                         <div><img className="pl-show-img" src={img_src}></img></div>
                         <div className="pl-show-title">{this.props.playlist.title}</div>
+                        <div className="pl-show-title-creator">by {this.props.playlist.creator_name}</div>
                         <div className="pl-show-left-buttons">
-                            <div><button className="pl-rename-button" onClick={this.handleEdit.bind(this)}>rename</button></div>
-                            <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
+                            {renamebtn}
+                            {delbtn}
                             <div><button className="pl-rename-button" onClick={this.handleFollow.bind(this)}>Follow</button></div>
                             <div><button className="pl-rename-button" onClick={this.handleUnfollow.bind(this)}>Unfollow</button></div>
                         </div>

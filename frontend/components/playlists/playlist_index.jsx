@@ -5,7 +5,9 @@ import Modal from '../modal/modal_np';
 import {NavLink} from 'react-router-dom';
 
 class PlaylistIndex extends React.Component {
-    
+    componentDidMount(){
+        this.props.fetchPlaylists()
+    }
 
     handleClick() {
         this.props.openModal('np')
@@ -13,7 +15,7 @@ class PlaylistIndex extends React.Component {
 
     
     render() {
-        console.log(this.props.playlists);
+        // console.log(this.props.playlists);
         
         return (
             <div className="full-playlists-index">
