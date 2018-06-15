@@ -1,6 +1,6 @@
 import React from 'react';
 
-class LibraryPage extends React.Component {
+class BrowsePage extends React.Component {
     render() {
         return (
             <div className="library-page">
@@ -10,4 +10,4 @@ class LibraryPage extends React.Component {
     }
 }
 
-export default LibraryPage;
+export default BrowsePage;

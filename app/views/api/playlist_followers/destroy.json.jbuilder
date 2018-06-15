@@ -1,0 +1,1 @@
+json.extract! @fakepf, :id, :playlist_id, :user_id

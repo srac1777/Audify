@@ -1,0 +1,1 @@
+json.extract! @playlistfollower, :id, :playlist_id, :user_id

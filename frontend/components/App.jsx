@@ -13,22 +13,15 @@ import { logout } from '../actions/session_actions';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import { fetchSongs } from '../actions/song_actions';
 import SearchPage from './search/search_container';
-import LibraryPage from './library/library';
+import BrowsePage from './library/library';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';
 import sidebar_container from './temp/sidebar_container';
 
 const App = ({store}) => {
-    // let st = props.store.getState();
     let landing_render, footer_render;
     let SidebarLinks, selected;
-    // console.log(op, "hihiiihihi");
 
-    // let sidebar_wp = store => {
-    //     return(
-    //         <Sidebar state={store.getState()}/>
-    //     )
-    // }
     
     return (<div className="AppComponent">
         <div className="inAppComponent">
@@ -40,7 +33,7 @@ const App = ({store}) => {
                         <AuthRoute path="/login" component={LogInFormContainer} />
                         <AuthRoute path="/signup" component={SignUpFormContainer} />
                         <ProtectedRoute exact path="/home" component={HomePage} />
-                        <ProtectedRoute exact path="/library" component={LibraryPage} />
+                        <ProtectedRoute exact path="/browse" component={BrowsePage} />
                         <ProtectedRoute exact path="/search" component={SearchPage} />
 
                         <ProtectedRoute exact path="/playlists/:playlistId" component={PlaylistShowPage} />

@@ -14,6 +14,11 @@ Rails.application.routes.draw do
     post '/playlist_songs', to: 'playlist_songs#create'
 
 
+    delete '/playlist_followers/:playlist_id/:user_id', to: 'playlist_followers#destroy'
+    get '/playlist_followers', to: 'playlist_followers#index'
+    post '/playlist_followers', to: 'playlist_followers#create'
+
+
     resource :session, only: [:create, :destroy]
   end
   root "static_pages#root"

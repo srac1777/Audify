@@ -5,6 +5,7 @@
 #  id         :bigint(8)        not null, primary key
 #  title      :string           not null
 #  creator_id :integer          not null
+#  img_url    :string
 #
 
 class Playlist < ApplicationRecord
@@ -20,5 +21,11 @@ class Playlist < ApplicationRecord
         foreign_key: :playlist_id,
         class_name: :PlaylistSong
     has_many :songs, through: :playlist_songs
+
+
+    has_many :playlist_followers,
+        foreign_key: :playlist_id,
+        class_name: :PlaylistFollower
+    has_many :followers, through: :playlist_followers
 
 end

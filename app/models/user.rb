@@ -22,6 +22,11 @@ class User < ApplicationRecord
         class_name: Playlist,
         foreign_key: :creator_id
 
+    has_many :playlist_followers,
+        foreign_key: :user_id,
+        class_name: :PlaylistFollower
+    has_many :followed_playlists, through: :playlist_followers
+
     
     def password=(password)
         @password = password
