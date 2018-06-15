@@ -1,0 +1,1980 @@
+/* line 5, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.container {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+/* line 25, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.new-playlist-button {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 10px;
+  border-radius: 50px;
+  width: 123px;
+  height: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+/* line 41, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.new-playlist-button:hover {
+  background: #18d45f;
+}
+
+/* line 47, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.np-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 53, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.playlist-index-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+/* line 72, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.homePlaylistIndex ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 260px;
+}
+
+/* line 79, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.homePlaylistIndex ul li {
+  margin: 0;
+  padding: 50px 20px 70px 20px;
+}
+
+/* line 84, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.album-art-pl-index {
+  width: 180px;
+  height: 180px;
+  -webkit-box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  transition: 0.2s;
+}
+
+/* line 95, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.album-art-pl-index:hover {
+  transform: scale(1.03, 1.03);
+  transition: 0.2s;
+  -webkit-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+}
+
+/* line 106, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.album-art-pl-index:active {
+  width: 187px;
+  height: 187px;
+  transition: 0.2s;
+  -webkit-box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+}
+
+/* line 116, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-index.scss */
+.playlist-title-index-page {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.playlist-show {
+  padding-left: 240px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 11, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.left-pl-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 0px;
+}
+
+/* line 20, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-rename-button {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 10px;
+  border-radius: 50px;
+  width: 123px;
+  height: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  align-self: center;
+  display: inline;
+}
+
+/* line 37, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-rename-button:hover {
+  background: #18d45f;
+  transition: 0.2s;
+}
+
+/* line 42, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.delete-pl-button {
+  color: lightgray;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  width: 121px;
+  height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  border: 2px solid lightgray;
+  align-self: center;
+  display: inline;
+}
+
+/* line 59, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.delete-pl-button:hover {
+  color: white;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+/* line 65, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-show-left-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+/* line 73, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-show-img {
+  height: 300px;
+  width: 300px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  margin-left: 50px;
+  -webkit-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+}
+
+/* line 86, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-show-title {
+  font-family: 'spotifybold';
+  font-size: 30px;
+  margin: 5px 0 10px 0;
+}
+
+/* line 92, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-songs-container {
+  margin-top: 20px;
+  margin-bottom: 120px;
+  height: 85vh;
+  overflow: auto;
+}
+
+/* line 101, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-songs-container::-webkit-scrollbar {
+  width: 0em;
+}
+
+/* line 105, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.right-pl-show {
+  width: 45vw;
+  margin-left: 50px;
+}
+
+/* line 114, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-each-song {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 10px;
+  transition: 0.2s;
+  line-height: 26px;
+}
+
+/* line 125, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.remove-song-from-pl {
+  display: none;
+}
+
+/* line 129, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-each-song:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+/* line 130, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-each-song:hover .music-note-icon {
+  background: url(/assets/music-note-hover-2f00f9d5b8a7972b2072f232d89dab2f321f560fda41ca3a84596672d0db071a.png);
+  width: 30px;
+  height: 30px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+}
+/* line 140, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-each-song:hover .remove-song-from-pl {
+  display: inline;
+}
+
+/* line 148, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-song-first {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  cursor: pointer;
+}
+
+/* line 155, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.music-note-icon:hover {
+  background: url(/assets/music-note-hover-2f00f9d5b8a7972b2072f232d89dab2f321f560fda41ca3a84596672d0db071a.png);
+}
+
+/* line 159, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-song-title {
+  align-self: center;
+  color: white;
+}
+
+/* line 165, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-artist-album-separator {
+  padding: 0 7px;
+  font-size: 12px;
+}
+
+/* line 170, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-song-details {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 176, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-song-details:hover {
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* line 183, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.pl-left-song {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 188, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.rsfp-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+/* line 196, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/playlist-show.scss */
+.rsfp-text:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 5px;
+  transition: 0.5s;
+}
+/* line 24, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.songs-index-items-container {
+  padding-left: 40px;
+  margin-left: 220px;
+  margin-bottom: 110px;
+}
+
+/* line 31, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.each-song {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 7px;
+  transition: 0.2s;
+  line-height: 26px;
+}
+
+/* line 42, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.container2 {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+/* line 54, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.new-playlist-button4 {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  padding: 10px;
+  border-radius: 50px;
+  width: 123px;
+  height: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  color: transparent;
+  cursor: default;
+}
+
+/* line 71, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.new-playlist-button2 {
+  display: none;
+}
+
+/* line 98, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropbtn {
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  margin-right: 50px;
+}
+
+/* line 109, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.each-song:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+/* line 110, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.each-song:hover .music-note-icon {
+  background: url(/assets/music-note-hover-2f00f9d5b8a7972b2072f232d89dab2f321f560fda41ca3a84596672d0db071a.png);
+  width: 30px;
+  height: 30px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+}
+/* line 120, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.each-song:hover .dropbtn {
+  color: white;
+  font-size: 20.5px;
+  border: none;
+  cursor: pointer;
+  display: inline;
+}
+
+/* line 137, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.music-note-icon {
+  background: url(/assets/music-note-d494fe1ca0908e4e6a4d5e85376fe2b83e7b2751aec4944126f78aa8e0468743.png);
+  width: 30px;
+  height: 30px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+}
+
+/* line 147, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.song-first {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  width: 70vw;
+}
+
+/* line 154, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.music-note-icon:hover {
+  background: url(/assets/music-note-hover-2f00f9d5b8a7972b2072f232d89dab2f321f560fda41ca3a84596672d0db071a.png);
+}
+
+/* line 158, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.song-title {
+  align-self: center;
+  color: white;
+}
+
+/* line 164, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.artist-album-separator {
+  padding: 0 7px;
+  font-size: 12px;
+}
+
+/* line 169, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.song-details {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 175, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.song-details:hover {
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* line 185, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  letter-spacing: 3px;
+}
+
+/* line 196, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropbtn:hover, .dropbtn:focus {
+  font-size: 21px;
+  letter-spacing: 3.6px;
+}
+
+/* line 201, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 207, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #282828;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  right: 40px;
+}
+/* line 218, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropdown-content button, .dropdown-content input[type="submit"] {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* line 225, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropdown-content a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  display: block;
+}
+
+/* line 235, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 237, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.show {
+  display: block;
+}
+
+/* line 239, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.dur {
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 245, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.left-song {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 250, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/api/songs.scss */
+.apply-green-nwpl {
+  color: #1cb953;
+}
+@font-face {
+  font-family: 'spotifybold';
+  src: url("data:application/font-otf;charset=utf-8;base64,T1RUTwAMAIAAAwBAQ0ZGIMIh0usAABa4AABs50RTSUcAAAACAACDoAAAAAhHUE9TKFCFlAAAg6gAAJO4R1NVQsrB0NgAARdgAAALIE9TLzJQOVGKAAABMAAAAGBjbWFwHBTc1gAACtgAAAReaGVhZAAFLDgAAADMAAAANmhoZWEJvQbXAAABBAAAACRobXR4BvxKGgAADzgAAAdgbWF4cAHYUAAAAAEoAAAABm5hbWWSpAw4AAABkAAACUVwb3N0/2gAUAAAFpgAAAAgAAEAAAABAEKHlBFJXw889QADA+gAAAAAzYx7GgAAAADNjG0P/8n/BAYMA+UAAAAHAAIAAAAAAAAAAQAAA+X+9AAABjr/yf/QBgwAAQAAAAAAAAAAAAAAAAAAAdgAAFAAAdgAAAAEAjICvAAFAAQCigJYAAAASwKKAlgAAAFeAFABJwAAAgsIBAIBAQEBAoAAAC9QAOR7AAAACAAAAABMTlRPAIAAAP7/Ayn/QQDIA+UBDCAAAAEAAAAAAewCxQAAACAACwAAACIBngABAAAAAAAAADwAAAABAAAAAAABAAwAPAABAAAAAAACAAQASAABAAAAAAADAB8ATAABAAAAAAAEABEAawABAAAAAAAFABkAfAABAAAAAAAGABAAlQABAAAAAAAHACEApQABAAAAAAAIAAYAxgABAAAAAAAJAA8AzAABAAAAAAALABUA2wABAAAAAAAMACMA8AABAAAAAAANAUQBEwABAAAAAAAOAC8CVwABAAAAAAAVABEAawABAAAAAAAWAAcChgADAAEECQAAAHgCjQADAAEECQABACIDBQADAAEECQACAA4DJwADAAEECQADAD4DNQADAAEECQAEACADcwADAAEECQAFADIDkwADAAEECQAGACADcwADAAEECQAHAEIDxQADAAEECQAIAAwEBwADAAEECQAJAB4EEwADAAEECQALACoEMQADAAEECQAMAEYEWwADAAEECQANAogEoQADAAEECQAOAF4HKQADAAEECQAQABgHhwADAAEECQARAAgHnwADAAEECQAVACIDBQADAAEECQAWAA4DJ0dlbmVyYXRlZCBpbiAyMDEzIGJ5IEZvbnRMYWIgU3R1ZGlvLiBDb3B5cmlnaHQgaW5mbyBwZW5kaW5nLkNpcmN1bGFyIFN0ZEJvbGRMaW5ldG86IENpcmN1bGFyIFN0ZC1Cb2xkOiAyMDEzQ2lyY3VsYXIgU3RkIEJvbGRWZXJzaW9uIDEuMDAxOyBidWlsZCAwMDAyQ2lyY3VsYXJTdGQtQm9sZENpcmN1bGFyIGlzIGEgdHJhZGVtYXJrIG9mIExpbmV0b0xpbmV0b0xhdXJlbnogQnJ1bm5lcmh0dHA6Ly93d3cubGluZXRvLmNvbWh0dHA6Ly93d3cubGluZXRvLmNvbS9UaGUrRGVzaWduZXJzTGF3ZnVsIHVzZSBvZiB0aGUgZm9udHMgb3IgdGhlIGRhdGEgY29udGFpbmVkIHdpdGhpbiB0aGUgZm9udCBmaWxlcyBleGNsdWRlcyBtb2RpZnlpbmcsIHJlYXNzZW1ibGluZywgcmVuYW1pbmcsIHN0b3Jpbmcgb24gcHVibGljbHkgYXZhaWxhYmxlIHNlcnZlcnMsIHJlZGlzdGlidXRyaW5nIGFuZCBzZWxsaW5nLiBBbnkgdW5sYXdmdWwgdXNlIG9mIHRoaXMgdHlwb2dyYXBoaWMgc29mdHdhcmUgd2lsbCBiZSBwcm9zZWN1dGVkLiBGb3IgYWRkaXRpb25hbCBpbmZvcm1hdGlvbiBzZWUNCmh0dHA6Ly93d3cubGluZXRvLmNvbS9MaW5ldG8uY29tL0ZvbnQrTGljZW5zaW5naHR0cDovL3d3dy5saW5ldG8uY29tL0xpbmV0by5jb20vRm9udCtMaWNlbnNpbmdSZWd1bGFyAEcAZQBuAGUAcgBhAHQAZQBkACAAaQBuACAAMgAwADEAMwAgAGIAeQAgAEYAbwBuAHQATABhAGIAIABTAHQAdQBkAGkAbwAuACAAQwBvAHAAeQByAGkAZwBoAHQAIABpAG4AZgBvACAAcABlAG4AZABpAG4AZwAuAEMAaQByAGMAdQBsAGEAcgAgAFMAdABkACAAQgBvAGwAZABSAGUAZwB1AGwAYQByAEwAaQBuAGUAdABvADoAIABDAGkAcgBjAHUAbABhAHIAIABTAHQAZAAtAEIAbwBsAGQAOgAgADIAMAAxADMAQwBpAHIAYwB1AGwAYQByAFMAdABkAC0AQgBvAGwAZABWAGUAcgBzAGkAbwBuACAAMQAuADAAMAAxADsAIABiAHUAaQBsAGQAIAAwADAAMAAyAEMAaQByAGMAdQBsAGEAcgAgAGkAcwAgAGEAIAB0AHIAYQBkAGUAbQBhAHIAawAgAG8AZgAgAEwAaQBuAGUAdABvAEwAaQBuAGUAdABvAEwAYQB1AHIAZQBuAHoAIABCAHIAdQBuAG4AZQByAGgAdAB0AHAAOgAvAC8AdwB3AHcALgBsAGkAbgBlAHQAbwAuAGMAbwBtAGgAdAB0AHAAOgAvAC8AdwB3AHcALgBsAGkAbgBlAHQAbwAuAGMAbwBtAC8AVABoAGUAKwBEAGUAcwBpAGcAbgBlAHIAcwBMAGEAdwBmAHUAbAAgAHUAcwBlACAAbwBmACAAdABoAGUAIABmAG8AbgB0AHMAIABvAHIAIAB0AGgAZQAgAGQAYQB0AGEAIABjAG8AbgB0AGEAaQBuAGUAZAAgAHcAaQB0AGgAaQBuACAAdABoAGUAIABmAG8AbgB0ACAAZgBpAGwAZQBzACAAZQB4AGMAbAB1AGQAZQBzACAAbQBvAGQAaQBmAHkAaQBuAGcALAAgAHIAZQBhAHMAcwBlAG0AYgBsAGkAbgBnACwAIAByAGUAbgBhAG0AaQBuAGcALAAgAHMAdABvAHIAaQBuAGcAIABvAG4AIABwAHUAYgBsAGkAYwBsAHkAIABhAHYAYQBpAGwAYQBiAGwAZQAgAHMAZQByAHYAZQByAHMALAAgAHIAZQBkAGkAcwB0AGkAYgB1AHQAcgBpAG4AZwAgAGEAbgBkACAAcwBlAGwAbABpAG4AZwAuACAAQQBuAHkAIAB1AG4AbABhAHcAZgB1AGwAIAB1AHMAZQAgAG8AZgAgAHQAaABpAHMAIAB0AHkAcABvAGcAcgBhAHAAaABpAGMAIABzAG8AZgB0AHcAYQByAGUAIAB3AGkAbABsACAAYgBlACAAcAByAG8AcwBlAGMAdQB0AGUAZAAuACAARgBvAHIAIABhAGQAZABpAHQAaQBvAG4AYQBsACAAaQBuAGYAbwByAG0AYQB0AGkAbwBuACAAcwBlAGUADQAKAGgAdAB0AHAAOgAvAC8AdwB3AHcALgBsAGkAbgBlAHQAbwAuAGMAbwBtAC8ATABpAG4AZQB0AG8ALgBjAG8AbQAvAEYAbwBuAHQAKwBMAGkAYwBlAG4AcwBpAG4AZwBoAHQAdABwADoALwAvAHcAdwB3AC4AbABpAG4AZQB0AG8ALgBjAG8AbQAvAEwAaQBuAGUAdABvAC4AYwBvAG0ALwBGAG8AbgB0ACsATABpAGMAZQBuAHMAaQBuAGcAQwBpAHIAYwB1AGwAYQByACAAUwB0AGQAQgBvAGwAZAAAAAAAAAMAAAADAAAAHAABAAAAAAJUAAMAAQAAABwABAI4AAAAigCAAAYACgAAAA0AfgD/ATEBQgFTAWEBeAF+AZICxwLJAt0DlAOpA7wDwCAIIAsgFCAaIB4gIiAmIDAgOiBCIEQgUSBwIHkgiSCsIRMhIiEmIWkhbyGTIZkhqSG0IcYiAiIGIg8iEiIVIhoiHiIrIkgiYCJlIsUkxSWhJbMlyyXPJi4nEycVJ4jgAvsE/v///wAAAAAADQAgAKABMQFBAVIBYAF4AX0BkgLGAskC2AOUA6kDvAPAIAcgCyATIBggHCAgICYgMCA5IEIgRCBRIHAgdCCAIKwhEyEiISYhYCFsIZAhliGpIbAhxiICIgYiDyIRIhUiGSIeIisiSCJgImQixSTFJaAlsiXKJc8mLicTJxUngOAA+wD+////AAH/9f/j/8L/kf+C/3P/Z/9R/03/Ov4H/gb9+P1C/S79HP0Z4NPg0eDK4MfgxuDF4MLgueCx4KrgqeCd4H/gfOB24FTf7t/g393fpN+i34LfgN9x32vfWt8f3xzfFN8T3xHfDt8L3v/e497M3sneatxr25Hbgdtr22jbCtom2iXZuyFEBkcCTQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCCgAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAEAAUABgAHAAgACQAKAAsADAANAA4ADwAQABEAEgATABQAFQAWABcAGAAZABoAGwAcAB0AHgAfACAAIQAiACMAJAAlACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOQA6ADsAPAA9AD4APwBAAEEAQgBDAEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABVAFYAVwBYAFkAWgBbAFwAXQBeAF8AYABhAAAAhgCHAIkAiwCTAJgAngCjAKIApACmAKUApwCpAKsAqgCsAK0ArwCuALAAsQCzALUAtAC2ALgAtwC8ALsAvQC+AOUAcgBkAGUAaQDnAHgAoQBwAGsBAgB2AGoBLACIAJoBKQBzAS0BLgBnAHcBIQEkASMA2QEqAGwAfAEDAKgAugCBAGMAbgEoAMwBKwEiAG0AfQDoAGIAggCFAJcAxQDGAN0A3gDiAOMA3wDgALkBNQDBAMkA7QEAAOoA6wFIAUkA5gB5AOEA5ADpAIQAjACDAI0AigCPAJAAkQCOAJUAlgAAAJQAnACdAJsAwgDNANQAcQDQANEA0gB6ANUA0wDOAAACSABHAAAAAAD3AAAA9wAAAU4AVgGSACIC5gApAlQALANWACwCzQBDANkAIgFKACsBSgAAAccAGQJNADEBOAA9AXwALQE3AEAB2wAAAnAAKQGMAB8CHwAgAiUAEgJVACACKgAdAkYAKgH3AAUCOAAnAkcAIgE4AEIBOgBDAfEAIwJbADsB8QAgAhEAIAM7ACcC0gAKAmIAUQL8ACcC1ABRAkYAUQIyAFEDDQAnAuwAUQEuAFECLQAUAroAUQIwAFEDuQBRAv8AUQMnACcCXgBRAycAJwJxAFECXAAeAmsAEAK1AEoCrwAKBAMADAKdABACjwAKAoAAJwE9AFEB3AAAAT0ABQISABACCwAGASgAGgIbACkCZABHAiYAIgJlACICKQAiAWQADgJVACQCSABHARMANwET/+cCLwBHARMARwN2AEcCSABHAkgAIgJkAEcCYAAiAYcARwHNAB0BdQAOAkoAQgIhAAoDPwAMAhQADAIwAAcB4QAlAXcALQERAFEBdwAFAkcAGgD3AAABLgBHAiUAKQJQADsCSwAkAmYAFgERAFECMQBDAZUAGwMwACcBpwA3AgwAGwJOAC0BfAAtAzAAJwFPABsBdQAUAlAAPgGKADQBmwAzAScAGgJSAEgCmgAaASAAPQEqABkBLwAmAeIAOgIMABEDKAAuAzoALgN0ADIB7QAOAtIACgLSAAoC0gAKAtIACgLSAAoC0gAKBCQACAL8ACcCRgBRAkYAUQJGAFECRgBRAS7/0AEuAFEBLv/eAS7/9ALrABAC/wBRAycAJwMnACcDJwAnAycAJwMnACcCMwAlAycAJwK1AEoCtQBKArUASgK1AEoCjwAKAlwAUQJUAEcCGwApAhsAKQIbACkCGwApAhsAKQIbACkDZwApAiYAIgIpACICKQAiAikAIgIpACIBE//WARMARwET/9oBE//rAkUAIgJIAEcCSAAiAkgAIgJIACICSAAiAkgAIgJLADECSAAiAkoAQgJKAEICSgBCAkoAQgIwAAcCZABHAjAABwETAEcCRgALAUcACwRmACcDqQAiAlwAHgHNAB0CjwAKAoAAJwHhACUCAf/iAZQAGgGUABoBTwAbAXYAGgDAABABGgAaAOAAFwGHABUBjAAYArMAAAMOAC0CUgBIAn4AJAJwAAABNwAAAAAAAAKAAD4EPABIAOkAIgDrACIA6wAiAa4AIgGtACIBrQAiAZ0AHAHFADACFAA6A5kASwQ8ACwBMwAbATMAEQNFACICPgAAAawAJgGyADMBuQAzAZUAMwGjADMBmQAzAaQANgGiADMBsgAzATMAJgGKADQBmwAzAbkAMwGVADMBowAzAZkAMwGkADYBogAzAqcAPgGtAB0DbAAhAw4ALQHyAC4DEgAuBCQALgQdAC4DKAAuBBoALgUyAC4GOgAuBAIALgMMAC4CkgAuAuAALgLnAC4EGwAuBCb/9wHmAB8EPQAZAd7/9wNsAEAC9f/JA1oALgLsACQDXf/qAyQAJgLtACMDA//zA1MASQMfAD0EjwBAAm0AJAKzAAACrgBRAjkAJAI9ADEBvAAAASAAPQK5ACADPwAqAV4ABQJSACACWwA7AiEAOAIhADsBIAA9AzAAJwOMAGUDjABlA0YAAANGAAACaQAdAy0AJAMtACQDLwAnA64AEALzABMDNgAqAzYAKgM2ACoDNgAqAzYAKgM2ACoDNgAqAzYAKgM2ACoC6f//BFYAJAO8ACwCqAAOAncADgJ2AA4DvQAOA70ADgAAAAABsgAzATkAJgGKADQBmwAzAbkAMwGLADMBowAzAZkAMwGkADYBogAzAbIAMwEzACYBigA0AZsAMwG5ADMBlQAzAaMAMwGZADMBpAA2AaIAMwAxAAABpwA3AfcAUwHNADoB+QA6AcUANgFXADUB0wA6AecAUwEdAFIBRwBGAc8AUwELAFMCvQBTAecAUwHiADoB9wBTAfQAOgExAE8BjwA7AUcAJwHOADoBpQAWAnQAGgGoAB0BsQAXAZYAOgJCAAACQgAJAkIAJwJCABYCQgAsAkIAtgJCALsCQgAeAkIAVQJCADECQgAbAkIAIAJCAC4CQgAlAkIAGwJCACwCQgAdAkIAvgJCAL8CQgBIAkIALwJCAEwCQgA+AkIAOgJCACACQgANAkMATQJCAB8CQgA3AkIALAJCACwCQgALAkIAAAJCAAACQgAVAkIALQJCADMCQgAXAkIALgJCAEoCQgBKATsAKwE7AAABfAAtAT0AUQE9AAUBdwAtAXcABQE8AE4CDAAbAXwALQIMABECBQAaAngAOgQ0AEQBMwAbATMAEQMGACcCZAAiAmQAIgJkACICZAAiAmQAIgJkACICZAAiAY0ARwLDADgB5wAnAa0AFwDVABoAzwAaALoAEQKoAA4DvQAOA70ADgJ3AA4CdgAOAUwADwFhABABJAAKAbwAFQFRABABJAAPAZsAEwGbABMBcAAVAMEAEAEmABABdAARAX8AEADUABoAuwAQAAMAAAAAAAD/ZQBQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQCAAEBARFDaXJjdWxhclN0ZC1Cb2xkAAEBATL4EAD5DgL5DgP4FAT7VwwD2wwEVPuQHQAABgz6eQUdAAAYSw/AHQAAX7MSHQAAGcARAPQCAAEABgANABQAGwAiACkAMAA3ADkAQABHAE4AVQBcAGMAagBxAHgAfwCGAI0AlACbAKIAqQCwALcAvgDFAMwA0wDXAN4A4wDqAPEA+AD/AQYBDQEUARsBIgEpATABNwE+AUUBTgFVAV8BaAFvAXYBfQGEAYsBkgGZAaABpwGuAbUBwAHFAcwB1QHcAeMB6gHyAfoCBQINAhYCIgIpAjACOQI/AkYCTQJUAloCYAJnAm4CdQJ8AoMCigKRApgCnwKmAq0CtAK7AsICyQLQAtcC3gLlAu4C9gL+AwgDEQMaAyIDLAM2Az8DSANQA1gDYgNrA3QDfAOGA5ADmQOjA6kDrwO1A7sDwQPHA80D0wPZA98D5QPrA/ED9wP9BAMECQQPBBUEGwQhBCcELQQzBDkEPwRHBFQEXQRnBG4EdgR/BIYEjASSBJoEoQSoBK4EtgS+BMUEzQTZBOAE6ATyBPkFBAUPBRUFHwUsBTgFQwVMBVUFXwVpBXcFfgWGBZQFnwWrBboFyAXXBeIF8gYDBhEGIAYvBkEGTQZgBnEGfAaHBpkGrAayBrgGwwbOBt4G6Qb3BwEHBwcVBx0HLAc1B0AHSQdMB1EHVgdZB1wHawd9B4UHkAeZB6EHrge2B74HygfRB9kH6Af0CAQIFS5udWxsdW5pMDAwRHVuaTAwQTB1bmkwMEFEdW5pMDJDOXVuaTAzOTR1bmkwM0E5dW5pMDNCQ3BpdW5pMjAwN3VuaTIwMDh1bmkyMDBCdW5pMjA0MnVuaTIwNTF1bmkyMDcwdW5pMjA3NHVuaTIwNzV1bmkyMDc2dW5pMjA3N3VuaTIwNzh1bmkyMDc5dW5pMjA4MHVuaTIwODF1bmkyMDgydW5pMjA4M3VuaTIwODR1bmkyMDg1dW5pMjA4NnVuaTIwODd1bmkyMDg4dW5pMjA4OUV1cm91bmkyMTEzT21lZ2F1bmkyMTYwdW5pMjE2MXVuaTIxNjJ1bmkyMTYzdW5pMjE2NHVuaTIxNjV1bmkyMTY2dW5pMjE2N3VuaTIxNjh1bmkyMTY5dW5pMjE2Q3VuaTIxNkR1bmkyMTZFdW5pMjE2RmFycm93bGVmdGFycm93dXBhcnJvd3JpZ2h0YXJyb3dkb3dudW5pMjE5NnVuaTIxOTd1bmkyMTk4dW5pMjE5OXVuaTIxQTl1bmkyMUIwdW5pMjFCMXVuaTIxQjJ1bmkyMUIzdW5pMjFCNHVuaTIxQzZwYXJ0aWFsZGlmZkRlbHRhcHJvZHVjdHN1bW1hdGlvbnVuaTIyMTV1bmkyMjE5cmFkaWNhbGluZmluaXR5aW50ZWdyYWxhcHByb3hlcXVhbG5vdGVxdWFsbGVzc2VxdWFsZ3JlYXRlcmVxdWFsZG90bWF0aHVuaTI0QzVmaWxsZWRib3hIMjIwNzN0cmlhZ3VwdW5pMjVCM2xvemVuZ2VjaXJjbGVIMTg1MzN1bmkyNjJFdW5pMjcxM3VuaTI3MTV1bmkyNzgwdW5pMjc4MXVuaTI3ODJ1bmkyNzgzdW5pMjc4NHVuaTI3ODV1bmkyNzg2dW5pMjc4N3VuaTI3ODh1bmlFMDAwdW5pMjFCNXVuaUUwMDJ1bmlGQjAwdW5pRkIwM3VuaUZCMDR1bmlGRUZGemVyby5udW1yb25lLm51bXJ0d28ubnVtcnRocmVlLm51bXJmb3VyLm51bXJmaXZlLm51bXJzaXgubnVtcnNldmVuLm51bXJlaWdodC5udW1ybmluZS5udW1yemVyby5kbm9tb25lLmRub210d28uZG5vbXRocmVlLmRub21mb3VyLmRub21maXZlLmRub21zaXguZG5vbXNldmVuLmRub21laWdodC5kbm9tbmluZS5kbm9tc3BhY2UuZnJhY2Eub3JkbmIub3JkbmMub3JkbmQub3JkbmUub3JkbmYub3Jkbmcub3Jkbmgub3Jkbmkub3Jkbmoub3Jkbmsub3Jkbmwub3Jkbm0ub3Jkbm4ub3Jkbm8ub3JkbnAub3JkbnEub3JkbnIub3JkbnMub3JkbnQub3JkbnUub3JkbnYub3Jkbncub3Jkbngub3Jkbnkub3Jkbnoub3JkbnNwYWNlLnRmbnVtYmVyc2lnbi50ZmRvbGxhci50ZnBlcmNlbnQudGZwbHVzLnRmY29tbWEudGZwZXJpb2QudGZ6ZXJvLnRmb25lLnRmdHdvLnRmdGhyZWUudGZmb3VyLnRmZml2ZS50ZnNpeC50ZnNldmVuLnRmZWlnaHQudGZuaW5lLnRmY29sb24udGZzZW1pY29sb24udGZsZXNzLnRmZXF1YWwudGZncmVhdGVyLnRmY2VudC50ZnN0ZXJsaW5nLnRmY3VycmVuY3kudGZ5ZW4udGZzZWN0aW9uLnRmbG9naWNhbG5vdC50ZnBsdXNtaW51cy50Zm11bHRpcGx5LnRmZGl2aWRlLnRmZmxvcmluLnRmdW5pMjAwNy50ZnVuaTIwMDgudGZwZXJ0aG91c2FuZC50ZkV1cm8udGZtaW51cy50ZmFwcHJveGVxdWFsLnRmbm90ZXF1YWwudGZsZXNzZXF1YWwudGZncmVhdGVyZXF1YWwudGZwYXJlbmxlZnQuY2FzZXBhcmVucmlnaHQuY2FzZWh5cGhlbi5jYXNlYnJhY2tldGxlZnQuY2FzZWJyYWNrZXRyaWdodC5jYXNlYnJhY2VsZWZ0LmNhc2VicmFjZXJpZ2h0LmNhc2VleGNsYW1kb3duLmNhc2VndWlsbGVtb3RsZWZ0LmNhc2V1bmkwMEFELmNhc2VndWlsbGVtb3RyaWdodC5jYXNlcXVlc3Rpb25kb3duLmNhc2VlbmRhc2guY2FzZWVtZGFzaC5jYXNlZ3VpbHNpbmdsbGVmdC5jYXNlZ3VpbHNpbmdscmlnaHQuY2FzZUcuc3Mw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GTIZSBlWGWIZXBliGWgZbhmIGaoZ0BnmGgQaGhokGi4aOBpOGnAahhqQGp4arBq2GsQa6hsAGyIbQBtSG1gbYhtsG3IbfBuaG6wciByOG8ob/BwSHFAciBxiHIgciByOHI4crBzmHRgdMh1QHYodwB36HjAeNh5MHmYeoB7CHtAe8h78HwIfSB/qAAIALwADAA8AAAARABIADQAUABsADwAeACMAFwAlAC4AHQAwAD8AJwBBAEIANwBJAEkAOQBMAEwAOgBPAE8AOwBUAFQAPABZAFkAPQBbAFsAPgBeAGEAPwBjAGkAQwBuAG4ASgByAHMASwB4AHkATQB8AHwATwCBAIEAUACIAKEAUQCrAKsAawCtALIAbAC1ALUAcgC3ALkAcwDEAMUAdgDHAMwAeADfAOgAfgDtAO0AiAD2AQIAiQEhASYAlgEoAS4AnAFHAUcAowFNAWAApAFiAWQAuAFmAWkAuwFsAWwAvwFuAXEAwAFzAXsAxAF9AX0AzQGbAZsAzgGlAaUAzwGqAaoA0AGsAawA0QGwAbAA0gG1AbUA0wG9AcAA1AACAAn/2AG+/9gAAwAaAAYAof/0Ab//+AAJABT/9gAV//wAFv/uABf/5AAY//QAGv/8ABv/+AAc//gBv//sAAgAFP/6ABb//AAX//wAGP/8ABr//AAb//wAHP/8Ab//+AABABT//AAIAAP/2AAU//wAFv/8ABf/9gAY//wAG//9ADn/xwBZ/+4AAwCuABAAsAAQALEAEAAUAA7/yAAU//IAFQACABYABgAX/9oAGP/wABn/4AAaAB8AG//0ADkADgA7AAgASv/yAFn/6QBb//oAof/xAK4AJgCwAAwAsQASAMwAOAEl/9gAAQDDAAgADgAVAAYAFgAMABf/xgAaACIAOQAUADv/+gBZABYAWwAGAK4ADACwACAAsQAYAMP/+gDM/+IBv//wAAkADP/IABT/3AAV//wAFv/4ABr/9gAc//wAOf/SADv/5wG//94AAgBK//AATQAMACIAEv/IABT/7gAV/90AF/+qABj/8gAaABgAG//oABz/7AA5ABQAOwAKAFn/8ABb/+wAof/cAKL/tgCk/6YApf+0AKb/vACn/6QAqv+mAK3/pgCuAEYAr//8ALAAHgCxACoAsv+UALT/nQC4/5QAw//xAMT/9ADI/9wAy//gAMz/xAG2/8IBv//eACEABv/yAAj//AAJ//oADAAMABUADgAWAAkAGAAJABoADgAbAAkAHAADAB///AAgAAwAIQAeACP/+gBCAAwAXwAEAGEADABjAAYAcgAIAHkABgCZAAwAuQACAQL/7gElAAwBJgAMASkACAErABQBLAAUAS0ADAEuABABpgAQAb//+AHA//wAGgAM//oADQAGABIABgAUAAEAFgADABf/9AAgAAYAIQAeAD//8ABCABAAYQAGAGYABgByAAoAcwAKAJkAEAEC/+gBJQAGASYAFAErABQBLAAKAS0ADAEuABABfQAGAab//QG/AAkBwAAEABkABv/yAAj//AANAAoAEv/8ABT/9QAV//0AGgAHACAABgAhABgAQv/2AF8ACABhAAoAaAAIAHIABABzAAQAmQAEALkABgDp//wBAv/6ASUACgEm//oBKwAOAS4ACAGb/9oBvwAFACoACP/8AA3/8gAOAAYAFP/xABr/+AAfAAwAIAAUACEAGAAi//oAP//oAGEAFABoAAQAbP/eAHL/9gBzAAQAfP/hAJkAEAC5AAYA6f/oAQD/+gEBAAYBAv/JASUABgEmAAQBKQAEASsAEgEsAAoBLQAMAS4ADAFi/+4BZv/cAWf/7gFw/+4Bcv/oAXT/9AF1/9QBdv/6AX0AGAGb//ABsAAGAb8AAQHA//gAHAAI//wACf/6AAz/+gAS//gAFP/3ABoAAgAfAAQAIAAKACEAFAAj//4AP//6AEL/9gBhAAoAbP/3AHIABAC5AAYA6f/2AQL/6AElAAoBJv/wASsADgEsAAQBLQAEAS4ACAGb/+QBsAAQAb///AHAAAQAGAAG//gADAAGAA0ABgAOAAoAFP/0ABYAAwAaAAgAIAAKACEAEAAj//wAP//8AEL/8gBhAAoAaAAGALkABgDp//gBAv/0ASUACgEm//oBKwAKAZv/zAGmAAYBsAAKAb8ABQA5AAQABgAG/9gACf/6AAz/+gANABoADv/UABL/uAAUAAUAFQAGABYADwAX/9UAGP/3ABoAHgAcAAQAH//cACAAAgAhACQAIgAUACP/+AA/ABgAQv+sAF8AFABh/94AY//6AGcAGABoABQAcgAkAHP//AB5/+oAfAAMAIH/uAC5/+wA5QApAOYAFADpAAQBAP/oAQIAFAEi/+gBJAASASX/6AEm/6wBKAAMASn/5AEs//wBLgAIAWIADAFmABQBcAAJAXUAHgF9//oBfwAMAZv/xgGeAAwBpv/9AbD/0gG/AAkBwAAMABsABv/8AAj//gAJ//AADP/0AA4ABgAU//cAFgADABf//QAY//0AHP/9ACAABgAhAAoAP//bAEL/8ABhAAYAZf/4ALkABgEA//oBAv/oASUABgEm//oBKwAOASwABAEuAAQBdf/0AZv/0AGm//oAAQBNAAwADQAUABgAFQAeABYAHAAXAAwAGAAUABoAOgAbAB4AHAAYADkABgA7AAYAWQASAMMABgG/ABAACAAU//QAFwAGABgABAAa//wAOf/kADv/8ABZAAYBv//wAAsAFP/qABX//AAW//gAFwAGABr/9AA5/9oAO//OAFn/+gBb//oAxAAGAb//4AAHABQABAAX//gAGgAYADv/+gBZAAgAw//6Ab///AAQABT/+gAV//cAFv/5ABf/9gAY//oAGv/+ABv/+gA5/+AAO//dAFkABgBb//8Aof/0ALAABgDDAAEAxP/6Ab//7gAlAAn/7AAO//4AEv/0ACAAAwAhAA0AOf/6ADv//QA//94AQv/8AFn//gBe//QAYQADAGP/+gBs//oAdP/6AHX/+gB5//0AfP/8AIH/6gCh//EAsAADALEAAwDDAAYA5QADAOYAAwDn//wA7//6APD/9ADx//QA8//0APr/8AD7//wA/P/8AQL/8AGq/+wBsAANAcAACQBBAAn/3gAMAAwADQAGAA7/8gAS/7oAH//6ACD/+gAhABAAIgAKACP/9gA5AAkAOwAJAD8AGABBAAQAQv+0AFn/7wBb//EAXv/4AF8AFABh/+wAY//0AGgACABpAAgAbP/6AHQADAB1AAwAeAAIAHn/+gB7AAwAgf+0AJn/+gCh/+kApf/gAK4AJgCv//gAsAAcALEAIwC5//0AzP/AAOUAFADmABQA5//wAO8ADADw//oA8QAGAPIABgDzAAwA9AAGAPUADAD2/8IA9//GAPj/xgD5/8IA+v+KAPv/sgD8/6IA/f/IAP7/uAD//7wBAgALAaX//AGmAAgBqv/oAbD/9AHAAA4AAQCwAAIAAwCuABIAsAAPALEAJABGAAn/3gAM//oADQAKAA7/6AAS/7QAH//0ACEAFAAiABQAI//+ADn//QA7//IAP//0AEL/rABZAAMAXv/sAGH/7ABpAAQAdAAMAHUACAB4AA4Aef/yAHsADACB/6oAmQAEAKH/6wCuAAYAsAAfALEAIwC5//wAu//sALz/7AC9/+wAvv/sAMT//gDI//QAzP/KAOUAFADmABQA5//yAO8ADADwAAwA8QAMAPIADADzAAwA9AAMAPUADAD2/6oA9/+2APj/pAD5/7QA+v+MAPv/sAD8/54A/f++AP7/pAD//6QBAv/6AWv/7AF1AAwBdgAMAXcAEgF4ABIBeQAQAXoAFAF7AAwBpv/0Aar/9gGw/+oBvv/6AcAAGAAdAAT/+gAJ//QADP/qAA4ABgAfAAoAIAAGACEADgA5/+QAO//rAD//1ABBAAYAWwAGAGEABgBj//oAmQAGAKH/8wCwAAMAuQAGAMMAAgDM//gA5QAGAOYABgDz//wA9v/6APr//AEC/+wBa//6Aab/6gG+//4AAgCwABAAsQAJABIAov/VAKT/zwCl/9MApv/cAKf/xQCuACgAr//jALAAHgCxADAAvf+/AL7/yQDB/84Awv/gAMj/8ADL/+gBt//AAbr/xAG7/8cARwAJ/9wADAAOAA0AFAAO/9IAEv+sAB//2gAg/+QAIgAEACP/4AA5AAoAOwAKAD8AFABB//oAQv+8AFn/7ABb//UAXv/iAF8ADgBh/9IAY//aAGgADgBp//oAbP/0AHQAEAB1ABAAef/cAHsAHAB8//0Agf+sAJn/9gCh/98Apf/SAKr/xgCuACAAr//0ALAAEACxADEAuf/kAMT/9ADM/7gA5QAOAOYACgDn/9IA7wAMAPD/+ADxAAYA8wAUAPQACAD1ABQA9v+WAPf/sgD4/64A+f+yAPr/lAD7/6AA/P+UAP3/tAD+/5AA//+QAQIADAFr//oBdwAaAXgAGgF5ABoBegAiAXsAEgGmAA4Bqv/4AawABAGw/+ABvv/6AAQArgAiAK//9wCwABYAsQAyAC8ACf/kAAwACAAN//oADv/nABIACgAf/+AAIP/wACL/+gAj/+EAOQAKAD8ACgBB//QAQgASAFn/3wBbAAsAXv/iAF8ADgBh/+YAY//6AGgACgBs/+4AeP/6AHn/3AB8/+4Amf/wAKH/9ACuABwAsAAKALEAEwC5/+oAxP/6AOf/1gDw//wA8wAEAPgABAD6AAQA+wAEAPwABAD9/+4A/v/+AP//8AFr//QBpgAIAar/4gGw//oBvv/0AcD/6AASAKL/tgCk/7wApv/FAKr/rACt/6wArgAoAK//1gCwAAQAsQAcALL/owC0/68At/+fALj/uwDI/9kBt/+5Abr/tQG7/7kBvP+1AAQAGf/uAK4ANACwAAwAsQAeAA0AFP/0ABUACgAW//wAF//wABj/+gAa//oAG//yADn/rAA7AAoAWf/kAFsACgDD//oBvwAOAAQAOf/6ADv/9ABZAAwBv//wAA0AFP/iABb/+gAX/7wAGP/0ABv/8AAc//QAOf+8ADsAEgBZ/9gAWwAYAMT/9ADMAEIBvwAOAAMArgAGALAABgCxAAYAAQEC/+IAKAAJ/+4ADP/pAA0AFgAS/+AAH//6ACAABgAhABIAIgAUACMABAA//+wAQQAMAEL/2ABZAAIAWwAEAF8ADABj//oAaAAUAGkADAB4ABoAfAAJAIH/4ACZAAwAuf/6AMQAAgDM//QA5QAeAOYAHgD2/9AA9//WAPj/1gD5/9YA+v+2APv/wAD8/9AA/f/cAP7/0AD//9ABAv/6AbD/+gHAAA4AGwAJ//AADP/6AA0ABgASABQAH//6ACIADAAjAAIAP//UAEIAGABZAAQAWwACAF8ADgBh//oAYwAEAGgABgBs//oAeAAGAHn/9gCBAAYAuf/6AOUAEADmABAA5//6AP3/+AEC//YBVP/uAcAACgAMABn/7gBE//sAov/7AKP/+wCk//sApf/7AKb/+wCn//sAqP/7AK4ANACwAAwAsQAeAAYAGgAUADkADgA7AA4AWQAMAFsADgG///gAAwA5//wAO//8AMMABAAHABT/9gAV//wAGv/mADn/0gA7/+YAW//6Ab//2gAHABT/+gAa//4AOf/aADv/+gBZ//oAWwAEAKH/+gADABT/+gAW//wBv//0AAMAFQAGABYADAAXAAwAAwAX//wAGgAYAb//9AAGABoABAAb//wAOQAOADsACgBZABQAWwAGAAIAOf/6Ab//+AABABb//AAEABQABgAX//AAGgAiAb8ABAADABT/9AAW//wAGv/8AAEBv//0AAYAFP/uABr/8gA5/9wAO//cAFv/9gG//+YAAQAaAAwADgAU/94AFv/qABf/1AAY/+4AGv/0ABv/6AAc/+4AOf+jAFn/2QCh/+4Aw//6AMT/9ADMACQBv//8AAEAsAAJAAUAjgAkAJEAFACuAAwAsAAGALEADAAGAI4ADACQABgAkQAQAK4ADACwAAYAsQAMAAYAjgAQAJAADgCRAAgArgAMALAABgCxAAwAAwCuAAwAsAAGALEADAACALAAAwCxAAMABAAU//QAOf/2ADv/8ABZAAwAAgCwAAYAsQAGAAMArgAGALAACACxAAYAKAAJ//AADP/wAA4ABgAS/8YAHwAGACAABgAhAAoAIgAEACMAAgA5/+4AO//gAD//zABBAAYAQv/WAFkABABbAAQAYQAKAHkABACB/9QAmQAGAKH/9AC5AAYAwwAGAMQADgDM/9IA5QAKAOYACgDnAAYA9v/0APf/+gD4/+gA+f/uAPr/wAD7/+gA/P/kAP7/9AD//+4BAv/cAab/8AG+//oAFAAJ//oADAAIABIABAAgAAYAIQAeAD//5ABCAAwAWf/6AGz/7AB8//YAof/6ALAAAwCxAAMAuQAGAMQABQDM//oA5gAGAQL/7gGwAAwBwP/4AAEAP//AAAIAP//mAQL/7gAZAAQABgAFABAACgAQAAwAJAANAAYAIgAGAD8AOgBAADQATAAGAF8AEgBgADQArgA+ALAAKACxAD0AyAADAN8AGADgADAA4gAYAOMAMAECABgBYwASAWYADAFnABgBaQAMAWoADAAhAAQABgAFABAACf/6AAoAEAAMAAwADQAkACIALgA/ABoAQAAMAEwACQBNAAYAXwAMAGAADACuABIAsAAoALEAQQDIAAMA3wAsAOAAJADiACwA4wAkAOUAJAECAAwBYgAMAWMAEgFkABIBZQASAWYAGAFnABgBaAASAWkADAFqAAwBwAAkACIABAAGAAUAEAAJ//oACgAQAAwAEgANACIAIgAqAD8AIgBAAB4ATAAMAE0ADABfAAwAYAAeAKUABgCuAD4AsAA6ALEARADIAAMA3wAoAOAAKgDiACgA4wAqAOUAGAECABgBYgAMAWMAEgFkAAwBZQASAWYAGAFnABgBaAAMAWkADAFqAAwBwAAeAAUAP//MAN//5ADg/+QA4v/kAOP/5AABAD//qAABAD//pQAJABT/6gAW//IAF//8ABr/9AA5/+QAO//qAFn/+gBb//oBv//gACcACf/0AA0ADAASAAQAIAAMACEAGAAiAAYAIwAMAFkAEgBbABcAdAAMAHUADAB4AAgAeQAEAHsADAB8AAYAgf/6AMQABADM//oA5QASAOYAGgDvAAwA8AAMAPEADADyAAwA8wAMAPQADAD1AAwA9v/0APf/9AD4//QA+f/0APr/7AD7//QA/P/0AP3/9AD+//QA///0Ab7/+gHAABoAAwCuAA0AsAAMALEACQACALAABACxAAQAAQA//9YAEgCi/7YApP+8AKb/xQCq/6wArf+sAK4AKACv/+4AsAAEALEAHACy/6MAtP+vALf/nwC4/7sAyP/ZAbf/uQG6/7UBu/+5Abz/tQADAK4AGACwABQAsQAUAAEAP//mAEIACf/mAAwACgANAB4ADv/gABL/wAAaABIAH//gACD/9gAhACgAIgAMACP/+AA/ACgAQv/kAFn//ABb//wAYf/mAGgADABsAAYAdAAEAHUABAB4AAgAewAMAHwABgCZAAYArgAqALAAHgCxACoAuf/oAMz/sgDlAAgA5gAIAPEABADzAAgA9AAEAPUABAD2/+AA9//wAPj/6AD5/+QA+v/YAPv/7AD8/+AA/f/oAP7/3AD//+ABAgAMAWIAEgFjABIBZAASAWUAEgFmABIBZwASAWgAEgFpABIBagASAWwAEgFtABIBbgASAW8AEgFwABIBcQASAXIAEgFzABIBdAASAb7//AHAACAABACuACgAsAAkALEAKgCy/9UABACuAAwAsAAQALEADACy/7IAAQBKAAoABAA5AA4AWQAeAFsAEAG/AAYABgA5AAoAWQAeAFsAEADDAAwAxAAGAb//+AAEADn/0gA7/9YAW//6Ab//1gABAEr/8AAKAVf/DAFY/zIBWf8SAVr/KwFb/uIBXP8XAV3/AgFe/z4BX/8UAWD/FAACADn/lgBZ/8QAAgA5/7IAWf/QAAIAOf+qAFn/0AACADn/lABZ/8QAAgA5/6AAWf/QAAIAOf+gAFn/ygAEADn/oAA7//QAWf/WAFv/+AADADn/kAA7//oAWf/MAAMAOf+QADv/9ABZ/8QABQAVAAYAFgAGABf/+AAaABYBvwAGAAMAGgAQABsABAAcAAQAAQG///wAAQG/AA4AAQG///gAAQG/AAYABgAM/9gAFP/0ABX//AAW//gAGv/6Ab//8AAIABT/9AAV//QAFgAGABf/yAAY/+wAGgAoABv/9AAc//oACQAU/8QAFf/CABb/3gAX/6IAGP+8ABr/6AAb/8AAHP/AAb//jAAFABT/6AAV//oAFv/6ABr/8AG//9YABwAUABYAFQAcABYALgAYAAgAGgBOABsACgAcABQABQAU//QAFwAEABr/+AAbAAgBv//wAAIAFP/0ABsABAACABT/+gG///gAAgAU//ABv//0AAUATAAGAE0AEACuADAAsAAmALEAKQAIAO3/DAFN//4BTv/8AVD//gFS//4BU//+AVT/+gFV//sABQDt/zkBTQACAU8AAgFTAAIBVAACAAIA7f84AVH//gADAO3/FgFOAAEBVAAEAAMA7f8aAU///QFQ//0AAgDt/x0BVAACAAMA7f8cAVAABgFUAAIACQBb//QA7f7iAU3/8wFOAAIBUf/mAVL//QFT//YBVAAMAVYABAAFAO3/EwFN//4BUP/6AVP//gFU//0ACADt/vwBTf/+AU7/+QFP//0BUP/+AVL//gFT//4BVf/+AAcBV//+AVj//AFa//4BXP/+AV3//gFe//oBX//7AAQBVwACAVkAAgFdAAIBXgACAAEBW//+AAIBWAABAV4ABAACAVn//QFa//0AAQFeAAIAAgFaAAYBXgACAAcBV//zAVgAAgFb/+YBXP/9AV3/9gFeAAwBYAAEAAQBV//+AVr/+gFd//4BXv/9AAcBV//+AVj/+QFZ//0BWv/+AVz//gFd//4BX//+AAwBYv/+AWT//gFl//4BZv/+AWj//gFw//4Bcv/+AXb//gF3//4BeP/+AXn//gF6//4ABQF2//oBd//8AXj//gF5//4Bev/8AA8BYv/6AWT/+AFl//gBZv/4AWf//gFo//gBawAIAXD/+AFy//gBdv/+AXcABAF4AAQBeQAEAXoABgF7AAQABAFi//4Bdv/+AXj//gF6//4ACQFi//4BZP/4AWX/+AFm//gBaP/4AXD/+AFy//gBdv/+AXsAAgABAXb//AAHAXX//gF2//4Bd//6AXj//AF5//wBev/6AXv//gAOABoAOgFk//wBZf/8AWb//AFnAAYBaP/8AXD//AFy//wBdQAEAXcABgF4AAQBeQAEAXoABgF7AAQADAFi//wBZP/+AWX//gFm//4BaP/+AXD//gFy//4Bdv/+AXf//gF4//4Bef/+AXr//gAGAXQAAgF3AAQBeAAEAXkACAF6AAIBewAIAAcBZP/+AWX//gFm//4BaP/+AXD//gFy//4Bdv/+AA4BYv/+AWT/+gFl//oBZv/6AWcABgFo//oBcP/6AXL/+gF1AAIBdwACAXgAAgF5AAQBegAEAXsABAANAWL//gFk//wBZf/8AWb//AFnAAYBaP/8AXD//AFy//wBdQACAXcAAgF5AAIBegACAXsAAgAOAWT//AFl//wBZv/8AWcABgFo//wBcP/8AXL//AF1AAIBdv/+AXcABAF4AAIBeQACAXoAAgF7AAgADQFi//wBZP/4AWX/+AFm//gBZwAEAWj/+AFw//gBcv/4AXT//AF1AAIBdv/+AXcAAgF6AAIAAQF5AAIABQAUAAwAFQAMABYADAAX//oAGgASAAYAFgAGABf/xAAY/+YAGgAsABv/+gAc//oADgAU//AAFQAEABYABgAX/+IAGP/4ABn/4AAaABoAG//6ABwABAA5AA4AOwAIAMP/8QDMABABv//4AAgARAACAKIAAgCjAAIApAACAKUAAgCmAAIApwACAKgAAgADABYADAAaABoAOQAEAAgAFP/oABr/9AA5/9IAO//6AFn/7gDDAA8AxAAMAb///AACALAADQCxAAkAAQDEAAQAEQAD/9gAFP/iABX/6AAW//oAFwAEABj/9wAa/+4AG//6ABz/+AA5/8gAO//SAFn/9ABb/+IAof/0AMMACADEABQBv//YACgABP/6AAb//AAI//oACf/6AAwADAAN//IADv/6ABIAIAAVABIAFgARABf//QAYAAYAGgAEABsABAAcAAoAIQAeACL/6AAj/+4AP//aAEH/9ABCADQAYf/6AGP/+gBu//QAcv/uAHn//gCBABYA5f/6AOYACADn//oA6f/0AQD/2AEC/84BIgAcASj/7gEp//QBLgAEAaYABAGwAAgBwP/wAAUAFAAEABf/6AAY//gAGgAQADv/9AACK6gABAAALKQvigB8AC0AAP/v/+YAEgAD//r/8gAG//8AAv/+//7/9v/0//4ABQAB//r/9P/+//j//v/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/K/4b/2wAkAAkACQAQ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//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/c/8r/7gASAAwAAAAGAAAAAAAAABIAAAAAAAD/+gAAAAAAAAAAAAAAIgAaAAAAAAAGAAYAAAAAAAAAAAAAAAAAAAAAAAwABgAAAAAAAAAMAAAAAAAGAAAAAP/6/+4ABgASAAYAAAAGAAAAAAAAAAwAAAAAAAAABgAAAAAAAAAAAAAAIgAaAAAAAAAGAAYAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAMAAAAAAAAAAAAAP/wAAAAAP/W/+n/yP/6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+v/6AAYAAAAGAAD//gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2AAD/+v/6AAAAAAAA//z/+gAAAAAAAAAA//sAAAAAAAAAAP/6//oAAAAAAAAAAAAAAAAAAAAA//r/+gAAAAAAAAAAAAAAAP/0/9wAAP/i//b/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAGAAb//QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/0//T/+gAAAAAAAAAA//QAAAAAAAAAAAAAAAD/9AAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAA//oAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAP/6AAD/+v/C/+r/uQAAAAD/9AAAAAAAAAAAAAD/9P/6AAAAAAAA//3/+v/6AAAAAP/6AAD/8AAAAAAAAAAAAAAAAP/6ACQAAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAGAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//AAAAAAAAAAA//oAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//YAAAAAAAAAAAAA//0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//z//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9D/0gAAAAD/4AAA/+T/yv/O/6QAKP/u/+T//AAAAAAAAAAAAAAAAAAaAAD/8v/0AAAAAAAAAAAAAAAo/7IAIgAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/94AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/8AAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAABgAAAAAAAP/0AAD/8gAAAAAAAAAA//oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//gAAAAAAAAAAAAAAAAADAAAAAAAD//j/+v/+AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAD/+gAAAAD//QAAAAAAAP/p/9AAAP/G/+b/uP/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+gAAAAAAAAAGAAD//gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAP/8AAwAAAAWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAASAA4ABgAKAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAABkAAgAAAAAAAQAC/+gAAAAKAAMAEAAUAAAAAAAAAAAAAAAAAAAABgAGAAAAAAAAAAAAAAAM/+gAAAAUAAAAFAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAP/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAP/q//r/4gAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAA//n//AAAAAAAAAAAAAsAAAAAAAAAAAAQAAwABgAMAAAAAAAAAAAAAP/8AAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAP/oAAD/6v/kAAAAAAAAABL/3AAAAAAAAAAA//QAAAAAAAAAAAAKAAYAAP/6AAQABAAAAAAAAP/uABr/7AAAAAAAAAAAAAAAAP/YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/0/+j/8QAIAAgACAAA//7/5gAA//AAAAAAAAD/4P/qAAAAAP/x/+7/5v/o/+wAAP/m/+b/+gAAAAAAAP/YAAAAAAAAAEQAAAAAAAAAAP/9AAD/9P/3AAAAAAAAAAD/8gAIAAgACAAD//4AAAAAAAAAAAAAAAD/5AAAAAAAAAAAAAAAAAAA/+wAAP/m/+b/+gAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAP/3AAAAAAAA//QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/g/8IAAP/O/+j/vv/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAGAAD/9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/o/9AAAP/I/+L/wv/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//QAAAAb/+gAGAAD//v/wAAAAAAAAAAAAAAAAAAD/9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/c/6j/9AAAAAD/+gAAAAAAAAAAAAAAAAAAAAD/5gAAAAAAAAAAAAAAAAAA//oAAP/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAD/9P+I/7j/iwAG/+b/3AAA/+0AAAAA//z/4P/0AAAAAP/0/+T/3P/q/+b/6P/S/+j/1gAAAAAAAAAAAAAAAAAAADT//AAAABD/9AAA//3/5P/kAAAAAP/6/+4ABv/W/+b/wAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9P/6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/6IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/cAAAAAAASAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/cAAD/2f/oAAAAAAAA/4AAGgAAAAAAAAAA//AAAAAAAAAAAAAA//3/9P/aAAQABgAAAAAAAAAa/6IAJAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+j/xAAAAAAAAP/KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//wABgAAAAAAAAAAAAAAAAAAAAAAAAAGAAYAAwAGAAAAAAAAAAAAAAAA//wABgAAAAAAAAAA//wAAP+u/2j/oAAcABQAEAAA/6L/wgAA/+0AAAAA/9D/gv+qAAAAAP+k/9//5v/w/9j/8f/U/9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/WAAD/+v/qAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2AAAAAAAA//b//gAAAAAAAAAA//0AAAAAAAAAAAAAAAAAAP/8AAYACgAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAP/YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAP/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeABT/7v/S/9D/sgAQAAD/5gAA//YAAAAAAAD/5v/qAAAAAAAA/+7/2P/e/+z/+v/Y/+L/7gAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAGAAD/3P/qAAAAAP/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+D/2AAA/+AAAAAAAAAAAAAA/9YAAP/kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAP/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+v+Q/7T/fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1v/GAAAAAP/iAAD/5gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+c/8b/jgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4v/QAAAAAP/qAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+c/7r/ggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/0P/KAAAAAP/gAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+c/7r/igAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/3P/KAAAAAP/qAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+v+U/6T/ggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/0v/E/+wAAP/MAAD/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//QAAAAAAAAAAAAAAAAAAP+c/7r/ggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2P/EAAAAAP/gAAD/9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//YAAP/8AAAAAAAAAAAAAP+c/7b/ggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/0P/EAAAAAP/cAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AAAP/8AAAAAAAAAAAAAP+c/8T/kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1v++AAAAAP/yAAD/9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//YAAP/8AAAAAAAAAAAAAP+c/7T/igAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/xv/EAAAAAP/cAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AAAP/6AAAAAAAAAAAAAP+c/67/hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/yv++AAAAAP/mAAD/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//AAAP/8AAAAAAAAAAAAAAAAAAAAAAAA//7/8QAAABX/9AAAAAD/8f/2/7IAAAAAAAAAAgAEAAAAAAAAAAAAAP/0AAD/+v/yAAgAAAAAAAAAAAAQ/8wAAAAEAAAAEgAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3/8AAAAAz/8AAAAAD/7f/yAAD/+gAA//sAAgACAAAAAAAAAAAAAP/6AAD/+v/nAAAAAAAAAAAAAAAEAAoAAAAOAAAACAAA//oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQB8AAMABAAGAAcACAAJAAsADQAOABIAFAAVABYAFwAYABkAGgAbAB8AIAAhACIAIwAlACkAMwA0ADkAOwA/AEEAQgBZAFsAXwBgAGEAYwBkAGUAZwBoAGkAdAB1AHgAeQB7AHwAgQCZAKAAoQC5AMQAzADlAOYA5wDpAO8A8ADxAPIA8wD0APUA9gD3APgA+QD6APsA/AD9AP4A/wEAAQIBJQEmASgBKQErASwBLQEuAVQBYgFjAWQBZQFmAWcBaAFpAWoBawFsAW0BbgFvAXABcQFyAXMBdAF1AXYBdwF4AXkBegF7AX0BmwGlAaYBqwGsAbABvgG/AcAAAgB7AAMAAwBZAAQABAAiAAYABgA8AAcABwAeAAgACABIAAkACQAJAAsACwBFAA0ADQAOAA4ADgBLABIAEgBYABQAFAA/ABUAFQBfABYAFgBcABcAFwApABgAGAAmABkAGQBXABoAGgBVABsAGwAgAB8AHwA0ACAAIAAhACEAIQAsACIAIgBNACMAIwAPACkAKQACADMAMwADADQANAAEADkAOQAGADsAOwAHAD8APwARAEEAQQAMAEIAQgBiAFkAWQB0AFsAWwB3AF8AXwASAGAAYAATAGEAYQANAGMAYwAjAGQAZAAYAGUAZQBaAGcAZwB6AGgAaAAVAGkAaQBUAHQAdABgAHUAdQBdAHgAeABEAHkAeQBJAHsAewBBAHwAfABCAIEAgQBOAJkAmQA5AKAAoAAFAKEAoQArALkAuQAcAMQAxAA2AMwAzAAnAOUA5QAaAOYA5gAbAOcA5wAWAOkA6QBKAO8A7wBjAPAA8ABkAPEA8QBlAPIA8gBmAPMA8wBnAPQA9ABoAPUA9QBpAPYA9gBqAPcA9wBrAPgA+ABsAPkA+QBtAPoA+gBuAPsA+wBvAPwA/ABwAP0A/QBxAP4A/gByAP8A/wBzAQABAAABAQIBAgBeASUBJQA4ASYBJgAdASgBKABRASkBKQAwASsBKwALASwBLAA7AS0BLQA1AS4BLgAtAVQBVABWAWIBYgAIAWMBYwAQAWQBZAAXAWUBZQAZAWYBZgAfAWcBZwAlAWgBaAAqAWkBaQAuAWoBagAvAWsBawAxAWwBbAAyAW0BbQAzAW4BbgA3AW8BbwA6AXABcAA+AXEBcQBDAXIBcgBMAXMBcwBQAXQBdABTAXUBdQBbAXYBdgBhAXcBdwB1AXgBeAB2AXkBeQB4AXoBegB5AXsBewB7AX0BfQA9AZsBmwAoAaUBpQBGAaYBpgBHAasBqwAUAawBrAAkAbABsABPAb4BvgAKAb8BvwBAAcABwABSAAIAbAAFAAUAJQAKAAoAJQAPAA8AEQAQABAAHwARABEAEQATABMAFwAZABkAFwAdAB4AHgAkACQAAQAlACUAKQAmACYAGQAnACkAKQAqACoAGQArACwAKQAtAC0AAwAuADEAKQAyADIAGQAzADMAKQA0ADQAGQA1ADUAKQA2ADYAKwA3ADcABAA4ADgAGwA6ADoABQA8ADwABgA9AD0ABwBAAEAAHABEAEQACABFAEUAJABGAEgADwBJAEkACwBKAEoADwBLAEsAJABMAEwAIgBNAE0AIwBOAE8AJABQAFEADgBSAFIADwBTAFMADgBUAFQADwBVAFUADgBWAFYAEwBXAFcAKgBYAFgAFABaAFoAFQBcAFwAFgBdAF0AKABgAGAAHABrAGsALABtAG0ADABvAG8AHwBwAHAALAB9AH0AIACCAIcAAQCIAIgAAgCJAIkAGQCKAJEAKQCSAJIAGACTAJMAKQCUAJgAGQCaAJoAGgCbAJ4AGwCfAJ8ABgCgAKAAKQCiAKgACACpAK0ADwCuALEAIgCyALIADwCzALMADgC0ALgADwC6ALoAEAC7AL4AFAC/AL8AFgDAAMAAJADBAMEAFgDCAMIAIgDFAMUAGQDGAMYADwDHAMcAKwDIAMgAEwDJAMkABgDKAMoABwDLAMsAKADdAN4AHwDfAN8AJwDgAOAAEgDhAOEAJgDiAOIAJwDjAOMAEgDkAOQAJgDoAOgAEQDqAOoADADrAOsAIAEwATAALAE2ATgALAE7AUMALAFHAUsACwGnAacACgGpAakAHQGrAasAHQGtAa0ADQGvAa8AIQGxAbIACgGzAbMADQG0AbQAIQG1AbUAGQG2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AAAAAAAA//0AAP/6AAD//QAAAAAAAAAAAAAAAAAAAAD//gAA//QAAP/e/+z//f/5//r/8wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+wAAP/8AAAAAP/9AAD/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+gAAAAAAAP/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//f/+gAAAAAAAAAA//r/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/3gAAAAAAAAAAAAAAAAAAAAAAAAAA//0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3/+gAAAAAAAAAAAAD/9AAA//oAAAAA//0AAAAAAAD/9P/uAAD//f/9//sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/s//wAAAAA//D//gAA/7QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9P/z//YAAAAAAAAAAP/uAAAAAAAA//r/9gAA/84AAAAA/+7/+AAA/8oAAAAA//wAAAAAAAAAAAAAAAAAAP/1//z//AAAAAAAAAAAAAAAAAAAAAAAAAAA//YAAAAAAAAAAAAA//gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//v/7//QAAAAA//0AAAAAAAAAAAAAAAQAAP/7//v/7v/5/+T/6AAA//j/9f/1AAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAD/7v/8AAAAAP/sAAAAAP+0AAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAA//oAAAAA//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//T/7v/0AAD/+gAAAAD/6gAAAAAAAP/q/+wAAP/OAAAAAP/3//gAAP+0AAAAAP/8AAD//AAAAAD/7AAAAAD/9gAAAAAAAAAAAAAAAP/0AAAAAAAAAAAAAP/yAAAAAAAAAAAAAP/4AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//D/9v/e/9gAAP/6//j/+QAAAAD/9AAA//QAAAAAAAAAAAAAAAAAAAAkAAAABgAa//wAKAAJACQAJAAAAAAAAP/8ACQAJAA0ADAAAAAkAAAAEgAGACQAJAAAACoAJAAkABoAJAAkAAAAJAAUACQAJAAkAAYADAAkACoAAAAAABgABv/8ACQAIP/eACQAKgAeABr/9AAkACAAIAAgACT/4AAgACAAIAAgACAAIAAgAA0ANAA0ADQANAAwAAAAAP/8/+r/6v/m/+b/3P/g/9r/5P/g/9oAEAAEAAAAHgAoAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6//kAFgAKAAz/+AAAAAH/9gAAAAwAAgAA//X/9QAy/8wALgAmABX//gANABgAAAAAAAAAAP/CAAYAFgAAAAoAAAAAAAAAAP/s//4AAAAAAAAAAAAA/8wAAAAAAAAAAAAAAAAAAAAA//4AAAAA//oAAP/4AAD/+gAAAAAAAP/8AAAAAAAAAAAAAAAAAAAAAP/v//0AAAAAAAAAAP/0AAAAAAAA//oAAAAA/+IAAAAAAAD/+AAA/+IAAAAAAAAAAAAAAAAAAP/8AAAAAP/9//r/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+//8//QAAAAA//0AAAAA//QAAAAAAAAAAAAAAAAAAAAA//r/7gAA//v/+//7AAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAD/9AAAAAAAAAAAAAAAAP/iAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAA//oAAAAAAAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAGAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//QAAAAA//oAAP/+AAD/+gAAAAAAAAAAAAAAAAAMABQAAAAAAAAAAAAAAAAAAP/7AAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//oAAAAAAAAAAAAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//4AAAAAAAAAAAAAAAP/+gAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAAAAAAAP/sAAD/+v/4//z/+wAA/97//AAAAAD/8gAAAAAAEAAQ//YAAAAAAAAABAAAAAAAAAAuAAAAAAAAAAAAAP/mAAAACAAAAAAAAAAAAAAAAAAMAAAAAP/0//r/8AAAAAAAEgAAAAAAAAAAABQAAAAA/+AAAAAAACQAAAAAAAAAAAAAAAAAAP/uAAAAAAAAAAAAAAAAAAAAAAAEAAQABAAEAAQABAAEAAAABAAEAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9P/s//T/+v/1/+IAAAAD/9wAAAAGAAAAAP/q//QAAAAOAAb//AAA//sAAAAAAAAAAAAAAAD/+gAAAAIAAAAAAAAAAAAAAAD/9AAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAAAAYABgAAAAAAAAAA//oAAAAA//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9P/6AAAAAAAAAAAAAP/6//QAAAAA//oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//0AAAAAAAAAAAAAAAAAAP/6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/+AAAAAAAAAAAAAAAA//oAAAAAAAAAAAAAAAAAAAAA//T//AAAAAD//P/4AAD/vAAAAAAAAAAAAAAAAP/3AAAAAAAA//4AAP/9AAAAAP/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/w//D/9AAAAAAAAAAAAAD//QAAAAD/7gAAAAD/zgAAAAAAAAAAAAD/ugAAAAAAAAAAAAAAAAAA/+wAAAAA//cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/o//QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/+//0AAAAAAAAAAAAAAAAAAAAAAAAAAP/6AAD/5P/UAAD//P/9//cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+P/q/+wAAAAG/+QAAP/4/6IAAAAAAAAAAP/4//j/+gAGAAD/+AAA//T/9P/4//j//gAA//j/+P/4//j/+AAA//gAAP/4//j/6P/p//T/+AAAAAAAAP/gAAAAAP/4/+T/6P/4/9T/+AAA/+b/+P/4/7b/+P/4/+b/+P/4//j/+P/4//j/+P/x//D/8AAA//j/+P/o/+gAAAAAAAAAAP/8//T//P/8AAAAAAAA/+0ACAAAAAAAAAAAAAD/3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+AAAP/4AAAAAAAAAAAAAP/6AAAAAAAAAAD/5v/w/9j/2P/+//7/8//pAAAAAP/oAAD/7gAA//4AAAAAAAAAAAAAAAD/8AAAAAAAAAAAAAAAAP+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//oAAAAA//oABgAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/6gAAAAAAAAAA/+4AAP/0AAAAAP/uAAAAAP/0AAAAAP/mAAAAAAAAAAAAAAAAAAD/8wAAAAAAAAAAAAAAAAAAAAD/+gAAAAAAAP/u//r/+gAA//r/+v/1AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/wAAAAAAAAAAAAAAAAAAD/+gAAAAAAAAAA//j/6v/m/+wAAP/9//P/8AAAAAAAAAAA/+4AAAAAAAAAAAAAAAAAAAAA/+4AAAAYAAAAKAAaAAD/6gAAAAAAAAAGAAAAAAAkACQAEgAAABIAEgAOAAAAAAAAAB4AAAAAAAAAAAAAAAYAAAAMAAAAAAAAAAAADAAAAC4AAAAA//QABgAGAAAAFP/wAAAAFAAAABL/9AAAAAAAAAAAAAD/6gAAAAAAAAAA//wAAAAAABIAAAAAAAAAAAAA//oAAAAA/+D/5v/i/+D/1v/g/9r/6v/g/+AAGAAAAAAAHgASAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG//wACAAeABIAAAAAABYAAAAIABgAAAAD//7//gAk/+gABgASABYAAgAQABgAAAAAAAAAA/+yAAYAEAADAAMAAAAAAAAAAP/0AAAABgAAAAoAFgAA/98AAAAAAAAABgAAAAAAEgASAAAAAAAAAAgABAAAAAD//QAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9AAAAAAASAAAAAP/2AAoAAAAAAAj/4AAAAAgAAAAA/+IAAAAA//QAAAAA/+gAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAP/uAAAAAP/a/+j/5P/i/8T/3v/O/+j/4v/iABAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9AAIACAAM//0AAAAS//oAAAAIAAgAAP/8//0ACP/kAAQACAAR//0ACgAKAAAAAAAAAAD/ogACAAQAAAAAAAAAAAAAAAD/9P/6AAAAAP/2AAAAAP/EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/7P/yAAAAAAAAAAD/8f/6AAAAAP/6AAAAAP/kAAAAAAAEAAAAAP/MAAAAAAAAAAAAAAAAAAAAAAAAAAD/+AAAAAAAAAAAAAD/9AAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAP/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//z//v/6AAAAAAAAAAAAAP/0AAAAAAAAAAD//v/+//wAA//w//YAAP/8//j/+AAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAGAAAAEgAAAAD/+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAQAAAAAAAAADgAGAAAAAAAAAAAAGgAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABAAGAAYAAAAAAAAAAAAAAAQAAP/8//4AAAAGAAT//P/2AAAABgAEAA4AAAAAAAD/6wAAAA4AFwADAAYAAAAAAAAAAP/0AAAAAAAAAAD/+wAA/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/y//QAAAAAAAAAAP/3AAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAA/+YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/+//0AAAAAAAAAAAAD//r//AAAAAAAAP/+//4AAAAA//b/+gAA//4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/6gAAAAwAAAAGAAkAAP/mAAAAAAAAAAAAAAAAAB4AIv/6AAAAAAAA//oAAAAA//0ADAAAAAAAAAAAAAD/+gAAAAYAAAAAAAAAAAAJAAAADAAAAAD/5gAA//0AAAAM/+AAAAAOAAAAAP/mAAAAAP/6AAAAAP/YAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAD/9AAA//r/1v/c/9b/1v++/8z/wP/k/8z/ygACAAAAAAAOAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//7/8//sAAQAAP/4AAAAEv/zAAAAAAAAAAD/8//zABD/0gAGAAYAEgAAAAAAAgAAAAAAAAAA/9IAAAAFAAAAAAAAAAAAAAAA/+wAAAAGAAAADAAEAAD/4gAAAAAAAAAAAAAAAAAaABr/+gAAAAAAAP/6AAAAAP/9ABIAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAwAAAAA/+j/+gAAAAAACv/WAAAACgAAAAb/3gAAAAAAAAAAAAD/zgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA/+4AAAAA/7r/0P/E/8r/nP+0/67/0P++/74AAP/9AAAADAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/x/+n/6AAG//f/5gAAABD/8AAAAAAAAAAA/+n/6wAK/8AAAAAAAA7/+wAAAAIAAAAAAAAAAP+e//kAAAAAAAAAAAAAAAAAAP/0AAAAAAAAAAYAAAAA/9cAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAABgAAAAAABgAAAAAAAAAAAAwAAAAA//oAAAAAAAoAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAAAwABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABv/5AAAAAAAAAAAAAAAS//kAAAAAAAAAAP/9AAAAAAAGAAAAAAAPAAAAAwADAAAAAAAAAAAAAAAAAAMAAAAAAAIAEAAkACQAAAAmACgAAQAqADIABAA1ADgADQA6ADoAEQA8AD0AEgBEAFgAFABaAFoAKQBcAF0AKgCCAJgALACaAJ8AQwCiALgASQC6AMMAYADFAMsAagFHAUsAcQG1Ab0AdgACAE8AJgAmAAEAJwAnAAgAKAAoAAIAKgAqAAMAKwAsAAUALQAtAA0ALgAuAAYALwAvAAcAMAAxAAUAMgAyAAgANQA1AAoANgA2AAsANwA3AAwAOAA4AA0AOgA6AA4APAA8AA8APQA9ABAARABEABEARQBFABwARgBGABMARwBHABoASABIABQASQBJABUASgBKABYASwBLABsATABMABcATQBNABgATgBOABkATwBPABoAUABRABsAUgBTABwAVABUABcAVQBVAB4AVgBWACAAVwBXACEAWABYACIAWgBaACMAXABcACQAXQBdACUAiACIAAIAiQCJAAEAigCNAAIAjgCRAAUAkgCSAAgAkwCTAAUAlACYAAgAmgCaAAkAmwCeAA0AnwCfAA8AogCnABEAqACoABQAqQCpABMAqgCtABQArgCxABcAsgCyABwAswCzABsAtAC4ABwAugC6AB0AuwC+ACIAvwC/ACQAwADAABwAwQDBACQAwgDCABcAwwDDAAcAxQDFAAIAxgDGABQAxwDHAAsAyADIACAAyQDJAA8AygDKABAAywDLACUBRwFHABUBSAFIABcBSQFJABoBSgFKABcBSwFLABoBtQG1AAQBtgG8ABIBvQG9AB8AAgDkAAQABAAXAAUABQB7AAYACAAAAAkACQAEAAoACgB7AAsACwAsAAwADAAuAA0ADQAIAA4ADgAwAA8ADwCHABAAEABxABEAEQCHABIAEgA4ABMAHAAAAB0AHgBwAB8AHwAiACAAIAAWACEAIQAcACIAIgAyACMAIwAJACQAJACDACUAJQAAACYAJgBkACcAKQAAACoAKgBkACsALAAAAC0ALQBjAC4AMQAAADIAMgBkADMAMwAAADQANABkADUANQAAADYANgBmADcANwBnADgAOABoADkAOQABADoAOgBpADsAOwACADwAPABqAD0APQBrAD4APgBeAD8APwALAEAAQABuAEEAQQAGAEIAQgA+AEMAQwAAAEQARABsAEUARQCGAEYASAB5AEkASQBzAEoASgB5AEsASwCGAEwATACKAE0ATQCLAE4ATwCGAFAAUQB4AFIAUgB5AFMAUwB4AFQAVAB5AFUAVQB4AFYAVgCIAFcAVwB/AFgAWACAAFkAWQBGAFoAWgCBAFsAWwBZAFwAXACCAF0AXQCJAF4AXgAMAF8AXwBcAGAAYABuAGEAYQAHAGIAYgAAAGMAYwAYAGQAZwAAAGgAaABdAGkAaQA3AGoAagAAAGsAawBvAGwAbAAoAG0AbQB0AG4AbgAAAG8AbwBxAHAAcABvAHEAcwAAAHQAdAA8AHUAdQA6AHYAdwAAAHgAeAArAHkAeQAvAHoAegAAAHsAewAnAHwAfAApAH0AfQB2AH4AgAAAAIEAgQAzAIIAhwCDAIgAiACEAIkAiQBkAIoAkQAAAJIAkgBiAJMAkwAAAJQAmABkAJkAmQAkAJoAmgBlAJsAngBoAJ8AnwBqAKAAoAAAAKEAoQAbAKIAqABsAKkArQB5AK4AsQCKALIAsgB5ALMAswB4ALQAuAB5ALkAuQAUALoAugB6ALsAvgCAAL8AvwCCAMAAwACGAMEAwQCCAMIAwgCKAMMAwwBbAMQAxABaAMUAxQBkAMYAxgB5AMcAxwBmAMgAyACIAMkAyQBqAMoAygBrAMsAywCJAMwAzABMAM0A3AAAAN0A3gBxAN8A3wB9AOAA4AB+AOEA4QB8AOIA4gB9AOMA4wB+AOQA5AB8AOUA5QASAOYA5gATAOcA5wAPAOgA6ACHAOkA6QAAAOoA6gB0AOsA6wB2AOwA7gAAAO8A7wA/APAA8ABAAPEA8QBBAPIA8gBCAPMA8wBDAPQA9ABEAPUA9QBFAPYA9gBPAPcA9wBQAPgA+ABR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") format("opentype");
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.main-footer {
+  background: plum;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 9, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 25px;
+  min-width: 300px;
+}
+
+/* line 19, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.nwpl-song-title {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 24, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.nwpl-song-artist {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 35, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.right-footer {
+  margin-right: 50px;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 45, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+input[type='range'] {
+  width: 100px;
+  height: 5px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* line 55, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: red;
+  margin-top: -1px;
+}
+
+/* line 63, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  box-shadow: -80px 0 0 80px rgba(255, 255, 255, 0.5);
+}
+
+/* line 74, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+input[type='range']:hover::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: white;
+  box-shadow: -80px 0 0 80px #1cb953;
+  transition: 0.2s;
+}
+
+/* line 85, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+input[type='range']:active::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: white;
+  box-shadow: -80px 0 0 80px #1cb953;
+  transition: 0.2s;
+}
+
+/* line 95, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.volume-icon {
+  background: url(/assets/volume-icon2-a9fbbc05dc9f0f0b5ae9596ac624ef193a947082e65bb41a141fe5fd67010f86.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+}
+
+/* line 106, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.volume-icon:hover {
+  opacity: 1;
+}
+
+/* line 110, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.main-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+
+/* line 119, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-main {
+  min-width: 450px !important;
+  height: 5px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* line 129, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-main::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: red;
+  margin-top: -1px;
+}
+
+/* line 137, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-main::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  box-shadow: -800px 0 0 800px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 148, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-main:hover::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: white;
+  box-shadow: -800px 0 0 800px #1cb953 !important;
+  transition: 0.2s;
+}
+
+/* line 160, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-main:active::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  background: white;
+  box-shadow: -800px 0 0 800px #1cb953 !important;
+  transition: 0.2s;
+}
+
+/* line 170, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.player-controller-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 110px;
+}
+
+/* line 179, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.play-btn {
+  background: url(/assets/play-button-62a5bc2296bf2dd2d9b07b41577d8f23573ccacde7c9206bf5235ecd79959230.png);
+  background-size: 69%;
+  background-repeat: no-repeat;
+  width: 61px;
+  height: 60px;
+  opacity: 0.6;
+  background-position-y: 21px;
+}
+
+/* line 191, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.pause-btn {
+  background: url(/assets/pause-button-b8b677613602965e4bffd9f4bb26715d6d1ec5f5b608c2db9e956494cfd49c80.png);
+  background-size: 72.6%;
+  background-repeat: no-repeat;
+  width: 61px;
+  height: 60px;
+  opacity: 0.6;
+  background-position-y: 21px;
+  background-position-x: -1px;
+}
+
+/* line 203, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.next-btn {
+  background: url(/assets/next-button-faa3d4f20239c63d8a948234b4c6f01b46d76c4a51c7a79cb085d99c12508ccd.png);
+  background-size: 47%;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 60px;
+  opacity: 0.6;
+  background-position-y: 32.5px;
+}
+
+/* line 215, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.prev-btn {
+  background: url(/assets/prev-button-a17b08ec627922edc118e23e862ac51427e1b298f77355166cab79aef6919364.png);
+  background-size: 47%;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 60px;
+  opacity: 0.6;
+  background-position-y: 34px;
+}
+
+/* line 228, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.play-btn:hover {
+  opacity: 1;
+}
+
+/* line 233, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.pause-btn:hover {
+  opacity: 1;
+}
+
+/* line 238, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.next-btn:hover {
+  opacity: 1;
+}
+
+/* line 243, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.prev-btn:hover {
+  opacity: 1;
+}
+
+/* line 247, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.under-controller {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+}
+
+/* line 254, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.seekbar-con {
+  margin: 0 10px;
+}
+
+/* line 258, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+.duration-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 5px;
+}
+
+/* line 266, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/footer.scss */
+#nwpl-album-art {
+  display: block;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  bottom: 90px;
+  left: 0;
+}
+/* line 5, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.inAppComponent {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+/* line 13, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.main-upper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+/* line 22, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.main-sidebar {
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 0;
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 37, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.side-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70px;
+}
+
+/* line 46, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.side-links {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.8;
+  margin: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 58, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.side-links:hover {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+/* line 63, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.side-user {
+  margin-top: 0px;
+}
+
+/* line 68, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.main-component {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+/* line 75, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.main-footer {
+  width: 100vw;
+  background: #282828;
+  z-index: 10;
+  position: fixed;
+  -webkit-transform: none;
+  bottom: 0;
+  height: 90px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 88, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.audify-logo {
+  background: url(/assets/Audify-white-3-665f1286af9acb830c9e7fcac686236ae89d0e09f07d2a05cf78004d96b472c3.png);
+  height: 100px;
+  width: 100%;
+  background-size: 50%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position-x: 45px;
+  background-position-y: 25px;
+}
+
+/* line 100, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.search-icon {
+  background: url(/assets/search-icon-e1183cac4628a191b91bda1bc40b20478d63390843c6037e09654c22a7d43509.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+
+/* line 112, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.home-icon {
+  background: url(/assets/home-icon-f0d243e5d421a912b2aadb89312f0454540e385c5ef2ed69cb700ed7a1ed9182.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+
+/* line 125, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.library-icon {
+  background: url(/assets/library-icon-34f1144cd8b230a8ec0daa8bf832edb91633cf36bd120bb36c485e9b486209d7.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+
+/* line 138, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.active-side {
+  color: #00bc43;
+  opacity: 1;
+}
+/* line 142, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.active-side .search-icon {
+  background: url(/assets/search-icon-selected-7ba4f360e97798dba755823265fb782bea68c9279685be06e444a2e3ca732dfd.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+/* line 154, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.active-side .home-icon {
+  background: url(/assets/home-icon-selected-6b516b4b798a7f013ee644f9941f007b39a7c928b458e591c64bfef05249c7da.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+/* line 166, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.active-side .library-icon {
+  background: url(/assets/library-icon-selected-80d76713f64be9ee2840fbd65ffe9440b3ecd21fe6b37d250e07494f26603012.png);
+  height: 50px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: 87%;
+  display: inline-block;
+  background-position-y: 5px;
+  margin-right: 10px;
+}
+
+/* line 179, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.username {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+/* line 186, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.user-icon {
+  background: url(/assets/user-91206361de98e9313f4070e49ac56115ccc0996e62251010f2f22bd34c58ca91.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -5px;
+}
+
+/* line 196, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.username-text {
+  margin-left: 5px;
+  font-size: 22px;
+  font-family: 'spotifybold';
+}
+
+/* line 202, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.lb-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 207, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.logout-button {
+  color: lightgray;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  width: 70px;
+  height: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid lightgray;
+  align-self: center;
+  display: inline;
+}
+
+/* line 225, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.logout-button:hover {
+  color: white;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+/* line 231, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/foundation.scss */
+.side-art {
+  margin-bottom: 90px;
+  margin-top: -140px;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.AllLanding {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/login-background-1a66294e04e42e2ae1ab37e183e9e9f2026143020b28e030976d2e1ce994c340.jpg);
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* line 14, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 21, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing-logo {
+  background-image: url(/assets/Audify-white-3-665f1286af9acb830c9e7fcac686236ae89d0e09f07d2a05cf78004d96b472c3.png);
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  height: 100px;
+  background-position-x: 67px;
+}
+
+/* line 29, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+}
+
+/* line 35, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing p {
+  color: rgba(211, 211, 211, 0.801);
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin: 36px 0;
+  text-align: center;
+}
+
+/* line 43, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing .link1 {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 19px;
+  border-radius: 50px;
+  width: 280px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* line 55, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.left-landing .link2 {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background: white;
+  padding: 19px;
+  border-radius: 50px;
+  width: 280px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* line 67, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.middle-landing-bar {
+  background: rgba(211, 211, 211, 0.801);
+  height: 430px;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* line 76, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing {
+  padding: 45px;
+  white-space: nowrap;
+}
+
+/* line 81, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing h1 {
+  color: #1DB954;
+  font-size: 52px;
+}
+
+/* line 86, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing h3 {
+  font-weight: lighter;
+  font-size: 24px;
+  color: white;
+}
+
+/* line 91, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing ul {
+  padding: 0;
+}
+
+/* line 95, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.right-landing ul li {
+  list-style-type: none;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+/* line 102, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.landing-tick {
+  background-image: url(/assets/checkmark-9697f50413e04306eac78d540e9e30101aa2c1a848f25d49ae62645980eef0e2.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  padding-right: 10px;
+  background-position-y: 5px;
+}
+
+/* line 112, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.ticktext {
+  position: relative;
+  bottom: 5px;
+}
+
+/* line 117, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/landing.scss */
+.demotext {
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(211, 211, 211, 0.801);
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/library.scss */
+.library-page {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.AllSession {
+  background: green;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* line 13, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.sessionlogo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  width: 100vw;
+}
+
+/* line 21, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.sessionlogo {
+  background: url(/assets/Audify-black-2-55286e72155e7f320ffc4e526d1ea5ad746433851033534f75e29977101b0e9c.png);
+  height: 60px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 37, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.demo-login-fb {
+  background: #3a5997;
+  width: 450px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 0px 0 10px 0;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 52, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.demo-login-fb:hover {
+  transition: 0.5s;
+  background: #3a61b3;
+}
+
+/* line 57, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform {
+  width: 450px;
+  padding: 8px 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: 1px solid #d9dadc;
+  font-size: 16px;
+}
+
+/* line 67, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform::placeholder {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 72, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform:focus {
+  border: 1px solid #909496;
+  transition: 0.5s;
+}
+
+/* line 77, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.usernameform:invalid {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+/* line 84, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.passwordform {
+  width: 450px;
+  padding: 8px 10px;
+  margin: 0px 0 15px 0;
+  box-sizing: border-box;
+  border: 1px solid #d9dadc;
+  font-size: 16px;
+}
+
+/* line 93, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.passwordform:focus {
+  border: 1px solid #909496;
+  transition: 0.5s;
+}
+
+/* line 98, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.passwordform::placeholder {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 103, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.or {
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* line 111, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitForm {
+  background: #1cb953;
+  width: 210px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 30px 0 40px 0;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 127, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitForm:hover {
+  transition: 0.5s;
+  background: #18d45f;
+}
+
+/* line 132, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.errors {
+  color: red;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 138, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.errors li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -30px;
+}
+
+/* line 146, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.submitcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 155, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss {
+  color: #1cb953;
+  text-decoration: none;
+}
+
+/* line 160, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss:hover {
+  color: #18d45f;
+}
+
+/* line 165, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss1 {
+  color: #1cb953;
+  text-decoration: none;
+}
+
+/* line 170, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.ss1:hover {
+  color: #18d45f;
+}
+
+/* line 175, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+.tc {
+  color: #c1c3c6;
+  font-size: 11px;
+  width: 400px;
+  padding: 20px 0;
+  border-top: 1px solid #c1c3c6;
+  margin: 0 0 270px 0;
+}
+
+/* line 184, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/login.scss */
+input.leftJustifyStyle.ErrorShade {
+  border-color: red;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.ModalATP {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  overflow: auto;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 26, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.ModalATP::-webkit-scrollbar {
+  width: 0em;
+}
+
+/* line 29, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+/* line 49, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-button-fix {
+  width: 180px;
+  height: 50px;
+}
+
+/* line 55, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.modal-atp-x {
+  font-size: 45px;
+  color: lightgray;
+}
+/* line 61, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.modal-atp-x button {
+  font-size: 42px;
+}
+
+/* line 66, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.modal-atp-x:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+/* line 71, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-index-container {
+  height: 100%;
+  margin-left: 130px;
+  margin-right: 130px;
+  border-radius: 7px;
+}
+
+/* line 81, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-index-comp-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+/* line 96, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.choose-playlist h1 {
+  font-size: 52px;
+  font-family: 'spotifybold';
+}
+
+/* line 102, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-li {
+  margin: 50px;
+  cursor: pointer;
+}
+
+/* line 109, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-album-art-pl-index {
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 24px 82px -4px rgba(0, 0, 0, 0.75);
+  transition: 0.4s;
+}
+
+/* line 120, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-album-art-pl-index:hover {
+  width: 198px;
+  height: 198px;
+  transition: 0.2s;
+  -webkit-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 27px 85px 8px rgba(0, 0, 0, 0.75);
+}
+
+/* line 130, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-album-art-pl-index:active {
+  width: 198px;
+  height: 198px;
+  transition: 0.2s;
+  -webkit-box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 20px 81px -7px rgba(0, 0, 0, 0.75);
+}
+
+/* line 140, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.atp-text {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'spotifybold';
+  margin-top: 15px;
+}
+
+/* line 149, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modal-atp.scss */
+.s-atp {
+  font-size: 24px;
+  background: #1cb953;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 40px;
+  right: 40px;
+  text-align: center;
+  font-family: 'spotifybold';
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modaldp.scss */
+.delete-pl-button-modal {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 10px;
+  border-radius: 50px;
+  width: 115px;
+  height: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  align-self: center;
+  display: inline;
+  margin-top: 30px;
+}
+
+/* line 23, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modaldp.scss */
+.delete-playlist-modal {
+  font-size: 47px;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-family: "spotifybold";
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.modal-ep {
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'spotifybold';
+  margin-top: -100px;
+  position: fixed;
+  /* Stay in place */
+  left: 0px;
+  right: 0;
+  top: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 26, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.rename-playlist {
+  font-size: 47px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "spotifybold";
+}
+
+/* line 33, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.close-ep {
+  font-size: 56px;
+  color: gray;
+}
+
+/* line 38, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.close-ep:hover {
+  font-weight: 100px;
+  color: white;
+  transition: 0.3s;
+}
+
+/* line 45, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.form-ep {
+  background: #282828;
+  width: 100vw;
+  height: 150px;
+  font-size: 58px;
+  caret-color: #1DB954;
+  font-family: 'spotifybold';
+  padding-left: 30%;
+}
+
+/* line 56, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+::placeholder {
+  color: white;
+  opacity: 0.2;
+}
+
+/* line 61, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.edit-ep-button {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 10px;
+  border-radius: 50px;
+  width: 123px;
+  height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  align-self: center;
+  display: inline;
+  margin-top: 30px;
+}
+
+/* line 82, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.edit-ep-button:hover {
+  background: #18d45f;
+  transition: 0.2s;
+}
+
+/* line 87, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.ep-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 94, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.ep-stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 101, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalep.scss */
+.submit-edit {
+  align-self: center;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.modal-np {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'spotifybold';
+  margin-top: -70px;
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  left: 0px;
+  right: 0;
+  top: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* line 27, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.create-playlist {
+  font-size: 47px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "spotifybold";
+}
+
+/* line 34, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.close-np {
+  font-size: 54px;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+/* line 41, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.close-np:hover {
+  font-weight: 100px;
+  color: white;
+  transition: 0.3s;
+}
+
+/* line 48, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.create-np-button {
+  color: white;
+  text-decoration: none;
+  background: #1DB954;
+  padding: 10px;
+  border-radius: 50px;
+  width: 123px;
+  height: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  align-self: center;
+  display: inline;
+}
+
+/* line 65, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.create-np-button:hover {
+  background: #18d45f;
+  transition: 0.2s;
+}
+
+/* line 70, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.create-np-button2 {
+  color: lightgray;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  width: 121px;
+  height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  border: 2px solid lightgray;
+  align-self: center;
+  display: inline;
+}
+
+/* line 87, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.create-np-button2:hover {
+  color: white;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+/* line 93, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.form-np {
+  background: rgba(40, 40, 40, 0.8);
+  width: 100vw;
+  height: 150px;
+  font-size: 58px;
+  caret-color: #1DB954;
+  font-family: 'spotifybold';
+  padding-left: 54vw;
+}
+
+/* line 104, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.2;
+  /* Firefox */
+}
+
+/* line 108, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.cp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 123, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/modalnp.scss */
+.cp-buttons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 16, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.main-nav:hover {
+  color: white;
+}
+
+/* line 27, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.active-nav .active-underline {
+  background: #1cb95d;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+/* line 37, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.nav-link-items {
+  padding: 10px;
+  font-size: 12x;
+}
+
+/* line 41, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.nav-text {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* line 46, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/nav.scss */
+.nav-left-filler {
+  min-width: 300px;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/reset.scss */
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+/* line 19, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 23, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/reset.scss */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 29, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/reset.scss */
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 43, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/reset.scss */
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+/* line 1, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-full {
+  background: black;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* line 9, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-top {
+  background: #282828;
+  height: 160px;
+  margin-left: 240px;
+}
+
+/* line 16, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-top-tiny-text p {
+  color: white;
+  margin-left: 30px;
+  padding-top: 30px;
+  font-family: 'spotifybold';
+}
+
+/* line 24, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-input {
+  color: white;
+  height: 80px;
+  margin-left: 30px;
+}
+
+/* line 32, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-input-actual-input {
+  color: white;
+  height: 80px;
+  font-size: 47px;
+  font-family: 'spotifybold';
+  caret-color: #1cb953;
+}
+
+/* line 41, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-input-actual-input::placeholder {
+  caret-color: #1cb953;
+}
+
+/* line 45, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.no-result-found {
+  margin: 0 auto;
+  color: white;
+  font-size: 30px;
+}
+
+/* line 51, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-results-full {
+  height: 100%;
+  width: 100vw;
+}
+
+/* line 58, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-songs-render {
+  width: 100vw;
+}
+
+/* line 65, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-playlists-render {
+  margin-left: 50px;
+  width: 100vw;
+}
+
+/* line 73, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-playlist-img {
+  height: 250px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+/* line 80, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-playlist-img:hover {
+  transform: scale(1.03, 1.03);
+  transition: 0.3s;
+}
+
+/* line 85, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-pl-title {
+  color: white;
+  font-family: 'spotifybold';
+  text-align: center;
+  font-size: 45px;
+  padding: 7px;
+  margin-left: 40px;
+  position: relative;
+  top: 20px;
+}
+
+/* line 97, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-headings {
+  font-size: 34px;
+  color: white;
+  text-align: center;
+  font-family: "spotifybold";
+}
+
+/* line 104, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-each-render {
+  display: inline-block;
+}
+
+/* line 111, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-each-render {
+  margin: 20px 0;
+}
+
+/* line 117, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.search-results-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 124, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-ul {
+  margin-left: 260px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+/* line 135, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/search.scss */
+.sr-pl-render-c {
+  display: flex;
+  flex-direction: row;
+}
+/* line 40, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/temp.scss */
+.search-t {
+  margin-left: 400px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 21, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 25, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+html {
+  background: black;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 31, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+html, body {
+  margin: 0;
+  background: linear-gradient(#3a5b5f, black);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 41, /Users/shashankracherla/Desktop/Dev/FSP/AudifyApp/app/assets/stylesheets/application.scss */
+body {
+  height: 100%;
+  overflow: auto;
+}
