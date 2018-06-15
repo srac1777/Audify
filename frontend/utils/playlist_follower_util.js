@@ -9,7 +9,7 @@ export const createPlaylistFollower = playlist_follower => {
     return $.ajax({
         url: 'api/playlist_followers',
         method: 'POST',
-        data: { playlist_follower }
+        data: { playlist_follower: {playlist_id: parseInt(playlist_follower)} }
     });
 };
 

@@ -37,6 +37,16 @@ class PlaylistShow extends React.Component {
         // this.props.history.push('/home');
         this.props.openModal('dp');
     }
+
+    handleFollow(){
+        // let cpf = {user_id:  }
+        // debugger
+        this.props.createPlaylistFollower(this.props.playlist.id)
+    }
+
+    handleUnfollow() {
+        this.props.deletePlaylistFollower({playlist_id: this.props.playlist.id, user_id: this.props.currentUser.id})
+    }
     
     render() {
         // console.log(this.props.playlist, "hiiiiiiiii");
@@ -63,6 +73,8 @@ class PlaylistShow extends React.Component {
                         <div className="pl-show-left-buttons">
                             <div><button className="pl-rename-button" onClick={this.handleEdit.bind(this)}>rename</button></div>
                             <div><button className="delete-pl-button" onClick={this.handleDelete.bind(this)}>Delete</button></div>
+                            <div><button className="pl-rename-button" onClick={this.handleFollow.bind(this)}>Follow</button></div>
+                            <div><button className="pl-rename-button" onClick={this.handleUnfollow.bind(this)}>Unfollow</button></div>
                         </div>
                     </div>
                <div className="pl-songs-container"><ul>

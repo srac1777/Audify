@@ -6,9 +6,6 @@ import {NavLink} from 'react-router-dom';
 
 class PlaylistIndex extends React.Component {
     
-    componentDidMount() {
-        this.props.fetchPlaylists();
-    }
 
     handleClick() {
         this.props.openModal('np')

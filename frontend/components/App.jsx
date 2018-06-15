@@ -13,7 +13,7 @@ import { logout } from '../actions/session_actions';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import { fetchSongs } from '../actions/song_actions';
 import SearchPage from './search/search_container';
-import BrowsePage from './library/library';
+import BrowsePageContainer from './browse/browse_container';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';
 import sidebar_container from './temp/sidebar_container';
@@ -33,7 +33,7 @@ const App = ({store}) => {
                         <AuthRoute path="/login" component={LogInFormContainer} />
                         <AuthRoute path="/signup" component={SignUpFormContainer} />
                         <ProtectedRoute exact path="/home" component={HomePage} />
-                        <ProtectedRoute exact path="/browse" component={BrowsePage} />
+                        <ProtectedRoute exact path="/browse" component={BrowsePageContainer} />
                         <ProtectedRoute exact path="/search" component={SearchPage} />
 
                         <ProtectedRoute exact path="/playlists/:playlistId" component={PlaylistShowPage} />

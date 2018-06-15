@@ -21,3 +21,16 @@ export const getFilteredPlaylistSongs = (state, playlist_id) => {
         
     return result;
 };
+
+
+export const getFilteredPlaylists = (state) => {
+
+    let result = [];
+    for (let id in state.entities.playlists) {
+        if (state.entities.playlists[id].creator_id === state.session.currentUser.id) {
+            result.push(state.entities.playlists[id])
+        }
+    }
+
+    return result;
+};

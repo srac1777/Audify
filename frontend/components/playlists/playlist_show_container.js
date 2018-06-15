@@ -8,6 +8,7 @@ import { deletePlaylistSong, fetchPlaylistSongs } from '../../actions/playlist_s
 import merge from 'lodash/merge';
 import { playNow } from '../../actions/play_now_action';
 import { nowPlayingQueue } from '../../actions/now_playing_queue_action';
+import { createPlaylistFollower, deletePlaylistFollower } from '../../actions/playlist_follower_actions';
 
 
 
@@ -26,7 +27,8 @@ const msp = (state, ownProps) => {
     songs: getFilteredPlaylistSongs(state, ownProps.match.params.playlistId),
     playlist_songs: Object.values(state.entities.playlist_songs),
     ownProps: ownProps,
-    now_pl_green: state.now_playing_queue[state.now_playing]
+    now_pl_green: state.now_playing_queue[state.now_playing],
+    currentUser: state.session.currentUser
 }};
 
 const mdp = dispatch => {
@@ -41,7 +43,9 @@ const mdp = dispatch => {
     fetchPlaylistSongs: () => dispatch(fetchPlaylistSongs()),
     deletePlaylistSong: ps => dispatch(deletePlaylistSong(ps)),
     playNow: song => dispatch(playNow(song)),
-    nowPlayingQueue: queue => dispatch(nowPlayingQueue(queue))
+    nowPlayingQueue: queue => dispatch(nowPlayingQueue(queue)),
+    createPlaylistFollower: playlist_follow => dispatch(createPlaylistFollower(playlist_follow)),
+    deletePlaylistFollower:   pf => dispatch(deletePlaylistFollower(pf))
 }};
 
 export default connect(msp, mdp)(PlaylistShow);
