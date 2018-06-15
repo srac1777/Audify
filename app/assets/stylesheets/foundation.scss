@@ -52,6 +52,7 @@
     // background: red;
     text-align: center;
     vertical-align: middle;
+    font-family: 'spotifynormal'
     // color: rgb(23,185,93);
 }
 
@@ -107,6 +108,7 @@
     display: inline-block;
     background-position-y: 5px; 
     margin-right: 10px; 
+    transition: 0.3s;
 }
 
 .home-icon {
@@ -119,6 +121,8 @@
     display: inline-block;
     background-position-y: 5px; 
     margin-right: 10px; 
+    transition: 0.3s;
+
 
 }
 
@@ -132,12 +136,14 @@
     display: inline-block;
     background-position-y: 5px; 
     margin-right: 10px; 
+    transition: 0.3s;
 
 }
 
 .active-side {
     color: rgb(0,188,67);
     opacity: 1;
+    transition: 0.3s;
 
     .search-icon {
         background: image-url("search-icon-selected.png");
@@ -149,6 +155,8 @@
         display: inline-block;
         background-position-y: 5px; 
         margin-right: 10px; 
+    transition: 0.3s;
+
     }
 
     .home-icon {
@@ -161,6 +169,8 @@
         display: inline-block;
         background-position-y: 5px; 
         margin-right: 10px; 
+    transition: 0.3s;
+
     }
 
     .library-icon {
@@ -173,12 +183,15 @@
         display: inline-block;
         background-position-y: 5px; 
         margin-right: 10px; 
+    transition: 0.3s;
+
     }
 }
 
 .username {
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
     margin-bottom: 5px;
 
 }
@@ -205,27 +218,30 @@
 }
 
 .logout-button {
-    color: lightgray;
+    color: rgba(white, 0.6);
     text-decoration: none;
     padding: 10px;
     border-radius: 50px;
     width: 70px;
-    height: 10px;
+    height: 14px;
     text-align: center;
     // font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     // margin-right: 25px;
-    border: 2px solid lightgray;
+    border: 2px solid rgba(white, 0.5);
     align-self: center;
     display: inline;
+    font-family: 'spotifynormal';
+   transition: 0.3s;
+    
     // margin-bottom: 250px;
 }
 
 .logout-button:hover {
    color: white;
    border: 2px solid white;
-   transition: 0.2s;
+   transition: 0.4s;
 }
 
 .side-art {

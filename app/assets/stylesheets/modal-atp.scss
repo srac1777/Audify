@@ -118,8 +118,7 @@
 }
 
 .atp-album-art-pl-index:hover {
-    width: 198px;
-    height: 198px;
+    transform: scale(1.03, 1.03);
     transition: 0.2s;
     //from cssmatic.com
     -webkit-box-shadow: -2px 27px 85px 8px rgba(0,0,0,0.75);

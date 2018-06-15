@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    font-family: 'spotifybold';
+
 }
 
 .sessionlogo-container {
@@ -47,6 +49,8 @@
     font-weight: bold;
     cursor: pointer;
     outline:none;
+    font-family: 'spotifybold';
+
 }
 
 .demo-login-fb:hover {
@@ -61,6 +65,8 @@
     box-sizing: border-box;
     border: 1px solid rgb(217,218,220);    
     font-size: 16px;  
+    font-family: 'spotifybold';
+
     // color: red;  
 }
 
@@ -88,6 +94,8 @@
     box-sizing: border-box;
     border: 1px solid rgb(217,218,220);
     font-size: 16px;
+    font-family: 'spotifybold';
+
 }
 
 .passwordform:focus {
@@ -121,6 +129,8 @@
     font-weight: bold;
     cursor: pointer;
     outline:none;
+    font-family: 'spotifybold';
+
     
 }
 
@@ -155,6 +165,8 @@
 .ss {
     color: rgb(28, 185, 83);
     text-decoration: none;
+    font-family: 'spotifybold';
+
 }
 
 .ss:hover {
@@ -179,6 +191,8 @@
     padding: 20px 0;
     border-top: 1px solid rgb(193,195,198);
     margin: 0 0 270px 0;
+    font-family: 'spotifynormal';
+
 }
 
 input.leftJustifyStyle.ErrorShade{

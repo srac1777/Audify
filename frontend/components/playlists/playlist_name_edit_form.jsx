@@ -20,7 +20,7 @@ class PlaylistNameEditForm extends React.Component {
     render() {
         return (
             <div className="modal-ep">
-                <div><button className="close-ep" onClick={this.props.closeModal}>X</button></div>
+                <div><button className="close-ep" onClick={this.props.closeModal}>x</button></div>
                 <div className="rename-playlist">Rename playlist</div>
                 {/* <div className="ep-form"> */}
                     <form onSubmit={this.handleSubmit.bind(this)}>

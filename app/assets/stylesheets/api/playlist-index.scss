@@ -36,12 +36,21 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-right: 25px;
+    transition: 0.3s;
+    font-family: 'spotifynormal';
+
+
 }
 
 .new-playlist-button:hover {
     // height: 18px;
     // width: 130px;
+    transition: 0.3s;
+    transform: scale(1.015, 1.015);
     background: rgb(24, 212, 95);
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
 }
 
 .np-button-container {
@@ -104,8 +113,7 @@
 }
 
 .album-art-pl-index:active {
-    width: 187px;
-    height: 187px;
+    transform: scale(0.97,0.97);
     transition: 0.2s;
     //from cssmatic.com
     -webkit-box-shadow: -2px 20px 81px -7px rgba(0,0,0,0.75);
@@ -118,5 +126,7 @@
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
+    font-family: 'spotifynormal';
+
     // z-index: 3;
 }

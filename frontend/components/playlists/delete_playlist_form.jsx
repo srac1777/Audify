@@ -30,7 +30,7 @@ class DeletePlaylist extends React.Component {
     render() {
         return (
             <div className="modal-ep">
-                <div><button className="close-ep" onClick={this.props.closeModal}>X</button></div>
+                <div><button className="close-ep" onClick={this.props.closeModal}>x</button></div>
                 <div className="delete-playlist-modal">Do you really want to delete this playlist?</div>
                 <div><button className="delete-pl-button-modal" onClick={this.handleDelete.bind(this)}>Delete</button></div>
             </div>

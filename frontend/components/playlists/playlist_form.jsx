@@ -62,7 +62,7 @@ class PlaylistForm extends React.Component {
     render() {
         return (
             <div className="modal-np">
-                <button className="close-np" onClick={this.props.closeModal}>X</button>
+                <button className="close-np" onClick={this.props.closeModal}>x</button>
                 <div className="create-playlist">Create new playlist</div>
                 <div className="cp-form">
                 <form onSubmit={this.handleSubmit.bind(this)}>
