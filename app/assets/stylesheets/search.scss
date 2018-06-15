@@ -1,5 +1,139 @@
-.search-page {
-    width: 100vw;
+.search-full {
+    background: black;
     height: 100vh;
+    overflow-x: hidden;
+    
+    // margin-left: 240px;
+}
+
+.search-top {
+    background: rgb(40,40,40);
+    height: 160px;
+    margin-left: 240px;
+
+}
+
+.search-top-tiny-text p{
+    color: white;
+    margin-left: 30px;
+    padding-top: 30px;
+    // font-size: 12px;
+    font-family: 'spotifybold';
+}
+
+.search-input {
+    color: white;
+    // background: blue;
+    height: 80px;
+    // margin-top: 20px;
+    margin-left: 30px;
+}
+
+.search-input-actual-input {
+    color: white;
+    // background: blue;
+    height: 80px;
+    font-size: 47px;
+    font-family: 'spotifybold';
+    caret-color: rgb(28, 185, 83);
+}
+
+.search-input-actual-input::placeholder {
+    caret-color: rgb(28, 185, 83);
+}
+
+.no-result-found {
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+}
+
+.search-results-full {
+    // background: orchid;
+    height: 100%;
+    width: 100vw;
+    // overflow-y: scroll;
+}
+
+.sr-songs-render {
+    // margin-left: 260px;
+    // display: block;
+    // background: red;
+    width: 100vw;
+}
+
+.sr-playlists-render {
+    // margin-left: 260px;
+    // background: green;
+    margin-left: 50px;
+    width: 100vw;
+    // padding: 50px;
+}
+
+.sr-playlist-img {
+    height: 250px;
+    width: 250px;
+    transition: 0.3s;
+    // background: red;
+}
+
+.sr-playlist-img:hover {
+    transform: scale(1.03,1.03);
+    transition: 0.3s;
+}
+
+.sr-pl-title {
+    color: white;
+    font-family: 'spotifybold';
     text-align: center;
+    font-size: 45px;
+    padding: 7px;
+    margin-left: 40px;
+    position: relative;
+    top: 20px;
+    // vertical-align: middle;
+}
+
+.sr-headings {
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    font-family: 'spotifybold'
+}
+
+.sr-each-render {
+    // margin-left: 260px; 
+    display: inline-block;
+    // width: 300px;
+    // background: yellow;
+}
+
+.sr-each-render {
+    margin: 20px 0;
+    // display: inline-block;
+
+}
+
+.search-results-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // background: honeydew;
+}
+
+.sr-ul {
+    // background: orange;
+    margin-left: 260px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.sr-pl-render-c {
+    display: flex;
+    flex-direction: row;
+    // background: green;
 }

@@ -65,23 +65,41 @@ class SRIndexItem extends React.Component {
         //     debugger
         //      searchResultSong = this.props.songs[this.props.result.searchable_id]
         // }
+        let img_url;
+
+        if(typeof this.state.searchResultPlaylist.album_art === 'undefined'){
+            img_url = "https://s3-us-west-1.amazonaws.com/audifymaster/fallback/no-pl-songs.png"
+        } else {
+            img_url = this.state.searchResultPlaylist.album_art
+        }
 
         if (this.state.searchResultPlaylist === '' && this.state.searchResultSong === ''){
-            return <div>hello</div>
+            return <div></div>
         }
 
         if(this.state.searchResultPlaylist === ''){
             // debugger
-            playlist_render = <p></p>
+            playlist_render = <div></div>
         } else {
-            playlist_render = (<Link to={`/playlists/${this.state.searchResultPlaylist.id}`}><img src={this.state.searchResultPlaylist.album_art}></img>{this.state.searchResultPlaylist.title}</Link>)
+            // debugger
+            playlist_render = (
+            <div >
+                    <Link className="sr-pl-render-c" to={`/playlists/${this.state.searchResultPlaylist.id}`}>
+                    <div><img className="sr-playlist-img" src={img_url}></img></div>
+                    <div className="sr-pl-title">
+                        {this.state.searchResultPlaylist.title}
+                    </div>
+                </Link>
+            </div>)
         }
 
         if(this.state.searchResultSong === ''){
-            songs_render = <p></p>
+            songs_render = <div></div>
         } else {
-            songs_render = (<PlaylistSongsIndexItem
-
+            songs_render = (
+            <div>
+            {/* <p className="sr-headings">Songs</p> */}
+            <PlaylistSongsIndexItem
                 song={this.state.searchResultSong}
                 idx={this.props.send_key}
                 playlist={this.props.playlist}
@@ -89,22 +107,19 @@ class SRIndexItem extends React.Component {
                 current_songs_list={[this.state.searchResultSong]}
                 nowPlayingQueue={this.props.nowPlayingQueue}
                 now_pl_green={this.props.now_pl_green}
-            />)
+            />
+            </div>)
         }
 
 
         // debugger
         // debugger
         return (
-            <div>
-                <li>
-                    <div>{playlist_render}</div>
-                    <div>{songs_render}</div>
-                    
-                    {/* hi{searchResultSong.title}hello{searchResultSong.duration} */}
-                </li>
-            </div>
-        );
+                <div className="sr-each-render"> 
+                    <div className="sr-playlists-render">{playlist_render}</div>  
+                    <div className="sr-songs-render">{songs_render}</div>
+                </div>
+            );
     }
 }
 

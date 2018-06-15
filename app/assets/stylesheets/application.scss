@@ -23,7 +23,9 @@
      font-family: Arial, Helvetica, sans-serif; //TODO
 }
     html {
-        // background: black;
+        background: black;
+        overflow: hidden;
+        height: 100%;
     }
 
     html,body {
@@ -34,6 +36,11 @@
         // height: 100vh;
         // max-width: 100%;
         // overflow-x: hidden;
+    }
+
+    body {
+        height: 100%;
+        overflow: auto;
     }
   
 
