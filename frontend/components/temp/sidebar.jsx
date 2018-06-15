@@ -24,6 +24,7 @@ class Sidebar extends React.Component {
                         <div><NavLink to="/search" className="side-links" activeClassName="active-side"><div className="search-icon"></div>Search</NavLink></div>
                         <div><NavLink to="/home" className="side-links" activeClassName="active-side"><div className="home-icon"></div>Home</NavLink></div>
                         <div><NavLink to="/browse" className="side-links" activeClassName="active-side"><div className="library-icon"></div>Browse</NavLink></div>
+                        <div><NavLink to="/aboutme" className="side-links" activeClassName="active-side"><div className="dev-icon"></div>Developer Info</NavLink></div>
                         <div className="side-user">
                             <ProtectedRoute path="/" component={UserContainer} />
                             <ProtectedRoute path="/" component={LogoutContainer} />

@@ -1,5 +1,6 @@
 .AppComponent {
     // background: aqua;
+    user-select: none;
 }
 
 .inAppComponent {
@@ -107,7 +108,7 @@
     background-size: 87%;
     // background: red;
     display: inline-block;
-    background-position-y: 5px; 
+    background-position-y: 7px; 
     margin-right: 10px; 
     transition: 0.3s;
 }
@@ -141,6 +142,19 @@
 
 }
 
+.dev-icon {
+    background: image-url("dev-info.png");
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    // background: red;
+    display: inline-block;
+    background-position-y: 10px; 
+    margin-right: 10px; 
+    transition: 0.3s;
+}
+
 .active-side {
     color: rgb(0,188,67);
     opacity: 1;
@@ -154,7 +168,7 @@
         background-size: 87%;
         // background: red;
         display: inline-block;
-        background-position-y: 5px; 
+        background-position-y: 7px; 
         margin-right: 10px; 
     transition: 0.3s;
 
@@ -187,6 +201,19 @@
     transition: 0.3s;
 
     }
+
+    .dev-icon {
+    background: image-url("dev-info.png");
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    // background: red;
+    display: inline-block;
+    background-position-y: 10px; 
+    margin-right: 10px; 
+    transition: 0.3s;
+}
 }
 
 .username {

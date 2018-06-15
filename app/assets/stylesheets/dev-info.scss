@@ -1,0 +1,73 @@
+.devPage-full {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    margin-left: 260px;
+    // background: red;
+    margin-right: 260px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+    // padding-right: 200px;
+}
+
+.me-icon {
+    background: image-url("mee.jpg");
+    overflow: hidden;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-position-x: 0px;
+}
+
+.me-text {
+    font-size: 54px;
+    color: white;
+    font-family: 'spotifybold';
+
+}
+.lll {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+.ab-Links {
+    // position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: #1DB954;
+    padding: 10px;
+    border-radius: 50px;
+    width: 123px;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+    // font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    transition: 0.3s;
+    font-family: 'spotifynormal';
+
+
+}
+
+.ab-Links:hover {
+    // height: 18px;
+    // width: 130px;
+    transition: 0.3s;
+    transform: scale(1.015, 1.015);
+    background: rgb(24, 212, 95);
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+}

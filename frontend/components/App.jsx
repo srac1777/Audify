@@ -17,6 +17,7 @@ import BrowsePageContainer from './browse/browse_container';
 import Sidebar from './temp/sidebar';
 import PlayerContainer from './player/player_container';
 import sidebar_container from './temp/sidebar_container';
+import devPage from './temp/devpage';
 
 
 const App = ({store}) => {
@@ -36,7 +37,7 @@ const App = ({store}) => {
                         <ProtectedRoute exact path="/home" component={HomePage} />
                         <ProtectedRoute exact path="/browse" component={BrowsePageContainer} />
                         <ProtectedRoute exact path="/search" component={SearchPage} />
-                        {/* <ProtectedRoute exact path="/aboutme" component={devPage} /> */}
+                        <ProtectedRoute exact path="/aboutme" component={devPage} />
                         <ProtectedRoute exact path="/playlists/:playlistId" component={PlaylistShowPage} />
                         <ProtectedRoute exact path="/songs/addtoplaylist" component={AddtoPlaylistContainer} />
                         <ProtectedRoute path="/home/songs" component={SongsIndex} />
