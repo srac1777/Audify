@@ -2,6 +2,6 @@
   json.set! playlist.id do
     json.extract! playlist, :id, :title, :creator_id, :img_url
     json.creator_name playlist.creator.username
-
+    json.follower_ids []
   end
 end

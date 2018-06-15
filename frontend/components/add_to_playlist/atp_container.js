@@ -3,12 +3,13 @@ import { fetchPlaylists, updatePlaylist } from '../../actions/playlist_actions';
 import AddtoPlaylist from './atp';
 import { createPlaylistSong } from '../../actions/playlist_song_actions'
 import { closeModal } from '../../actions/modal_actions';
+import { getFilteredPlaylists } from '../../reducers/selectors';
 
 const mapStateToProps = state => {
     // console.log(state.entities.clicked_song);
 
     return {
-        playlists: Object.values(state.entities.playlists),
+        playlists: getFilteredPlaylists(state),
         clickedSong: state.entities.clicked_song
     }
 };

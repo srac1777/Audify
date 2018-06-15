@@ -2,6 +2,7 @@ class Api::PlaylistFollowersController < ApplicationController
     
     def index
         @playlists = Playlist.all
+        
     end
     
     def create

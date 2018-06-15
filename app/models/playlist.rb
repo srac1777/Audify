@@ -20,12 +20,15 @@ class Playlist < ApplicationRecord
     has_many :playlist_songs,
         foreign_key: :playlist_id,
         class_name: :PlaylistSong
+
     has_many :songs, through: :playlist_songs
+        -> {order('created_at asc')}
 
 
     has_many :playlist_followers,
         foreign_key: :playlist_id,
         class_name: :PlaylistFollower
+        
     has_many :followers, through: :playlist_followers
 
 end

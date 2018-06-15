@@ -6,7 +6,8 @@ import {NavLink} from 'react-router-dom';
 
 class PlaylistIndex extends React.Component {
     componentDidMount(){
-        this.props.fetchPlaylists()
+        this.props.fetchPlaylists().then(this.props.fetchPlaylistFollowers)
+        
     }
 
     handleClick() {
@@ -16,6 +17,10 @@ class PlaylistIndex extends React.Component {
     
     render() {
         // console.log(this.props.playlists);
+
+
+        
+        
         
         return (
             <div className="full-playlists-index">
@@ -30,7 +35,12 @@ class PlaylistIndex extends React.Component {
 
                 </div>
                 <div className="playlist-index-list-container">
-                    
+                
+            {/* FollowedPlaylists
+                < ul >
+                { this.props.followed_playlists.map(fplaylist => <PlaylistIndexItem key={fplaylist.id} playlist={fplaylist} />) }
+                    </ul >
+                Own playlists */}
                 <ul>
                     {this.props.playlists.map(playlist => (<PlaylistIndexItem key={playlist.id} playlist={playlist} />))}
                 </ul>

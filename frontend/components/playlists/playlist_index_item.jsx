@@ -12,6 +12,7 @@ class PlaylistIndexItem extends React.Component {
 
     render() {
         let songs = this.props.playlist.songs
+        // debugger
         let img_src;
         // console.log(this.props.playlist, "hhhasoidhfaosfoawgfawqefgjwoqgjf");
         // console.log(songs, "hhhasoidhfaosfoawgfawqefgjwoqgjf");

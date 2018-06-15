@@ -39,9 +39,23 @@ export const getFilteredPlaylists = (state) => {
 export const getFilteredOtherPlaylists = (state) => {
 
     let result = [];
+    // debugger
     for (let id in state.entities.playlists) {
         if (state.entities.playlists[id].creator_id !== state.session.currentUser.id) {
             result.push(state.entities.playlists[id])
+        }
+    }
+
+    return result;
+};
+
+
+export const getFilteredFollowedPlaylists = (state) => {
+    // debugger
+    let result = [];
+    for (let id in state.entities.playlist_followers) {
+        if (state.entities.playlist_followers[id].creator_id === state.session.currentUser.id) {
+            result.push(state.entities.playlist_followers[id])
         }
     }
 
