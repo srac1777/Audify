@@ -34,10 +34,10 @@ const App = ({store}) => {
                     <Switch>
                         <AuthRoute path="/login" component={LogInFormContainer} />
                         <AuthRoute path="/signup" component={SignUpFormContainer} />
+                        <ProtectedRoute exact path="/aboutme" component={devPage} />
                         <ProtectedRoute exact path="/home" component={HomePage} />
                         <ProtectedRoute exact path="/browse" component={BrowsePageContainer} />
                         <ProtectedRoute exact path="/search" component={SearchPage} />
-                        <ProtectedRoute exact path="/aboutme" component={devPage} />
                         <ProtectedRoute exact path="/playlists/:playlistId" component={PlaylistShowPage} />
                         <ProtectedRoute exact path="/songs/addtoplaylist" component={AddtoPlaylistContainer} />
                         <ProtectedRoute path="/home/songs" component={SongsIndex} />

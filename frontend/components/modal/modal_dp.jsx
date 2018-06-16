@@ -26,7 +26,7 @@ function Modal({ modal, closeModal, playlist }) {
             break;
         // debugger
         default:
-        debugger
+        // debugger
             return null;
     }
     return (

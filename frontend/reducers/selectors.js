@@ -17,7 +17,7 @@ export const getFilteredPlaylistSongs = (state, playlist_id) => {
             result.push(state.entities.songs[iid])
             } 
         }
-        console.log(result);
+        // console.log(result);
         
     return result;
 };

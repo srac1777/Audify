@@ -52,7 +52,7 @@ class PlaylistShow extends React.Component {
         // console.log(this.props.playlist, "hiiiiiiiii");
         // debugger
         if(typeof this.props.playlist === 'undefined'){
-            console.log("undeffffff");
+            // console.log("undeffffff");
             return (<div>hello</div>);
         }
         let songs = this.props.playlist.songs;

@@ -5,7 +5,7 @@ import AddtoPlaylistContainer from '../add_to_playlist/atp_container';
 import PlaylistFormContainer from '../playlists/playlist_form_container';
 
 function Modal(props) {
-    console.log(props);
+    // console.log(props);
     
     if (!props.modal) {
         return null;

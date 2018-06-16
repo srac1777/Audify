@@ -12,7 +12,7 @@ class DeletePlaylist extends React.Component {
 
     handleDelete(e) {
         e.stopPropagation();
-        console.log(this.props, "lololololol")
+        // console.log(this.props, "lololololol")
         
         this.props.deletePlaylist(this.props.playlist.id);
         this.props.closeModal();
