@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
         art = this.props.now_playing.album_art
     }
     return (<div className="main-sidebar">
-                <div>
+                <div className="sidebar-top">
                     <div className="audify-logo"></div>
                     <div className="side-links-container">
                         <div><NavLink to="/search" className="side-links" activeClassName="active-side"><div className="search-icon"></div>Search</NavLink></div>

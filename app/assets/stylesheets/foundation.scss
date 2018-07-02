@@ -277,4 +277,13 @@
     margin-top: -140px;
 }
 
+.sidebar-top {
+    height: 100%;
+    margin-bottom: 150px;
+    // background: red;
+    overflow: scroll;
+    .sidebar-top::-webkit-scrollbar {
+        width: 4em;
+    }
+}
 
