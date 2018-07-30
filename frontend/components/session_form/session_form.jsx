@@ -105,7 +105,7 @@ class SessionForm extends React.Component {
                 </form>
                 </div>
                 {loginorsignup}
-                <div className="tc"> If you click "Demo Login" and are not a Audify user, you are invited to visit my <a href="#" className="ss1">Github</a> and <a href="#" className="ss1">LinkedIn</a></div>
+                <div className="tc"> If you click "Demo Login" and are not a Audify user, you are invited to visit my <a href="https://github.com/srac1777" className="ss1">Github</a> and <a href="https://www.linkedin.com/in/shashankracherla/" className="ss1">LinkedIn</a></div>
             </div>
         );
     }

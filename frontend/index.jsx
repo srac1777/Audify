@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         store = configureStore();
     }
     // window.fetchPlaylists = fetchPlaylists;
-    window.getState = store.getState;
-    window.fetchPlaylists = fetchPlaylists;
-    window.logout = UtilTest.logout;
-    window.dispatch = store.dispatch;
+    // window.getState = store.getState;
+    // window.fetchPlaylists = fetchPlaylists;
+    // window.logout = UtilTest.logout;
+    // window.dispatch = store.dispatch;
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
 });
