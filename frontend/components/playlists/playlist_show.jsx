@@ -91,8 +91,8 @@ class PlaylistShow extends React.Component {
                         <div className="pl-show-left-buttons">
                             {renamebtn}
                             {delbtn}
-                            {fbtn}
-                            {ubtn}
+                            {/* {fbtn}
+                            {ubtn} */}
                             
                         </div>
                     </div>
