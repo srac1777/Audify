@@ -18,7 +18,7 @@ I modelled the UX closely after the real app while adding a little more of my ta
 
 ![no gif](https://github.com/srac1777/Audify/blob/master/wiki/readme-screengrabs/home.gif "User Interaction")
 
-##Significant Code
+## Significant Code
 
 I had to create custom API endpoints to remove songs from playlists because I had access to both song_id and playlist_id but I did not have access to the playlist_song_id in the joins table. So I sent both the song id and playlist id to the backend by creating a custom route that stores the information in its route params.
 
@@ -46,6 +46,8 @@ export const deletePlaylistSong = ps => {
     });
 };
 ```
+
+## Other Visuals
 ### Playlists
 
 ![no gif](https://github.com/srac1777/Audify/blob/master/wiki/readme-screengrabs/playlist.gif "Playlists")
